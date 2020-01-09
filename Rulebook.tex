@@ -1,0 +1,767 @@
+\documentclass[a4paper, 10pt, twocolumn, twoside]{book}
+
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage\if@twoside
+  \ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}%
+  \newpage\fi\fi\fi}
+\makeatother
+
+\usepackage[dvipdfx, rgb]{xcolor}
+  \definecolor{yellowtext}{HTML}{f9b00b}
+  \definecolor{redtext}{HTML}{931004}
+  \definecolor{whitetext}{gray}{0.5}
+  
+  \definecolor{normalpage}{gray}{0.95}
+  \definecolor{storyblack}{gray}{0.1}
+  \definecolor{boxred}{HTML}{721a16}
+  \definecolor{headred}{HTML}{5e1519}
+
+\widowpenalty10000
+\clubpenalty10000
+
+\usepackage{stfloats}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{hyphenat}
+\usepackage[11pt]{moresize}
+\usepackage{enumitem}
+
+\usepackage{pgf} 
+\pgfdeclareimage{cover-black}{./core/tikz/Cover-black.pdf}
+\pgfdeclareimage{cover-red}{./core/tikz/Cover-red.pdf}
+\pgfdeclareimage{cover-blue}{./core/tikz/Cover-blue.pdf}
+\pgfdeclareimage{cover-green}{./core/tikz/Cover-green.pdf}
+\pgfdeclareimage{cover-yellow}{./core/tikz/Cover-yellow.pdf}
+\pgfdeclareimage{cover-brown}{./core/tikz/Cover-brown.pdf}
+\pgfdeclareimage{cover-grey}{./core/tikz/Cover-grey.pdf}
+
+\pgfdeclareimage{leftfooter}{./core/tikz/Footerleft.pdf}
+\pgfdeclareimage{rightfooter}{./core/tikz/Footerright.pdf}
+
+\pgfdeclareimage{bigleftheader}{./core/tikz/HeaderLeftBig.pdf}
+\pgfdeclareimage{bigrightheader}{./core/tikz/HeaderRightBig.pdf}
+\pgfdeclareimage{smallleftheader}{./core/tikz/HeaderLeftSmall.pdf}
+\pgfdeclareimage{smallrightheader}{./core/tikz/HeaderRightSmall.pdf}
+
+\pgfdeclareimage{widepictureframe}{./core/tikz/Twocolumnframe.pdf}
+\pgfdeclareimage{longpictureframe}{./core/tikz/Columnframe.pdf}
+
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+
+\usepackage{fontspec}
+%  \newfontfamily{\bodyfont}[ 
+%	UprightFont=Shadowrun,
+%	BoldFont=Shadowrun Bold, 
+%	ItalicFont=Shadowrun Italic,
+%	BoldItalicFont=Shadowrun BoldItalic]{Shadowrun}
+  \newfontfamily{\bodyfont}[
+  Path = ./core/fonts/,
+  Extension = .ttf,
+  UprightFont = *-rg,
+  BoldFont = *-b,
+  ItalicFont = *-i,
+  BoldItalicFont = *-bi,
+  NFSSFamily = srbody
+  ]{srfont}
+%  \newfontfamily{\deckerfont}[
+%	UprightFont=Decker,
+%	BoldFont=Decker Bold  
+%  ]{Decker}
+  \newfontfamily{\deckerfont}[
+  Path = ./core/fonts/,
+  Extension = .ttf,  
+  UprightFont = *-rg,
+  BoldFont = *-b
+  ]{dckr}
+%  \newfontfamily{\headerfont}{Sublimation Medium}
+  \newfontfamily{\headerfont}[
+	Path = ./core/fonts/,
+	Extension = .ttf,
+	UprightFont = *-rg,  
+  ]{sublm}
+%  \newfontfamily{\boxfont}{Univers Condensed}
+  \newfontfamily{\boxfont}[
+	Path = ./core/fonts/,
+	Extension = .ttf,
+	UprightFont = *-rg  
+  ]{universcondensed}
+  
+  \renewcommand{\rmdefault}{srbody}
+  \renewcommand{\sfdefault}{srbody}
+%  \setmainfont{srbody}
+  
+  
+\usepackage{geometry}
+  \geometry{a4paper, 
+  includeheadfoot,
+  top=0cm, 
+  headheight=23mm, 
+  headsep=7mm, 
+  footskip=23mm, 
+  bottom=7mm,
+  left=20mm, 
+  right=15mm
+  }  
+  
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+  
+
+\usepackage[ngerman]{babel}
+\usepackage{tocloft}
+\usepackage{multicol}
+
+\addtocontents{toc}{\protect\begin{multicols*}{2}}
+\AtEndDocument{\addtocontents{toc}{\protect\end{multicols*}}}
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}{Content}%
+}
+\addto\captionsngerman{
+  \renewcommand{\contentsname}{Inhalt}
+}
+\setcounter{tocdepth}{2}
+\renewcommand{\cfttoctitlefont}{\color{redtext}\headerfont\Huge\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\\[-0.75em]\color{redtext}\titlerule}
+\setlength{\cftchapnumwidth}{0pt}
+\setlength{\cftsecnumwidth}{0pt}
+\setlength{\cftsubsecnumwidth}{0pt}
+\renewcommand{\cftdot}{.}
+\renewcommand{\cftdotsep}{0.1}
+\renewcommand{\cftchapindent}{0em}
+\renewcommand{\cftsecindent}{0em}
+\renewcommand{\cftsubsecindent}{1em}
+\renewcommand{\cftchapfont}{\boxfont\color{redtext}\small\bfseries}
+\renewcommand{\cftchappagefont}{\boxfont\color{redtext}\small\bfseries}
+\renewcommand{\cftsecfont}{\boxfont\color{redtext}\small\bfseries}
+\renewcommand{\cftsecpagefont}{\boxfont\color{redtext}\small\bfseries}
+\renewcommand{\cftsubsecfont}{\boxfont\small}
+\renewcommand{\cftsubsecpagefont}{\boxfont\small}
+\renewcommand{\cftchapleader}{\color{redtext}\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsecleader}{\color{redtext}\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftchapdotsep}{0.1}
+
+\usepackage[pagecolor=normalpage]{pagecolor}
+
+\usepackage{background}
+
+\backgroundsetup{
+scale=1,
+opacity=.01,
+angle=0,
+contents={%
+	%Image should be located in ./Images/
+	%Image should have the right ratio, otherwise it will be stretched.
+	%\pgfuseimage{scanlines}
+   \includegraphics[width=\paperwidth , height=\paperheight]{core/images/scanlines.png}
+}
+}
+
+\usepackage[many]{tcolorbox}
+\usepackage{changepage}
+
+\makeatletter  
+
+\newcommand\styleA{\raggedright\parfillskip=-\rightskip\relax}
+\newcommand\styleB{\rightskip=0pt plus .8\hsize\relax \parfillskip=0pt plus-.7\hsize\relax}
+
+\strictpagecheck
+
+\newenvironment{twocolumnbox}{
+\boxfont
+\checkoddpage
+\ifoddpage
+  \begin{tcolorbox}[
+	enhanced,
+	top=4mm,
+    bottom=4mm,	
+	left=25mm,
+	right=5mm,    
+    opacityframe=1,
+    opacityback=1,
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    colframe=storyblack,
+    coltext=white,
+    text width=\textwidth-7mm,
+    boxrule=2mm,
+    arc is angular,    
+    arc=6mm,outer arc=7mm,
+    float*=h!tb,
+    every float=\hspace{-32mm}
+    ] 
+\else
+   \begin{tcolorbox}[
+	enhanced,
+	top=4mm,
+    bottom=4mm,	
+	left=5mm,
+	right=25mm,    
+    opacityframe=1,
+    opacityback=1,
+    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    colframe=storyblack,
+    coltext=white,
+    text width=\textwidth-7mm,
+    boxrule=2mm,
+    arc is angular,    
+    arc=6mm,outer arc=7mm,
+    float*=h!tb
+    ]
+\fi
+}{\end{tcolorbox}}
+
+\newenvironment{columnbox}{
+\par
+\boxfont
+\if@firstcolumn
+\begin{tcolorbox}[
+	enhanced,	
+	before={\hspace{-32mm}},
+	top=4mm,
+    bottom=4mm,	
+	left=25mm,
+	right=5mm,    
+    opacityframe=1,
+    opacityback=1,
+    interior style={left color=boxred,right color=redtext},
+    colframe=storyblack,
+    coltext=white,
+    text width=\dimexpr\columnwidth-7mm,
+    boxrule=2mm,
+    arc is angular,    
+    arc=6mm,outer arc=7mm
+    ]
+\else
+\begin{tcolorbox}[
+	enhanced,
+    top=4mm,
+    bottom=4mm,	
+	left=5mm,
+    right=25mm,
+	opacityframe=1,
+    opacityback=1,
+    interior style={left color=redtext,right color=boxred},
+    colframe=storyblack,
+    coltext=white,
+    text width=\dimexpr\columnwidth-7mm,
+    boxrule=2mm,
+  	arc is angular,    
+    arc=6mm,outer arc=7mm]
+    
+\fi
+}{\end{tcolorbox}}
+
+\graphicspath{{./images/}}
+\usepackage{fancyhdr}
+
+\newcommand{\footerleft}{
+\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+	\node[anchor=center] at (.5\paperwidth,.5\paperheight) {\pgfuseimage{leftfooter}};
+	\node [anchor=west, white, font=\headerfont] at (27mm,9mm) {\LARGE\thepage\hspace{1cm}\Large\leftmark\hspace{1em}\Huge\guillemotright};
+	\end{tikzpicture}	
+}
+
+\newcommand{\footerright}{
+	\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+	\node[anchor=center] at (.5\paperwidth,.5\paperheight) {\pgfuseimage{rightfooter}};
+	\node [anchor=east, align=right, white, font=\headerfont] at (\paperwidth-27mm,9mm) {\Huge\guillemotleft\hspace{1em}\Large\leftmark\hspace{1cm}\LARGE\thepage};
+	\end{tikzpicture}	
+
+}
+
+  \newif\ifTitleSpread
+  \renewcommand{\headrulewidth}{0pt}
+
+  \fancypagestyle{plain}{
+	\fancyhf{}	
+	\fancyhead[LE]{
+	  \begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
+	  \ifTitleSpread
+	  \suppressfloats[t]
+	  \suppressfloats[b]	  
+	  \node at (0,0) {\pgfuseimage{bigleftheader}};
+	  \node[anchor=south west, fill=redtext, minimum height=6mm, white, font=\headerfont] at (-.5\paperwidth+15mm,.5\paperheight-14mm) {\MakeUppercase{\doctitle}};
+	\draw node[anchor=north west, white, align=left, font=\headerfont\fontsize{60}{50}\selectfont] at (-.5\paperwidth+8mm,.5\paperheight-20mm)
+ {\parbox{197mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
+	  \else
+      \node at (0,0) {\pgfuseimage{smallleftheader}};	  
+	  \node[anchor=west, white, font=\headerfont] at (-.5\paperwidth+15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\Large\guillemotright~~\normalsize\doctitle~~\Large\guillemotleft};
+	  \fi	  
+	  \end{tikzpicture}
+	}
+	\fancyhead[LO]{
+	  \begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
+	  \ifTitleSpread
+	  \suppressfloats[t]
+	  \suppressfloats[b]
+	  \node at (0,0) {\pgfuseimage{bigrightheader}};
+	  \@ifundefined{srsplash}{}{
+		\begin{scope}
+    	\clip(-.5\paperwidth,.5\paperheight) rectangle (.5\paperwidth,{.5\paperheight-(\headheight-3mm)});
+    	\node[red, anchor=center, opacity=0.25] at (0,.5\paperheight) {\pgfuseimage{splashimage}};
+		\end{scope}
+	  } 
+	  \else
+	  \node at (0,0) {\pgfuseimage{smallrightheader}};
+	  \@ifundefined{srsplash}{}{
+		\begin{scope}
+    	\clip(-.5\paperwidth,.5\paperheight) rectangle (.5\paperwidth,{.5\paperheight-(\headheight-3mm)});
+    	\node[red, anchor=center, opacity=0.25] at (0,.5\paperheight) {\includegraphics[height=\paperheight, width=\paperwidth]{\srsplash}};
+		\end{scope}
+	  } 
+	  \node[anchor=east, align=left, white, font=\headerfont] at (.5\paperwidth-15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\large\guillemotright~~\normalsize\doctitle~~\Large\guillemotleft};
+	  \fi	  
+	  \end{tikzpicture}
+	  \global\setlength{\headheight}{23mm}%
+  	  \global\setlength{\textheight}{237mm}
+  	  \global\TitleSpreadfalse
+	}
+	\fancyfoot[LE]{
+		\footerleft
+	}
+	\fancyfoot[LO]{
+		\footerright
+		\global\setlength{\headsep}{7mm}%
+	}  
+  }
+  
+  \fancypagestyle{story}{
+		\fancyhf{}
+    \fancyhead[LE]{
+    \suppressfloats[t]
+	\suppressfloats[b]
+    \ifTitleSpread  
+    \begin{tikzpicture}[remember picture, overlay]
+    \node at (.5\paperwidth-15mm,.5\headheight) {\includegraphics[width=\paperwidth, height=\headheight]{\storyleftimage}};
+    \fill[fill=redtext, path fading=east, fill opacity=.8] (-15mm,0) rectangle (\paperwidth, 3);
+      \draw node[white, align=justify, font=\headerfont\fontsize{40}{35}\selectfont\styleA] at (65mm,15mm) {\parbox{140mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
+    \end{tikzpicture}
+	\fi
+  }
+  \fancyhead[LO]{
+  \suppressfloats[t]
+  \suppressfloats[b]  
+  \ifTitleSpread
+      \begin{tikzpicture}[remember picture, overlay]
+    \node at (.5\paperwidth-20mm,.5\headheight) {\includegraphics[width=\paperwidth, height=\headheight]{\storyrightimage}};
+    \fill[anchor=south east, fill=redtext, path fading=west, fill opacity=.8] (.4\paperwidth,0) rectangle (\paperwidth-20mm, 10mm);
+      \draw node[white, anchor=east, font=\headerfont\large] at (\paperwidth-40mm, 0.5) {\MakeUppercase{\storyauthor}};
+    \end{tikzpicture}
+    \fi
+    \global\setlength{\textheight}{237mm}
+	\global\setlength{\headheight}{23mm}%
+	\global\TitleSpreadfalse
+  }
+	\fancyfoot[LE]{
+	\footerleft
+	}
+	\fancyfoot[LO]{
+	\footerright	
+	\global\setlength{\headsep}{7mm}%
+	}  
+  }
+  
+  \pagestyle{plain}
+
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\chaptername}{}
+\renewcommand{\thechapter}{}
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+
+\usepackage{titlesec}
+\usepackage{etoolbox}
+
+%  \titleformat{\chapter}
+%  {\headerfont\fontsize{44}{44}\selectfont\raggedright\fontdimen2\font=.5em\color{whitetext}\nohyphens}{}{0cm}{\MakeUppercase}[]  
+  \titleformat{\section}
+  {\headerfont\huge\color{redtext}\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{redtext}\nobreak\titlerule}]
+  \titleformat{\subsection}
+  {\headerfont\Large\color{redtext}\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{redtext}\nobreak\titlerule}]
+  \titleformat{\subsubsection}
+  {\headerfont\large\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{black}\nobreak\titlerule}]
+  
+
+\newenvironment{dckcomment}[1]
+    {
+    \def\commentauthor{#1}
+    \setmainfont{Decker}
+    \small
+	\par    
+    \begin{itemize}[leftmargin=1.2em, itemsep=-1ex, label={
+    \begin{tcolorbox}[valign=center, halign=center,hbox,boxsep=-3.7mm, boxrule=0mm,colback=black, square, circular arc]  
+    {\color{normalpage}\bfseries\textgreater}
+	\end{tcolorbox}    
+	}]
+    \item  
+    }
+    {    
+	\item \commentauthor 
+    \end{itemize}
+    \par
+    }
+
+\usepackage{afterpage}
+
+\newcommand{\storychapter}[4]{
+  \def\tmp{#2}
+  \let\storyauthor\tmp
+  \def\tmp{#3}
+  \let\storyleftimage\tmp
+  \def\tmp{#4}  
+  \let\storyrightimage\tmp
+  
+  \cleardoublepage
+  \global\TitleSpreadtrue
+  \newpagecolor{storyblack}
+  \globalcolor{white}
+  \pagestyle{story}
+  \newgeometry{ 
+    includeheadfoot,
+    top=0cm, 
+    bottom=7mm,
+    headheight=15cm, 
+    headsep=5mm, 
+    footskip=23mm, 
+    left=20mm, 
+    right=15mm
+  }  
+  \par\refstepcounter{chapter}% Increase section counter
+  \chaptermark{\MakeUppercase{#1}}% Add section mark (header)
+  \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}\MakeUppercase{#1}}
+}
+
+\renewcommand{\chapter}[1]{
+  \cleardoublepage
+  \global\TitleSpreadtrue
+  \restorepagecolor
+  \globalcolor{black}
+  \pagestyle{plain}
+  \newgeometry{ 
+    includeheadfoot,
+    top=0cm, 
+    bottom=7mm,
+    headheight=73mm, 
+    headsep=10mm, 
+    footskip=23mm, 
+    left=20mm, 
+    right=15mm
+  }
+  \par\refstepcounter{chapter}% Increase section counter
+  \chaptermark{#1}% Add section mark (header)
+  \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}
+}
+
+\usepackage{bophook}
+\usepackage{atbegshi}
+\usepackage{everypage}
+
+
+\newcommand{\storypar}{\begin{center}
+\resizebox{3mm}{!}{$\textcolor{redtext}\ast$}
+\end{center}}
+
+\newcommand{\splashpicture}[1]{
+  \def\tmp{#1}  
+  \let\srsplash\tmp
+  \pgfdeclareimage[width=\paperwidth, height=\paperheight]{splashimage}{./images/\tmp}
+}
+
+\newcommand{\srmaketitle}[1][black]{
+\def\coverframe{cover-}
+\g@addto@macro\coverframe{#1}
+
+\makeatletter
+  \let\doctitle\@title 
+\makeatother
+\pagestyle{empty}
+\cleardoublepage
+\begin{titlepage}
+\@ifundefined{srsplash}
+{
+\begin{center}
+{\Huge\headerfont\color{redtext}\@title}\\
+{\Large\headerfont\color{redtext}\@author}
+\end{center}
+}
+{
+\begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
+\node[white] at (0,0) {\coverframe};
+\node[opacity=1, inner sep=0pt, scale=0.9] at (0,-30mm) {\pgfuseimage{splashimage}};
+\node[opacity=1, inner sep=0pt] at (0,0) {\pgfuseimage{\coverframe}};
+\end{tikzpicture}
+\newpage
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (current page.center){\pgfuseimage{splashimage}};
+}
+\end{titlepage}
+\vspace*{.6\textheight}
+  \begin{tcolorbox}[
+	enhanced,
+	before=\hspace{-32mm},
+	top=4mm,
+    bottom=4mm,	
+	left=25mm,
+	right=25mm,    
+    opacityframe=1,
+    opacityback=1,
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    colframe=storyblack,
+    coltext=white,
+    text width=\textwidth-7mm,
+    boxrule=2mm
+    ]
+     
+{\color{yellowtext}\Huge Impressum}\\
+{\textcolor{white} Main Author: \@author}
+\begin{center}
+The Topps Company, Inc. has sole ownership of the names, logo, artwork, marks, photographs, sounds, audio, video and/or any proprietary material used in connection with the game Shadowrun. The Topps Company, Inc. has granted permission to \@author ~to use such names, logos, artwork, marks and/or any proprietary materials for promotional and informational purposes on its website but does not endorse, and is not affiliated with \@author ~in any official capacity whatsoever.
+\par
+Shadowrun-Logo und Inhalte mit freundlicher Genehmigung von Pegasus Spiele unter Lizenz von Catalyst Game Labs und Topps Company, Inc. © 2014 Toppy Company, Inc. Alle Rechte vorbehalten. Shadowrun ist eine eingetragene Handelsmarke von Topps Company, Inc.
+\end{center}
+\end{tcolorbox}
+\setcounter{page}{1}
+\cleardoublepage
+\pagestyle{plain}
+}
+
+\newcommand{\twocolumnimage}[1]{
+  \begin{figure*}[t]
+  \centering
+  \vspace*{13cm}
+  \begin{tikzpicture}[remember picture, overlay, shift={(current page.north)}]
+  \node[anchor=north] at (0,{-(\headheight+\headsep)}) {\includegraphics[width=\textwidth, height=12cm]{#1}};
+  \node[anchor=north] at (0,{-(\headheight+\headsep-(8.85cm))}) {\pgfuseimage{widepictureframe}};
+  \end{tikzpicture}
+  \end{figure*}
+}
+
+\def\@floatplacement{
+\def\zero{0}
+%Textpage bit, global:
+\ifodd\c@page
+\if@firstcolumn
+\global\@topnum \zero
+\global\@botnum \zero
+\else
+\global\@topnum \c@topnumber 
+\global\@botnum \c@bottomnumber
+\fi
+\else
+\if@firstcolumn
+\global\@topnum \c@topnumber 
+\global\@botnum \c@bottomnumber
+\else
+\global\@topnum \zero
+\global\@botnum \zero
+\fi
+\fi
+\global\@colnum  \c@totalnumber
+\global\@toproom \topfraction\@colht
+\global\@botroom \bottomfraction\@colht
+
+% Floatpage bit, local:
+\@fpmin   \floatpagefraction\@colht}
+
+\newcommand{\columnimage}[1]{
+\begin{figure}[tb]
+  \vspace{237mm}
+  \begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
+  \if@firstcolumn
+  \coordinate (A) at ({-(.5\columnsep)-(.6\columnwidth)}, 0);  
+  \else
+  \coordinate (A) at ({(.5\columnsep)+(.6\columnwidth)}, 0);
+  \fi
+  %\coordinate (A) at (0,0);
+  \node[anchor=center] at (A) {\includegraphics[width=\columnwidth, height=237mm]{#1}};
+  \node[anchor=center] at (A) {\pgfuseimage{longpictureframe}};
+  \end{tikzpicture}
+\end{figure}  
+}
+
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Kowloon Walled City}
+\author{Tobias Braun}
+\splashpicture{Kowloon.jpg}
+
+\begin{document}
+\srmaketitle[red]
+\tableofcontents
+\chapter{EINLEITUNG}
+\lipsum
+\storychapter{Wohin sich nur wenige wagen}{Tobias Braun}{example-image-a}{example-image-b}
+\lipsum
+\storypar
+\lipsum
+\storypar
+\lipsum
+\storypar
+\lipsum[1-5]
+\chapter{DIE ERWACHTE WELT}
+\columnimage{example-image}
+\lipsum
+\section{Erwacht geboren}
+\lipsum
+\subsection{Magie in der Pokultur}
+\lipsum[1-3]
+\subsection{Magie in Volkskulturen}
+Nur in wenigen Kulturen wurde die Magie anfangs freudig begrüßt. Viele hingen alten Vorurteilen an. Die Angst trieb die Mächtigen dazu, die Erwachten kontrollieren zu wollen; und was sie nicht kontrollieren konnten, vernichteten sie. In Teilen Afrikas, Osteuropas und tief im Herzen der CAS gibt es immer noch Gebiete, in denen Magie ein todeswürdiges Verbrechen darstellt. Kinder bemühen sich, ihre Fähigkeiten zu verbergen, und werden manchmal zum Selbstmord getrieben, wenn sie sie entdecken. Sie wollen ihrer Familie den Spott und die Schande ersparen, die ein Zauberer über sie bringen könnte.
+Diese Vorurteile schwingen, als Resultat der Medienwahrnehmung, auch gegenüber ganzen Staaten mit. Man kennt das: 
+In Tír na NÓg wimmelt es von Druiden, alle chinesischen Magier sind Wujen, und wenn jemand aussieht, als käme er aus Aztlan, will er uns wahrscheinlich für sienen nächsten Zauber Blut abzapfen. Nicht alle glauben das überall, aber genügend viele, dass es sich darauf auswirkt, wie die Durchschnittsbevölkerung uns sieht. Die NAN sind dabei ganz offen. SChamanismus wird als der traditionell vorgegebene Pfad betrachtet, und wer sich Magier oder anders nennt, wird als Außenseiter gesehen. Eine Handvoll Kulturen der Sechsten Welt sind in ihrer Behandlung der Erwachten bemerkenswert.
+\subsubsection{Asamando}
+Kurz nach dem Erwachen bilteten sich mehrere metamenschliche Staaten. Jeder hatte andere Gesetze für die Magie. In Asamando wurden die Gesetze under Berücksichtigung der Magie ausgearbeitet. Fast 30 Prozent der Bevölkerung sind Zauberer verschiedener Traditionen, aber weil sie auch Ghule sind, trauen sich nur wenige Außenseiter über die Grenze, um zu sehen, was ihnen diese Bevölkerung bieten kann. Da etwa 95 Prozent der Bevölkerung mit MMVV infiziert sind, nennt man Asamando auch die Heimat der Ghule.\par
+\twocolumnimage{example-image}
+Ein Ghulstaat zieht natürlich die Aufmerksamkeit der Erwachten auf sich. Zusätzlich zu den Ghulen gibt es in Asamando auch eine größere Population Freier Geister, was in manchen Landesteilen zu Gesetzen gegen das Binden von Geistern geführt hat.\par
+\begin{columnbox}
+{\large\color{yellowtext}\MakeUppercase{Beispiele für manifestierte Alcheras}}\\
+{\color{yellowtext} SEARS-TOWER, CHICAGO}\\
+An jedem 10. Februar, dem Jahrestag der Zerstörung des Sears-Towers, manifestiert sich dort für 24 Stunden eine Alchera als Abbild des Gebäudes vor der Zerstörung. Sie gibt ein unirdisches Leuchten von sich, wodurch sie auch nachts gut sichtbar ist.
+\end{columnbox}
+
+\begin{dckcomment}{Hannibelle}
+Konzerne sprechen nicht offen über die Forschungen und Anwerbungen, die sie in Asamando durchführen, abie sie sind extrem an der hohen Konzentration der Magie in dieser Region interessiert. Dennoch haben sie Angst, dass die unvernünftige Borniertheit, die mein Volk dazu gezwungen hat, in den Schatten zu leben, ihren Profit beeinträchtigen könnte.
+\end{dckcomment}
+\begin{dckcomment}{Turbo Bunny}
+Unvernünftige Borniertheit? Vergiss nicht, dass Ghule Metamenschenfleisch fressen. Aber Asamando ist nicht die einzige metamenschliche Nation in Afrika, die für aufregung sorgt. Wenn man ein Rundohr ist, sollte man nicht nach Azanien reisen, wo die Zulu-Elfen sehr besorgt darüber sind, die Macht im Land zu verlieren, und das Außenseiter deutlich spüren lassen.
+\end{dckcomment}
+\begin{dckcomment}{Frosty}
+Mujajis fehlende Führungskraft in diesem Teil der WElt hat zu großer Instabilität geführt. Die Trans-Swazi-Föderation ist bereits so weit gegangen, andere Nationen, auch Asamando, um Hilfe bei der Verbrechensbekämpfung in Kapstadt zu bitten. Bislang haben sich dazu aber nur Söldner und Shadowrunner bereit gefunden.
+\end{dckcomment}
+
+\subsubsection{Arabisches Kalifat}
+Die Scharia ist selten eine Konstante im Kalifat, wo Magie als Vergehen gegen den Willen Allahs gesehen wird. Die Gläubigen sehen Magie als eine der Sieben Todsünden und wenden sich im Kalifat offen gegen ihren Einsatz. Jede Magieanwendung ist im Kalifat verboten. DIe islamische Führung selbst sieht aber einen Unterschied zwischen Magieanwendung und den "Gaben", die die Gläubigen von Allah erhalten. Die \emph{Sufis} -- oder islamischen Mystiker -- sind in diesem Sinne keine Magieanwender. Nach der Denkweise des Kalifats haben sie ihre Gaben von Allah erhalten und nutzen diese, um Sein Wort zu verbreiten.
+
+\subsubsection{Philippinen}
+Die Philippinen finden sich aus zwei Gründen auf dieser Liste: wegen der Insel Yomi und wegen der Huk. Yomi, deren ursprünglicher Name Lagu Lagu lautet, ist eine Brutstätte metamenschlicher und Geister-Aktivitäten. Obwohl die Insel im Jahr 2061 von der Herrschaft der Japaner befreit wurde, überwacht der japanische Geheimdienst immer noch die AUs- und Einreisen. Schmuggler, die sich in den Gewässern auskennen, können sich mit dem geheimen Transport von Reisenden ihren Lebensunterhalt verdienen. Schmuggler können auch daran verdienen, dass sie magische aktive Teenager aus dem Land schmuggeln, bevor die Huk-Regierung sie in die Finger bekommt. Die Huk-Regierung kam 2073 schwer in die Kritik, als ein Reporter von Horizon aufdeckte, dass sie mit einer Entführungswelle in Marawi zu tun hatte. Er bewies, dass Teile des militärischen Arms der Regierung Guerilleros angeheuert hatten, um Kinder mit magischem Potenzial zu entführen, vielleichtu m sie aus noch unbekannten Gründen in die Armee zu pressen. Die Regierung leugnete die Existenz dieses Programms, aber die Entführungen finden auch heute noch statt. Das Problem ist so schlimm geworden, dass Kinder sich weigern, sich testen zu lassen, weil sie Angst haben, mitten in der Nacht aus ihren Familien entführt zu werden.
+\begin{dckcomment}{Kay St. Irregular}
+Eher am hellichten Tag. Die Huks verwenden dafür frühere Freiheitskämpfer, die sich nach der Machtübernahme nicht mehr in die Gesellschaft einfügen konnten. Das hat der Regierung, die immer noch um eine Anerkennung durch die Vereinten Nationen kämpft, politisch schweren Schaden zugefügt. Wenn eine neue Verbindung zu den Entführungen aufgedeckt werden könnte, würde das den Huk große Schwierigkeiten bereiten.
+\end{dckcomment}
+\begin{twocolumnbox}
+\begin{multicols}{2}[
+{\large\color{yellowtext}\MakeUppercase{Beispiele für Hintergrundstrahlung durch Domänen und Manaverzerrungen}}]
+{\color{yellowtext} STUFE 1-3}\\
+Entsteht durch einen bedeutenden, aber kurzen, oder einen kleinen, aber andauernden magischen, emotionalenen oder spirituellen Einfluss. Beispiele sind einzelne Gewaltverbrechen, Liebesaffären, Bars, die regelmößig von Erwachten besucht werden (und sich auf die Stammgäste ausrichten), kleine Kirchen oer tagelange überdurchscnittliche Luftverschmutzung. Natürlich entstandene Ringe des Hexenröhrlings richten ihr Mana auf Wicca- oder Druidentraditionen aus.\par
+{\color{yellowtext} STUFE 4-6}\\
+Bedeutsame, aber kurze Gefühlserfahrung einer großen Gruppe (über 50 Leute) oder ständiger magische oder emotionaler Einfluss über Jahre hinweg. Beispiele sind magische Universitäten, ausverkaufte Rockkonzerte, Hochsicherheitsgefängnisse, Mülldeponien oder Läden von Alchemisten und Taliskrämern. Auch in Städten, die stark verscmutzt sind, oder in dicht bevölkerten Slums kann Hintergrundstrahlung dieser Höhe entstehen. Domänen dieser Stärke sind meist auf eine Tradition oder eine bestimme magische Fertigkeit (wie z.B. Alchemie) ausgerichtet. Beispiele: Teotihuacan (Stufe 4), die Cahokia Mounds (Stufe 6), UCLA und CalTech (Stufe 5), MIT\&T (Stufe 4).\par
+{\color{yellowtext} STUFE 7-9}\\
+Bedeutende, wiederholt stattfindende Ereignisse, die im Lauf von Jahren oder Jahrzehnten emotionale Bedeutung entwickeln. Die meisten großen Manalinien und Stätten der Macht gehören in diese Kategorie. Beispiele: Göbekli-Tepe-Nexus (Stufe 8), Nazca-Linien (Stufe 9), Pyramiden von Gizeh (Stufe 7).\par
+{\color{yellowtext} STUFE 10-12}\\
+Orte, an denen wichtige Ereignisse stattfanden, deren Auslöser immer noch bestehen; Orte, die über Jahrhunderte hinweg emotionale Bedeutung entwickelt haben, oder möglichte Manalienien. Beispiele: Stonehenge (Stufe 12), Traumpfad von Sydney (Stufe 11), Friedhof Arlington, Sixtinische Kapelle, Notre Dame (alle Stufe 10).\par
+{\color{yellowtext} STUFE 13-15}\\
+Die möchtigsten Manalinien oder Ereignisse, die für den Großteil der Menschheit magische oder emotionale Bedeutung haben. Beispiele: die fünf heiligen Berge Chinas -- inklusive Tai Shan, wo der Große Drache Lung lebt (Stufe 15), die Great Cairn Line in Tír na nÓg (Stufe 14), die Explosionspunkte in Hiroshima und Nagasaki, die Konzentrationslager der Nazis, das Umerziehungslager in Abilene (alle Stufe 13).\par
+{\color{yellowtext} STUFE 16-18}\\
+Eine positive Hintergrundstrahlung von 16 oder höher gilt als Manaverzerrung. In diesen Gebieten fließt das Mana völlig chaotisch. Diese Höhe der Hintergrundstrahlung findet man meist in der oberen Atmosphäre, aber es gibt auch andere seltsame Orte, an denen der Astralraum verzerrt ist. Man geht davon aus, dass an solchen Orten eine Kombination aus plötzlichen, erschütternden Ereignissen und massiver Manipulation des Manas gewirkt hat. Beispiele: Auschwitz und das Gefängnis Blackstone (Stufe 16), ein Nordlicht (Stufe 18).
+\end{multicols}
+\end{twocolumnbox}
+\subsection{Magie im Schulsystem}
+\lipsum[1]
+\begin{columnbox}
+{\large\color{yellowtext}\MakeUppercase{Beispiele für manifestierte Alcheras}}\\
+{\color{yellowtext} SEARS-TOWER, CHICAGO}\\
+An jedem 10. Februar, dem Jahrestag der Zerstörung des Sears-Towers, manifestiert sich dort für 24 Stunden eine Alchera als Abbild des Gebäudes vor der Zerstörung. Sie gibt ein unirdisches Leuchten von sich, wodurch sie auch nachts gut sichtbar ist.
+\end{columnbox}
+\lipsum[1]
+\lipsum[2-10]
+\subsection{Magie an der Universität}
+\lipsum
+\subsection{Im Sold der Mächtigen}
+\lipsum
+\subsection{Im Dienst der Kirche}
+\lipsum
+\subsection{Magie in dern Schatten}
+\lipsum
+\chapter{Magie in der Welt}
+\begin{twocolumnbox}
+\begin{multicols}{2}[
+{\large\color{yellowtext}\MakeUppercase{Beispiele für Hintergrundstrahlung durch Domänen und Manaverzerrungen}}]
+{\color{yellowtext} STUFE 1-3}\\
+Entsteht durch einen bedeutenden, aber kurzen, oder einen kleinen, aber andauernden magischen, emotionalenen oder spirituellen Einfluss. Beispiele sind einzelne Gewaltverbrechen, Liebesaffären, Bars, die regelmößig von Erwachten besucht werden (und sich auf die Stammgäste ausrichten), kleine Kirchen oer tagelange überdurchscnittliche Luftverschmutzung. Natürlich entstandene Ringe des Hexenröhrlings richten ihr Mana auf Wicca- oder Druidentraditionen aus.\par
+{\color{yellowtext} STUFE 4-6}\\
+Bedeutsame, aber kurze Gefühlserfahrung einer großen Gruppe (über 50 Leute) oder ständiger magische oder emotionaler Einfluss über Jahre hinweg. Beispiele sind magische Universitäten, ausverkaufte Rockkonzerte, Hochsicherheitsgefängnisse, Mülldeponien oder Läden von Alchemisten und Taliskrämern. Auch in Städten, die stark verscmutzt sind, oder in dicht bevölkerten Slums kann Hintergrundstrahlung dieser Höhe entstehen. Domänen dieser Stärke sind meist auf eine Tradition oder eine bestimme magische Fertigkeit (wie z.B. Alchemie) ausgerichtet. Beispiele: Teotihuacan (Stufe 4), die Cahokia Mounds (Stufe 6), UCLA und CalTech (Stufe 5), MIT\&T (Stufe 4).\par
+{\color{yellowtext} STUFE 7-9}\\
+Bedeutende, wiederholt stattfindende Ereignisse, die im Lauf von Jahren oder Jahrzehnten emotionale Bedeutung entwickeln. Die meisten großen Manalinien und Stätten der Macht gehören in diese Kategorie. Beispiele: Göbekli-Tepe-Nexus (Stufe 8), Nazca-Linien (Stufe 9), Pyramiden von Gizeh (Stufe 7).\par
+{\color{yellowtext} STUFE 10-12}\\
+Orte, an denen wichtige Ereignisse stattfanden, deren Auslöser immer noch bestehen; Orte, die über Jahrhunderte hinweg emotionale Bedeutung entwickelt haben, oder möglichte Manalienien. Beispiele: Stonehenge (Stufe 12), Traumpfad von Sydney (Stufe 11), Friedhof Arlington, Sixtinische Kapelle, Notre Dame (alle Stufe 10).\par
+{\color{yellowtext} STUFE 13-15}\\
+Die möchtigsten Manalinien oder Ereignisse, die für den Großteil der Menschheit magische oder emotionale Bedeutung haben. Beispiele: die fünf heiligen Berge Chinas -- inklusive Tai Shan, wo der Große Drache Lung lebt (Stufe 15), die Great Cairn Line in Tír na nÓg (Stufe 14), die Explosionspunkte in Hiroshima und Nagasaki, die Konzentrationslager der Nazis, das Umerziehungslager in Abilene (alle Stufe 13).\par
+{\color{yellowtext} STUFE 16-18}\\
+Eine positive Hintergrundstrahlung von 16 oder höher gilt als Manaverzerrung. In diesen Gebieten fließt das Mana völlig chaotisch. Diese Höhe der Hintergrundstrahlung findet man meist in der oberen Atmosphäre, aber es gibt auch andere seltsame Orte, an denen der Astralraum verzerrt ist. Man geht davon aus, dass an solchen Orten eine Kombination aus plötzlichen, erschütternden Ereignissen und massiver Manipulation des Manas gewirkt hat. Beispiele: Auschwitz und das Gefängnis Blackstone (Stufe 16), ein Nordlicht (Stufe 18).
+\end{multicols}
+\end{twocolumnbox}
+\lipsum
+\section{Gesetze der Magie}
+\lipsum[1]
+\subsection{Die Regeln, die wir aufstellen}
+\lipsum[1-4]
+\subsubsection{Magie ist Leben}
+\lipsum[1-3]
+\subsubsection{Magie ist empfindlich}
+\lipsum[1-2]
+\subsubsection{Magie ist unberechenbar}
+\lipsum
+\begin{dckcomment}{Enigma}
+Die sind nicht so seicht, wie sie sich anhören. Offiziell machen die zwar nur ihr ödes Aufklärungsdings, aber ich bin mir sicher, dass jedes der Mitglieder nebenbei in radikaleren Öko-Gruppen aktiv ist.
+\end{dckcomment}
+\begin{dckcomment}{Sunset}
+Die haben mal geführte Wanderungen zur arkanen Pflanzenbestimmung angeboten. Ich weiß nicht, ob dem heute noch so ist. Es gab wohl einige Probleme mit der Sicherheit -- sowohl von dem buchenden Kunden als auch die der besuchten Flora.
+\end{dckcomment}
+\lipsum[1-5]
+\chapter{Magische Traditionen}
+\lipsum
+\lipsum
+\section{Das Rückgrat unseres Glaubens}
+\lipsum
+\section{Traditionen unserer Welt}
+\lipsum
+\subsection{Aztekische Tradition}
+\lipsum
+\subsection{Brockenhexen}
+\lipsum
+\subsection{Buddhistische Tradition}
+\lipsum
+\subsection{Chaosmagie}
+\lipsum
+\subsection{Christliche Theurgie}
+\lipsum
+\subsection{Druidische Tradition}
+\lipsum
+\subsection{Faustianer}
+\lipsum
+\subsection{Hinduistische Tradition}
+\lipsum
+\subsection{Islamistische Tradition}
+\lipsum
+\subsection{Kabbalistische Tradition}
+\lipsum
+\subsection{Pfad des Rades}
+\lipsum
+\subsection{Schwarze Magie}
+\lipsum
+\subsection{Shinto-Tadition}
+\lipsum
+\subsection{Sioux-Tradition}
+\lipsum
+\subsection{Sorbische Theurgie}
+\lipsum
+\subsection{Strassenhexen}
+\lipsum
+\subsection{Voodoo}
+\lipsum
+\subsection{Wicca-Tradition}
+\lipsum
+\subsection{Wuxing-Tradition}
+\lipsum
+\subsection{Zarathustrische Tradition}
+\lipsum
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass[a4paper, 10pt, twocolumn, twoside]{book}
+\usepackage[dvipdfx, rgb, table]{xcolor}
+  \definecolor{yellowtext}{HTML}{f9b00b}
+  \definecolor{redtext}{HTML}{931004}
+  \definecolor{whitetext}{gray}{0.5}
+  
+  \definecolor{normalpage}{gray}{0.95}
+  \definecolor{storyblack}{gray}{0.1}
+  \definecolor{boxred}{HTML}{721a16}
+  \definecolor{headred}{HTML}{5e1519}
+
+\usepackage{lipsum}
+
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{external}
+\usetikzlibrary{calc}
+%\tikzexternalize[prefix=figures/]
+\usepackage[many]{tcolorbox}
+
+%newpackages
+\usepackage{array}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{environ}
+
+\usepackage{geometry}
+  \geometry{a4paper, 
+  includeheadfoot,
+  top=0cm, 
+  headheight=23mm, 
+  headsep=7mm, 
+  footskip=23mm, 
+  bottom=7mm,
+  left=20mm, 
+  right=15mm
+  }  
+  
+\graphicspath{{./SR5_Fankit/}}
+  
+\makeatletter
+
+\newcommand*{\belowrulesepcolor}[1]{%
+  \noalign{%
+    \kern-\belowrulesep
+    \begingroup
+      \color{#1}%
+      \hrule height\belowrulesep
+    \endgroup
+  }%
+}
+\newcommand*{\aboverulesepcolor}[1]{%
+  \noalign{%
+    \begingroup
+      \color{#1}%
+      \hrule height\aboverulesep
+    \endgroup
+    \kern-\aboverulesep
+  }%
+}
+
+\newenvironment{twocolumnblackbox}[1]{
+  \begin{tcolorbox}[enhanced, float*, colback=storyblack, left=2mm, right=2mm, bottom=6mm, top=3mm, title={\color{yellowtext}\Large\MakeUppercase{#1}}, width = \textwidth, arc=0mm, outer arc=0mm, colframe=storyblack, attach boxed title to top left={yshift=-1mm}, boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=storyblack, outer arc=0mm}, underlay boxed title={\fill[storyblack] ($(title.north east)+(-2mm, 0mm)$) -- ($(title.south east)+(-2mm, 0mm)$) -- ($(title.south east)+(2mm, 0mm)$) -- ++(2cm, 0mm) -- ($(title.north east)+(2mm, 0mm)$) -- cycle;}]
+\centering
+}{\end{tcolorbox}}
+
+\NewEnviron{srtable}[2]{
+  \rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
+  \arrayrulecolor{yellowtext}
+  \color{white}\small  
+  \begin{tabularx}{\textwidth}{#1}
+  \toprule
+  \belowrulesepcolor{black}
+  #2\\
+  \aboverulesepcolor{black}   
+  \bottomrule
+  \BODY
+  \toprule
+  \end{tabularx}
+}
+
+\makeatother
+
+
+
+\pagestyle{empty}
+
+
+\begin{document}
+
+\begin{twocolumnblackbox}{Beispiele für Hoststufen}
+\begin{srtable}{Xc}{Beispiele & Hoststufe}
+Persönliche Sites, Piratenarchive, öffentliche Bildungseinrichtungen & 1-2\\
+Kleinunternehmer, private Geschäftshost, öffentliche Bibliotheken, kleine Policlubs & 3-4\\
+Soziale Netzwerke, kleine Colleges und UNiversitäten, lokale Polizei, internationale Policlubs & 5-6\\
+Matrixspiele, lokale Konzernhosts, große Universitäten, niederrangige Regierungsbehörden & 7-8\\
+Reiche Gruppen, regionale Konerznhosts, wichtige Regierungseinrichtungen, gesicherte Einrichtungen & 9-10\\
+Hauptquartiere von Megakons, Militärhauptquartiere, Geheimdienste & 11-12\\
+\end{srtable}
+\end{twocolumnblackbox}
+\end{document}

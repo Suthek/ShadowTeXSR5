@@ -1,0 +1,9 @@
+Body Font & Decker Comment Font:
+ - https://rpg.divnull.com/srun/fonts.html
+
+Header Font: Sublimation Medium
+- https://www.ffonts.net/Sublimation-Medium.font
+
+Sidebox Font: Univers Condensed
+- https://www.dafontfree.net/freefonts-univers-condensed-f146660.htm
+

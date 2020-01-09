@@ -1,0 +1,44 @@
+\documentclass[a4paper, 10pt, twocolumn, twoside]{book}
+\usepackage[dvipdfx, rgb]{xcolor}
+  \definecolor{yellowtext}{HTML}{f9b00b}
+  \definecolor{redtext}{HTML}{931004}
+  \definecolor{whitetext}{gray}{0.5}
+  
+  \definecolor{normalpage}{gray}{0.95}
+  \definecolor{storyblack}{gray}{0.1}
+  \definecolor{boxred}{HTML}{721a16}
+  \definecolor{headred}{HTML}{5e1519}
+
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{external}
+\usetikzlibrary{calc}
+%\tikzexternalize[prefix=figures/]
+
+
+\usepackage{geometry}
+  \geometry{a4paper, 
+  includeheadfoot,
+  top=0cm, 
+  headheight=23mm, 
+  headsep=7mm, 
+  footskip=23mm, 
+  bottom=7mm,
+  left=20mm, 
+  right=15mm
+  }  
+  
+\graphicspath{{./SR5_Fankit/}}
+  
+
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+		\fill[fill=storyblack, path fading=north] (0,13mm) rectangle (\paperwidth, 22mm);		
+		\fill[fill=storyblack] (0,-1mm) rectangle (\paperwidth, 13mm);
+		\fill[path fading=west, fill=headred] (.2\paperwidth-15mm,4mm) rectangle (\paperwidth, 14mm);
+		\fill[pattern=horizontal lines, pattern color=headred!50!black, path fading=west] (.2\paperwidth-15mm,4mm) rectangle (\paperwidth, 14mm);
+	   \node[anchor=center] at (\paperwidth-15mm,12mm) {\includegraphics[height=3cm]{Schlange/Shadowrun-5-Schlange_500x600.png}};
+\end{tikzpicture}
+\end{document}

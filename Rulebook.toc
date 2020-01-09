@@ -1,0 +1,46 @@
+\begin {multicols*}{2}
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {}EINLEITUNG}{4}%
+\contentsline {chapter}{\numberline {}\MakeUppercase {Wohin sich nur wenige wagen}}{6}%
+\contentsline {chapter}{\numberline {}DIE ERWACHTE WELT}{10}%
+\contentsline {section}{\numberline {}Erwacht geboren}{11}%
+\contentsline {subsection}{\numberline {}Magie in der Pokultur}{12}%
+\contentsline {subsection}{\numberline {}Magie in Volkskulturen}{12}%
+\contentsline {subsubsection}{Asamando}{12}%
+\contentsline {subsubsection}{Arabisches Kalifat}{13}%
+\contentsline {subsubsection}{Philippinen}{13}%
+\contentsline {subsection}{\numberline {}Magie im Schulsystem}{13}%
+\contentsline {subsection}{\numberline {}Magie an der Universität}{15}%
+\contentsline {subsection}{\numberline {}Im Sold der Mächtigen}{16}%
+\contentsline {subsection}{\numberline {}Im Dienst der Kirche}{16}%
+\contentsline {subsection}{\numberline {}Magie in dern Schatten}{17}%
+\contentsline {chapter}{\numberline {}Magie in der Welt}{20}%
+\contentsline {section}{\numberline {}Gesetze der Magie}{21}%
+\contentsline {subsection}{\numberline {}Die Regeln, die wir aufstellen}{21}%
+\contentsline {subsubsection}{Magie ist Leben}{22}%
+\contentsline {subsubsection}{Magie ist empfindlich}{22}%
+\contentsline {subsubsection}{Magie ist unberechenbar}{23}%
+\contentsline {chapter}{\numberline {}Magische Traditionen}{26}%
+\contentsline {section}{\numberline {}Das Rückgrat unseres Glaubens}{28}%
+\contentsline {section}{\numberline {}Traditionen unserer Welt}{28}%
+\contentsline {subsection}{\numberline {}Aztekische Tradition}{29}%
+\contentsline {subsection}{\numberline {}Brockenhexen}{30}%
+\contentsline {subsection}{\numberline {}Buddhistische Tradition}{31}%
+\contentsline {subsection}{\numberline {}Chaosmagie}{31}%
+\contentsline {subsection}{\numberline {}Christliche Theurgie}{32}%
+\contentsline {subsection}{\numberline {}Druidische Tradition}{33}%
+\contentsline {subsection}{\numberline {}Faustianer}{34}%
+\contentsline {subsection}{\numberline {}Hinduistische Tradition}{35}%
+\contentsline {subsection}{\numberline {}Islamistische Tradition}{35}%
+\contentsline {subsection}{\numberline {}Kabbalistische Tradition}{36}%
+\contentsline {subsection}{\numberline {}Pfad des Rades}{37}%
+\contentsline {subsection}{\numberline {}Schwarze Magie}{38}%
+\contentsline {subsection}{\numberline {}Shinto-Tadition}{38}%
+\contentsline {subsection}{\numberline {}Sioux-Tradition}{39}%
+\contentsline {subsection}{\numberline {}Sorbische Theurgie}{40}%
+\contentsline {subsection}{\numberline {}Strassenhexen}{41}%
+\contentsline {subsection}{\numberline {}Voodoo}{41}%
+\contentsline {subsection}{\numberline {}Wicca-Tradition}{42}%
+\contentsline {subsection}{\numberline {}Wuxing-Tradition}{43}%
+\contentsline {subsection}{\numberline {}Zarathustrische Tradition}{44}%
+\end {multicols*}

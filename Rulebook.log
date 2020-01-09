@@ -1,0 +1,2082 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  9 JAN 2020 20:34
+entering extended mode
+**./Rulebook.tex
+(Rulebook.tex
+LaTeX2e <2019-10-01> patch level 3
+("C:\Utility\MiKTeX 2.9\tex/latex/base\book.cls"
+Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
+("C:\Utility\MiKTeX 2.9\tex/latex/base\bk10.clo"
+File: bk10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `dvipdfx' ignored on input line 216.
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics-def\xetex.def"
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/sttools\stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
+ings
+\@dblbotnum=\count89
+\c@dblbotnumber=\count90
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.sty
+("C:\Utility\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2019-11-07 L3 programming layer (loader) 
+
+("C:\Utility\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
+Package: expl3 2019-11-07 L3 programming layer (code)
+\c_max_int=\count91
+\l_tmpa_int=\count92
+\l_tmpb_int=\count93
+\g_tmpa_int=\count94
+\g_tmpb_int=\count95
+\l__seq_internal_a_int=\count96
+\l__seq_internal_b_int=\count97
+\g__kernel_prg_map_int=\count98
+\c__ior_term_noprompt_ior=\count99
+\c_log_iow=\count100
+\l_iow_line_count_int=\count101
+\l__iow_line_target_int=\count102
+\l__iow_one_indent_int=\count103
+\l__iow_indent_int=\count104
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count105
+\l__intarray_loop_int=\count106
+\c__intarray_sp_dim=\dimen109
+\g__intarray_font_int=\count107
+\c__fp_leading_shift_int=\count108
+\c__fp_middle_shift_int=\count109
+\c__fp_trailing_shift_int=\count110
+\c__fp_big_leading_shift_int=\count111
+\c__fp_big_middle_shift_int=\count112
+\c__fp_big_trailing_shift_int=\count113
+\c__fp_Bigg_leading_shift_int=\count114
+\c__fp_Bigg_middle_shift_int=\count115
+\c__fp_Bigg_trailing_shift_int=\count116
+\g__fp_array_int=\count117
+\l__fp_array_loop_int=\count118
+\l__sort_length_int=\count119
+\l__sort_min_int=\count120
+\l__sort_top_int=\count121
+\l__sort_max_int=\count122
+\l__sort_true_max_int=\count123
+\l__sort_block_int=\count124
+\l__sort_begin_int=\count125
+\l__sort_end_int=\count126
+\l__sort_A_int=\count127
+\l__sort_B_int=\count128
+\l__sort_C_int=\count129
+\l__str_internal_int=\count130
+\l__tl_analysis_normal_int=\count131
+\l__tl_analysis_index_int=\count132
+\l__tl_analysis_nesting_int=\count133
+\l__tl_analysis_type_int=\count134
+\l__regex_internal_a_int=\count135
+\l__regex_internal_b_int=\count136
+\l__regex_internal_c_int=\count137
+\l__regex_balance_int=\count138
+\l__regex_group_level_int=\count139
+\l__regex_mode_int=\count140
+\c__regex_cs_in_class_mode_int=\count141
+\c__regex_cs_mode_int=\count142
+\l__regex_catcodes_int=\count143
+\l__regex_default_catcodes_int=\count144
+\c__regex_catcode_L_int=\count145
+\c__regex_catcode_O_int=\count146
+\c__regex_catcode_A_int=\count147
+\c__regex_all_catcodes_int=\count148
+\l__regex_show_lines_int=\count149
+\l__regex_min_state_int=\count150
+\l__regex_max_state_int=\count151
+\l__regex_left_state_int=\count152
+\l__regex_right_state_int=\count153
+\l__regex_capturing_group_int=\count154
+\l__regex_min_pos_int=\count155
+\l__regex_max_pos_int=\count156
+\l__regex_curr_pos_int=\count157
+\l__regex_start_pos_int=\count158
+\l__regex_success_pos_int=\count159
+\l__regex_curr_char_int=\count160
+\l__regex_curr_catcode_int=\count161
+\l__regex_last_char_int=\count162
+\l__regex_case_changed_char_int=\count163
+\l__regex_curr_state_int=\count164
+\l__regex_step_int=\count165
+\l__regex_min_active_int=\count166
+\l__regex_max_active_int=\count167
+\l__regex_replacement_csnames_int=\count168
+\l__regex_match_count_int=\count169
+\l__regex_min_submatch_int=\count170
+\l__regex_submatch_int=\count171
+\l__regex_zeroth_submatch_int=\count172
+\g__regex_trace_regex_int=\count173
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen110
+\l__box_bottom_dim=\dimen111
+\l__box_left_dim=\dimen112
+\l__box_right_dim=\dimen113
+\l__box_top_new_dim=\dimen114
+\l__box_bottom_new_dim=\dimen115
+\l__box_left_new_dim=\dimen116
+\l__box_right_new_dim=\dimen117
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen118
+\l__coffin_offset_x_dim=\dimen119
+\l__coffin_offset_y_dim=\dimen120
+\l__coffin_x_dim=\dimen121
+\l__coffin_y_dim=\dimen122
+\l__coffin_x_prime_dim=\dimen123
+\l__coffin_y_prime_dim=\dimen124
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\g_tmpa_coffin=\box39
+\g_tmpb_coffin=\box40
+\l__coffin_bounding_shift_dim=\dimen125
+\l__coffin_left_corner_dim=\dimen126
+\l__coffin_right_corner_dim=\dimen127
+\l__coffin_bottom_corner_dim=\dimen128
+\l__coffin_top_corner_dim=\dimen129
+\l__coffin_scaled_total_height_dim=\dimen130
+\l__coffin_scaled_width_dim=\dimen131
+\c__coffin_empty_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen132
+\l__coffin_display_x_dim=\dimen133
+\l__coffin_display_y_dim=\dimen134
+\g__char_data_ior=\read1
+
+("C:\Utility\MiKTeX 2.9\tex/latex/l3kernel\l3deprecation.def"
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/l3backend\l3backend-xdvipdfmx.def"
+File: l3backend-xdvipdfmx.def 2019-04-06 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count174
+\l__pdf_internal_box=\box45
+\g__pdf_backend_object_int=\count175
+\g__pdf_backend_annotation_int=\count176
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2019-10-11 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count177
+\g__xparse_grabber_int=\count178
+\l__xparse_m_args_int=\count179
+\l__xparse_v_nesting_int=\count180
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+)
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language78
+LaTeX Info: Redefining \_ on input line 43.
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/moresize\moresize.sty
+Package: moresize 1999/07/26 v1.9 (more font sizes)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen137
+\enit@toks=\toks15
+\enit@inbox=\box46
+\enit@count@id=\count181
+\enitdp@description=\count182
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-c
+ommon.tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen138
+\pgfutil@tempdimb=\dimen139
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-c
+ommon-lists.tex))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-l
+atex.def
+\pgfutil@abb=\box47
+ ("C:\Utility\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfrcs.co
+de.tex
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2019/12/21 v3.1.5a (3.1.5a)
+))
+Package: pgf 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfcore.st
+y
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer\pgfsys.st
+y
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys.
+code.tex
+Package: pgfsys 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.c
+ode.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfi
+ltered.code.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen140
+\pgf@y=\dimen141
+\pgf@xa=\dimen142
+\pgf@ya=\dimen143
+\pgf@xb=\dimen144
+\pgf@yb=\dimen145
+\pgf@xc=\dimen146
+\pgf@yc=\dimen147
+\pgf@xd=\dimen148
+\pgf@yd=\dimen149
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count183
+\c@pgf@countb=\count184
+\c@pgf@countc=\count185
+\c@pgf@countd=\count186
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+\pgf@sys@id@count=\count187
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2019/12/21 v3.1.5a (3.1.5a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-
+xetex.def
+File: pgfsys-xetex.def 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-
+dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-
+common-pdf.def
+File: pgfsys-common-pdf.def 2019/12/21 v3.1.5a (3.1.5a)
+)
+\pgfsys@objnum=\count188
+)))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyss
+oftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfsyssoftpath@smallbuffer@items=\count189
+\pgfsyssoftpath@bigbuffer@items=\count190
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsysp
+rotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcore.
+code.tex
+Package: pgfcore 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.t
+ex
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathcalc.co
+de.tex
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathutil.co
+de.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.
+code.tex
+\pgfmath@dimen=\dimen150
+\pgfmath@count=\count191
+\pgfmath@box=\box48
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.code.tex
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.basic.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.trigonometric.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.random.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.comparison.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.base.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.round.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.misc.code.tex)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.integerarithmetics.code.tex)))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.c
+ode.tex
+\c@pgfmathroundto@lastzeros=\count192
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.te
+x)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+oints.code.tex
+File: pgfcorepoints.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@picminx=\dimen151
+\pgf@picmaxx=\dimen152
+\pgf@picminy=\dimen153
+\pgf@picmaxy=\dimen154
+\pgf@pathminx=\dimen155
+\pgf@pathmaxx=\dimen156
+\pgf@pathminy=\dimen157
+\pgf@pathmaxy=\dimen158
+\pgf@xx=\dimen159
+\pgf@xy=\dimen160
+\pgf@yx=\dimen161
+\pgf@yy=\dimen162
+\pgf@zx=\dimen163
+\pgf@zy=\dimen164
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+athconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@path@lastx=\dimen165
+\pgf@path@lasty=\dimen166
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+athusage.code.tex
+File: pgfcorepathusage.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@shorten@end@additional=\dimen167
+\pgf@shorten@start@additional=\dimen168
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcores
+copes.code.tex
+File: pgfcorescopes.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
+\pgf@picture@serial@count=\count193
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreg
+raphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgflinewidth=\dimen169
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoret
+ransformations.code.tex
+File: pgfcoretransformations.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@pt@x=\dimen170
+\pgf@pt@y=\dimen171
+\pgf@pt@temp=\dimen172
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreq
+uick.code.tex
+File: pgfcorequick.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreo
+bjects.code.tex
+File: pgfcoreobjects.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+athprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorea
+rrows.code.tex
+File: pgfcorearrows.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfarrowsep=\dimen173
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcores
+hade.code.tex
+File: pgfcoreshade.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@max=\dimen174
+\pgf@sys@shading@range@num=\count194
+\pgf@shadingcount=\count195
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorei
+mage.code.tex
+File: pgfcoreimage.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoree
+xternal.code.tex
+File: pgfcoreexternal.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfexternal@startupbox=\box52
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorel
+ayers.code.tex
+File: pgfcorelayers.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoret
+ransparency.code.tex
+File: pgfcoretransparency.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+atterns.code.tex
+File: pgfcorepatterns.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorer
+df.code.tex
+File: pgfcorerdf.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulesh
+apes.code.tex
+File: pgfmoduleshapes.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfnodeparttextbox=\box53
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulepl
+ot.code.tex
+File: pgfmoduleplot.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp
+-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@nodesepstart=\dimen175
+\pgf@nodesepend=\dimen176
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp
+-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/12/21 v3.1.5a (3.1.5a)
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlayer\tikz.st
+y
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgffor.sty
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfkeys.sty
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.c
+ode.tex))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.t
+ex))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgffor.co
+de.tex
+Package: pgffor 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.t
+ex)
+\pgffor@iter=\dimen177
+\pgffor@skip=\dimen178
+\pgffor@stack=\toks26
+\pgffor@toks=\toks27
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\
+tikz.code.tex
+Package: tikz 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrar
+yplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@plot@mark@count=\count196
+\pgfplotmarksize=\dimen179
+)
+\tikz@lastx=\dimen180
+\tikz@lasty=\dimen181
+\tikz@lastxsaved=\dimen182
+\tikz@lastysaved=\dimen183
+\tikz@lastmovetox=\dimen184
+\tikz@lastmovetoy=\dimen185
+\tikzleveldistance=\dimen186
+\tikzsiblingdistance=\dimen187
+\tikz@figbox=\box54
+\tikz@figbox@bg=\box55
+\tikz@tempbox=\box56
+\tikz@tempbox@bg=\box57
+\tikztreelevel=\count197
+\tikznumberofchildren=\count198
+\tikznumberofcurrentchild=\count199
+\tikz@fig@count=\count266
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulema
+trix.code.tex
+File: pgfmodulematrix.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfmatrixcurrentrow=\count267
+\pgfmatrixcurrentcolumn=\count268
+\pgf@matrix@numberofcolumns=\count269
+)
+\tikz@expandcount=\count270
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/
+libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/
+libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrar
+yfadings.code.tex
+File: pgflibraryfadings.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/
+libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrar
+ypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)) ("C:\Utility\MiKTeX 2.9\tex/latex/fontspec\fontspec.sty"
+Package: fontspec 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTeX
+
+("C:\Utility\MiKTeX 2.9\tex/latex/fontspec\fontspec-xetex.sty"
+Package: fontspec-xetex 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count271
+\l__fontspec_language_int=\count272
+\l__fontspec_strnum_int=\count273
+\l__fontspec_tmp_int=\count274
+\l__fontspec_tmpa_int=\count275
+\l__fontspec_tmpb_int=\count276
+\l__fontspec_tmpc_int=\count277
+\l__fontspec_em_int=\count278
+\l__fontspec_emdef_int=\count279
+\l__fontspec_strong_int=\count280
+\l__fontspec_strongdef_int=\count281
+\l__fontspec_tmpa_dim=\dimen188
+\l__fontspec_tmpb_dim=\dimen189
+\l__fontspec_tmpc_dim=\dimen190
+
+("C:\Utility\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+("C:\Utility\MiKTeX 2.9\tex/latex/base\tuenc.def"
+File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/fontspec\fontspec.cfg")
+LaTeX Info: Redefining \itshape on input line 4047.
+LaTeX Info: Redefining \slshape on input line 4052.
+LaTeX Info: Redefining \scshape on input line 4057.
+LaTeX Info: Redefining \upshape on input line 4062.
+LaTeX Info: Redefining \em on input line 4092.
+LaTeX Info: Redefining \emph on input line 4117.
+))
+
+Package fontspec Info: Font family 'srbody' created for font 'srfont' with
+(fontspec)             options [Path = ./core/fonts/,Extension =
+(fontspec)             .ttf,UprightFont = *-rg,BoldFont = *-b,ItalicFont =
+(fontspec)             *-i,BoldItalicFont = *-bi,NFSSFamily = srbody].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/srfont-rg.ttf]/OT"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/srfont-b.ttf]/OT"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/srfont-i.ttf]/OT"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/srfont-bi.ttf]/OT"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'dckr(0)' created for font 'dckr' with
+(fontspec)             options [Path = ./core/fonts/,Extension =
+(fontspec)             .ttf,UprightFont = *-rg,BoldFont = *-b].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/dckr-rg.ttf]/OT"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/dckr-b.ttf]/OT"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'sublm(0)' created for font 'sublm' with
+(fontspec)             options [Path = ./core/fonts/,Extension =
+(fontspec)             .ttf,UprightFont = *-rg].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/sublm-rg.ttf]/OT"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'universcondensed(0)' created for font
+(fontspec)             'universcondensed' with options [Path =
+(fontspec)             ./core/fonts/,Extension = .ttf,UprightFont = *-rg].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./core/fonts/universcondensed-rg.ttf]/OT"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/geometry-de\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Utility\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+("C:\Utility\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+("C:\Utility\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+("C:\Utility\MiKTeX 2.9\tex/generic/iftex\ifxetex.sty"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen191
+\Gm@wd@mp=\dimen192
+\Gm@odd@mp=\dimen193
+\Gm@even@mp=\dimen194
+\Gm@layoutwidth=\dimen195
+\Gm@layoutheight=\dimen196
+\Gm@layouthoffset=\dimen197
+\Gm@layoutvoffset=\dimen198
+\Gm@dimlist=\toks28
+
+("C:\Utility\MiKTeX 2.9\tex/xelatex/xetexconfig\geometry.cfg"))
+("C:\Utility\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2019/12/08 3.37 The Babel package
+
+("C:\Utility\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2019/12/08 3.37 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Utility\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-german\ngerman.ldf
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
+phy)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-german\ngermanb.ldf
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
+aphy)
+("C:\Utility\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/12/08 3.37 Babel common definitions
+\babel@savecnt=\count285
+\U@D=\dimen199
+
+("C:\Utility\MiKTeX 2.9\tex/generic/babel\xebabel.def"
+("C:\Utility\MiKTeX 2.9\tex/generic/babel\txtbabel.def"))
+\bbl@dirlevel=\count286
+)
+Package babel Info: Making " an active character on input line 121.
+)))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip50
+\cftbeforetoctitleskip=\skip51
+\cftaftertoctitleskip=\skip52
+\cftbeforepartskip=\skip53
+\cftpartnumwidth=\skip54
+\cftpartindent=\skip55
+\cftbeforechapskip=\skip56
+\cftchapindent=\skip57
+\cftchapnumwidth=\skip58
+\cftbeforesecskip=\skip59
+\cftsecindent=\skip60
+\cftsecnumwidth=\skip61
+\cftbeforesubsecskip=\skip62
+\cftsubsecindent=\skip63
+\cftsubsecnumwidth=\skip64
+\cftbeforesubsubsecskip=\skip65
+\cftsubsubsecindent=\skip66
+\cftsubsubsecnumwidth=\skip67
+\cftbeforeparaskip=\skip68
+\cftparaindent=\skip69
+\cftparanumwidth=\skip70
+\cftbeforesubparaskip=\skip71
+\cftsubparaindent=\skip72
+\cftsubparanumwidth=\skip73
+\cftbeforeloftitleskip=\skip74
+\cftafterloftitleskip=\skip75
+\cftbeforefigskip=\skip76
+\cftfigindent=\skip77
+\cftfignumwidth=\skip78
+\c@lofdepth=\count287
+\c@lotdepth=\count288
+\cftbeforelottitleskip=\skip79
+\cftafterlottitleskip=\skip80
+\cftbeforetabskip=\skip81
+\cfttabindent=\skip82
+\cfttabnumwidth=\skip83
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/tools\multicol.sty"
+Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
+\c@tracingmulticols=\count289
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+141.
+
+\mult@box=\box58
+\multicol@leftmargin=\dimen256
+\c@unbalance=\count290
+\c@collectmore=\count291
+\doublecol@number=\count292
+\multicoltolerance=\count293
+\multicolpretolerance=\count294
+\full@width=\dimen257
+\page@free=\dimen258
+\premulticols=\dimen259
+\postmulticols=\dimen260
+\multicolsep=\skip84
+\multicolbaselineskip=\skip85
+\partial@page=\box59
+\last@line=\box60
+\maxbalancingoverflow=\dimen261
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@gfirstbox=\box63
+\mult@firstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\c@minrows=\count295
+\c@columnbadness=\count296
+\c@finalcolumnbadness=\count297
+\last@try=\dimen262
+\multicolovershoot=\dimen263
+\multicolundershoot=\dimen264
+\mult@nat@firstbox=\box82
+\colbreak@box=\box83
+\mc@col@check@num=\count298
+) (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/pagecolor\pagecolor.sty
+Package: pagecolor 2017/05/29 v1.0i Provides thepagecolor (HMM)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) ("C:\Utility\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+Package pagecolor Info: \nopagecolor is undefined on input line 101.
+
+
+Package pagecolor Warning: Option nopagecolor=none requested but \nopagecolor u
+nknown:
+(pagecolor)                By option nopagecolor the "colour" to be used with\n
+opagecolor
+(pagecolor)                is set. The current value is "none" (maybe by defaul
+t),
+(pagecolor)                but command \nopagecolor is undefined.
+(pagecolor)                Therefore the colour cannot be "none".
+(pagecolor)                Please change the option accordingly!
+(pagecolor)                As first aid nopagecolor is now set to white
+(pagecolor)                 on input line 116.
+
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/background\background.sty
+Package: background 2014/03/04 v2.1 background material
+("C:\Utility\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Utility\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Utility\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
+)
+\XKV@depth=\count299
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/everypage\everypage.sty
+Package: everypage 2007/06/20 1.1 Hooks to run on every page
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/tools\afterpage.sty"
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks31
+\AP@partial=\box84
+\AP@footins=\box85
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.sty"
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+("C:\Utility\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks32
+\verbatim@line=\toks33
+\verbatim@in@stream=\read3
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/environ\environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Utility\MiKTeX 2.9\tex/latex/trimspaces\trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks34
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count300
+)
+\tcb@titlebox=\box86
+\tcb@upperbox=\box87
+\tcb@lowerbox=\box88
+\tcb@phantombox=\box89
+\c@tcbbreakpart=\count301
+\c@tcblayer=\count302
+\tcolorbox@number=\count303
+\tcb@temp=\box90
+\tcb@temp=\box91
+\tcb@temp=\box92
+\tcb@temp=\box93
+\tcb@out=\write4
+\tcb@record@out=\write5
+
+("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbraster.code.tex"
+Library (tcolorbox): 'tcbraster.code.tex' version '4.22'
+\c@tcbrastercolumn=\count304
+\c@tcbrasterrow=\count305
+\c@tcbraster=\count306
+) ("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbskins.code.tex"
+Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
+\tcb@waterbox=\box94
+("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex"
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
+)) ("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbbreakable.code.tex"
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.22'
+\tcb@testbox=\box95
+\tcb@totalupperbox=\box96
+\tcb@totallowerbox=\box97
+) ("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbhooks.code.tex"
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.22'
+) ("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbtheorems.code.tex"
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.22'
+("C:\Utility\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip86
+
+For additional information on amsmath, use the `?' option.
+("C:\Utility\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Utility\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks35
+\ex@=\dimen265
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen266
+)
+("C:\Utility\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count307
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count308
+\leftroot@=\count309
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count310
+\DOTSCASE@=\count311
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box98
+\strutbox@=\box99
+\big@size=\dimen267
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count312
+\c@MaxMatrixCols=\count313
+\dotsspace@=\muskip16
+\c@parentequation=\count314
+\dspbrk@lvl=\count315
+\tag@help=\toks36
+\row@=\count316
+\column@=\count317
+\maxfields@=\count318
+\andhelp@=\toks37
+\eqnshift@=\dimen268
+\alignsep@=\dimen269
+\tagshift@=\dimen270
+\tagwidth@=\dimen271
+\totwidth@=\dimen272
+\lineht@=\dimen273
+\@envbody=\toks38
+\multlinegap=\skip87
+\multlinetaggap=\skip88
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbfitting.code.tex"
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
+\tcbfitdim=\dimen274
+\tcb@lowerfitdim=\dimen275
+\tcb@upperfitdim=\dimen276
+\tcb@cur@hbadness=\count319
+) ("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbxparse.code.tex"
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.22'
+))
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/changepage\changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count320
+\cp@tempcnt=\count321
+) (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip89
+\f@nch@O@elh=\skip90
+\f@nch@O@erh=\skip91
+\f@nch@O@olh=\skip92
+\f@nch@O@orh=\skip93
+\f@nch@O@elf=\skip94
+\f@nch@O@erf=\skip95
+\f@nch@O@olf=\skip96
+\f@nch@O@orf=\skip97
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box100
+\beforetitleunit=\skip98
+\aftertitleunit=\skip99
+\ttl@plus=\dimen277
+\ttl@minus=\dimen278
+\ttl@toksa=\toks40
+\titlewidth=\dimen279
+\titlewidthlast=\dimen280
+\titlewidthfirst=\dimen281
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/bophook\bophook.sty
+Package: bophook 2001/03/29 v0.02 beginning-of-page hook, K. Tinnefeld
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/atbegshi\atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)) (Rulebook.aux)
+\openout1 = `Rulebook.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 598.
+LaTeX Font Info:    ... okay on input line 598.
+ ABD: EveryShipout initializing macros
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(0.0pt, 825.12993pt, 19.91692pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=674.33035pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-72.26999pt
+* \headheight=65.44133pt
+* \headsep=19.91692pt
+* \topskip=10.0pt
+* \footskip=65.44133pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box101
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+[1
+
+
+]
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Cover-red.pdf Graphic file (type pdf)
+<use ./core/tikz/Cover-red.pdf>
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+ [1
+
+
+]
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+ [2]
+File: ./core/images/scanlines.png Graphic file (type bmp)
+<./core/images/scanlines.png>
+
+Overfull \hbox (312.33125pt too wide) in paragraph at lines 599--599
+[] [] 
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+[1
+
+
+] (Rulebook.toc
+
+LaTeX Font Warning: Font shape `TU/universcondensed(0)/bx/n' undefined
+(Font)              using `TU/universcondensed(0)/m/n' instead on input line 3.
+
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+.
+("C:\Utility\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+.
+
+("C:\Utility\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+3.
+
+("C:\Utility\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+3.
+
+("C:\Utility\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 3.
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+ [2
+
+
+])
+\tf@toc=\write6
+\openout6 = `Rulebook.toc'.
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [3
+
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(0.0pt, 825.12993pt, 19.91692pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=523.53075pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-72.26999pt
+* \headheight=207.70511pt
+* \headsep=28.45274pt
+* \topskip=10.0pt
+* \footskip=65.44133pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 603--603
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftBig.pdf>
+
+Underfull \hbox (badness 4467) has occurred while \output is active
+[]\TU/sublm(0)/m/n/60 EINLEITUNG  
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <60> on input line 603.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <60> on input line 603.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <41.99982> on input line 603.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <30> on input line 603.
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[4
+
+]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightBig.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [5
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(0.0pt, 825.12993pt, 19.91692pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=318.6709pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-72.26999pt
+* \headheight=426.79134pt
+* \headsep=14.22636pt
+* \topskip=10.0pt
+* \footskip=65.44133pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 605--605
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 8132) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Missing character: There is no 5 in font nullfont!
+LaTeX Font Info:    Calculating math sizes for size <40> on input line 605.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <40> on input line 605.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <27.99988> on input line 605.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20> on input line 605.
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+ [6
+
+]
+Underfull \vbox (badness 8132) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Missing character: There is no 6 in font nullfont!
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [7]
+Underfull \hbox (badness 1931) in paragraph at lines 607--607
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 609--609
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[8]
+Underfull \hbox (badness 1931) in paragraph at lines 611--611
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[9]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(0.0pt, 825.12993pt, 19.91692pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=523.53075pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-72.26999pt
+* \headheight=207.70511pt
+* \headsep=28.45274pt
+* \topskip=10.0pt
+* \footskip=65.44133pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
+
+
+LaTeX Warning: Float too large for page by 150.79956pt on input line 612.
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 614--614
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+
+Underfull \vbox (badness 6477) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftBig.pdf>
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+ [10
+
+
+]
+Underfull \hbox (badness 1931) in paragraph at lines 616--616
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightBig.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[11]
+Underfull \hbox (badness 1931) in paragraph at lines 618--618
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+File: ./core/tikz/Twocolumnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Twocolumnframe.pdf>
+
+Overfull \hbox (82.51292pt too wide) in paragraph at lines 630--630
+[][] 
+ []
+
+
+Package fontspec Info: Could not resolve font "Decker/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'Decker(0)' created for font 'Decker' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Decker/OT:mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->"Decker/B/OT:mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
+(fontspec)             <->"Decker/BI/OT:mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
+LaTeX Info: Redefining \rmfamily on input line 632.
+LaTeX Info: Redefining \rmfamily on input line 635.
+LaTeX Info: Redefining \rmfamily on input line 638.
+
+Underfull \hbox (badness 1142) in paragraph at lines 639--640
+\TU/Decker(0)/m/n/9 hat zu großer Instabilität geführt. Die Trans-Swazi-
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[12]
+LaTeX Info: Redefining \rmfamily on input line 647.
+File: ./core/images/scanlines.png Graphic file (type bmp)
+<./core/images/scanlines.png>
+
+Overfull \hbox (82.51292pt too wide) in paragraph at lines 673--673
+[][] 
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 676--676
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[13]
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+ [14]
+Underfull \hbox (badness 1931) in paragraph at lines 678--678
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[15]
+Underfull \hbox (badness 1931) in paragraph at lines 680--680
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[16]
+Underfull \hbox (badness 1931) in paragraph at lines 682--682
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 684--684
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[17]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+ [18]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [19]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(0.0pt, 825.12993pt, 19.91692pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=523.53075pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-72.26999pt
+* \headheight=207.70511pt
+* \headsep=28.45274pt
+* \topskip=10.0pt
+* \footskip=65.44133pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: ./core/images/scanlines.png Graphic file (type bmp)
+<./core/images/scanlines.png>
+
+Overfull \hbox (82.51292pt too wide) in paragraph at lines 701--701
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftBig.pdf>
+
+Underfull \hbox (badness 1824) has occurred while \output is active
+\TU/sublm(0)/m/n/60 IN DER WELT  
+ []
+
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[20
+
+
+]
+Underfull \hbox (badness 1931) in paragraph at lines 703--703
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightBig.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [21]
+Underfull \hbox (badness 1931) in paragraph at lines 707--707
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 709--709
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[22]
+Underfull \hbox (badness 1931) in paragraph at lines 713--713
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 713.
+LaTeX Info: Redefining \rmfamily on input line 716.
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[23]
+Underfull \hbox (badness 1931) in paragraph at lines 720--720
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[24
+
+]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [25
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(0.0pt, 825.12993pt, 19.91692pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=523.53075pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-72.26999pt
+* \headheight=207.70511pt
+* \headsep=28.45274pt
+* \topskip=10.0pt
+* \footskip=65.44133pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 722--722
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftBig.pdf>
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+
+Underfull \hbox (badness 2253) has occurred while \output is active
+\TU/sublm(0)/m/n/60 TRADITIONEN  
+ []
+
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[26
+
+]
+Underfull \hbox (badness 1931) in paragraph at lines 723--723
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightBig.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+ [27]
+Underfull \hbox (badness 1931) in paragraph at lines 725--725
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 1509) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+ [28]
+Underfull \hbox (badness 1931) in paragraph at lines 727--727
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 729--729
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[29]
+Underfull \hbox (badness 1931) in paragraph at lines 731--731
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[30]
+Underfull \hbox (badness 1931) in paragraph at lines 733--733
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[31]
+Underfull \hbox (badness 1931) in paragraph at lines 735--735
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 737--737
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[32]
+Underfull \hbox (badness 1931) in paragraph at lines 739--739
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[33]
+Underfull \hbox (badness 1931) in paragraph at lines 741--741
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[34]
+Underfull \hbox (badness 1931) in paragraph at lines 743--743
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[35]
+Underfull \hbox (badness 1931) in paragraph at lines 745--745
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 747--747
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[36]
+Underfull \hbox (badness 1931) in paragraph at lines 749--749
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[37]
+Underfull \hbox (badness 1931) in paragraph at lines 751--751
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[38]
+Underfull \hbox (badness 1931) in paragraph at lines 753--753
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+
+Underfull \hbox (badness 1931) in paragraph at lines 755--755
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[39]
+Underfull \hbox (badness 1931) in paragraph at lines 757--757
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[40]
+Underfull \hbox (badness 1931) in paragraph at lines 759--759
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[41]
+Underfull \hbox (badness 1931) in paragraph at lines 761--761
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+
+Underfull \hbox (badness 1931) in paragraph at lines 763--763
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[42]
+Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
+
+Underfull \hbox (badness 1931) in paragraph at lines 765--765
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Kowloon.jpg Graphic file (type bmp)
+<./images/Kowloon.jpg>
+File: ./core/tikz/Footerright.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerright.pdf>
+[43]
+Underfull \hbox (badness 1931) in paragraph at lines 767--767
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/Footerleft.pdf Graphic file (type pdf)
+<use ./core/tikz/Footerleft.pdf>
+[44] (Rulebook.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 32063 strings out of 427265
+ 687883 string characters out of 3147679
+ 1129282 words of memory out of 3000000
+ 36067 multiletter control sequences out of 15000+200000
+ 565356 words of font info for 85 fonts, out of 3000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 59i,18n,95p,1297b,1121s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Rulebook.pdf (47 pages).
