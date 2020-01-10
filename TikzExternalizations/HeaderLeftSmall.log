@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  8 JAN 2020 16:00
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  10 JAN 2020 21:49
 entering extended mode
 **./HeaderLeftSmall.tex
 (HeaderLeftSmall.tex
@@ -496,25 +496,24 @@ LaTeX Font Info:    ... okay on input line 36.
 
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 6 in font nullfont!
-Missing character: There is no 8 in font nullfont!
 [1
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (HeaderLeftSmall.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 43.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 12347 strings out of 427265
- 254398 string characters out of 3147679
- 317438 words of memory out of 3000000
- 16636 multiletter control sequences out of 15000+200000
+ 13381 strings out of 427265
+ 278649 string characters out of 3147679
+ 523516 words of memory out of 3000000
+ 17670 multiletter control sequences out of 15000+200000
  3648 words of font info for 15 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,5n,68p,554b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,5n,68p,554b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on HeaderLeftSmall.pdf (1 page).

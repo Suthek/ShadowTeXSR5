@@ -36,6 +36,19 @@
 \begin{document}
 \begin{tikzpicture}[remember picture, overlay, shift={(current page.north west)}]
 	  \fill[headred] (0mm,0mm) rectangle (\paperwidth, -\headheight+3mm);
-	  \fill[gray, path fading=south, fill opacity=.9] (0mm,-\headheight) rectangle (\paperwidth-20mm, -\headheight+3mm);
+	  \pgfmathsetseed{534532}
+	  
+	  \edef\srtmp{0.5}
+      \foreach \i in {0,2,...,208} {
+      \pgfmathparse{\srtmp + (rand*(rand * 1 ))}
+	  \edef\srtmp{\pgfmathresult}
+      \pgfmathparse{(208-\i)/208*100}
+      \edef\c{\pgfmathresult}
+      
+      \fill[normalpage] (\i mm, -\headheight+1mm) rectangle ++(2mm, 2mm); 
+      \fill[headred, opacity={\srtmp - .1}] (\i mm, -\headheight+1mm) rectangle ++(2mm, 2mm); 
+      \fill[headred] (\i mm, -\headheight+3mm) rectangle ++(2mm, 2mm);       
+	  \fill[normalpage, opacity={(1-\srtmp)-0.5}] (\i mm, -\headheight+3mm) rectangle ++(2mm, 2mm);      	      
+      }
 	  \end{tikzpicture}
 \end{document}

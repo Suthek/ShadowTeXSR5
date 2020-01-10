@@ -1,46 +1,15 @@
-\begin {multicols*}{2}
 \babel@toc {ngerman}{}
-\contentsline {chapter}{\numberline {}EINLEITUNG}{4}%
-\contentsline {chapter}{\numberline {}\MakeUppercase {Wohin sich nur wenige wagen}}{6}%
-\contentsline {chapter}{\numberline {}DIE ERWACHTE WELT}{10}%
-\contentsline {section}{\numberline {}Erwacht geboren}{11}%
-\contentsline {subsection}{\numberline {}Magie in der Pokultur}{12}%
-\contentsline {subsection}{\numberline {}Magie in Volkskulturen}{12}%
-\contentsline {subsubsection}{Asamando}{12}%
-\contentsline {subsubsection}{Arabisches Kalifat}{13}%
-\contentsline {subsubsection}{Philippinen}{13}%
-\contentsline {subsection}{\numberline {}Magie im Schulsystem}{13}%
-\contentsline {subsection}{\numberline {}Magie an der Universität}{15}%
-\contentsline {subsection}{\numberline {}Im Sold der Mächtigen}{16}%
-\contentsline {subsection}{\numberline {}Im Dienst der Kirche}{16}%
-\contentsline {subsection}{\numberline {}Magie in dern Schatten}{17}%
-\contentsline {chapter}{\numberline {}Magie in der Welt}{20}%
-\contentsline {section}{\numberline {}Gesetze der Magie}{21}%
-\contentsline {subsection}{\numberline {}Die Regeln, die wir aufstellen}{21}%
-\contentsline {subsubsection}{Magie ist Leben}{22}%
-\contentsline {subsubsection}{Magie ist empfindlich}{22}%
-\contentsline {subsubsection}{Magie ist unberechenbar}{23}%
-\contentsline {chapter}{\numberline {}Magische Traditionen}{26}%
-\contentsline {section}{\numberline {}Das Rückgrat unseres Glaubens}{28}%
-\contentsline {section}{\numberline {}Traditionen unserer Welt}{28}%
-\contentsline {subsection}{\numberline {}Aztekische Tradition}{29}%
-\contentsline {subsection}{\numberline {}Brockenhexen}{30}%
-\contentsline {subsection}{\numberline {}Buddhistische Tradition}{31}%
-\contentsline {subsection}{\numberline {}Chaosmagie}{31}%
-\contentsline {subsection}{\numberline {}Christliche Theurgie}{32}%
-\contentsline {subsection}{\numberline {}Druidische Tradition}{33}%
-\contentsline {subsection}{\numberline {}Faustianer}{34}%
-\contentsline {subsection}{\numberline {}Hinduistische Tradition}{35}%
-\contentsline {subsection}{\numberline {}Islamistische Tradition}{35}%
-\contentsline {subsection}{\numberline {}Kabbalistische Tradition}{36}%
-\contentsline {subsection}{\numberline {}Pfad des Rades}{37}%
-\contentsline {subsection}{\numberline {}Schwarze Magie}{38}%
-\contentsline {subsection}{\numberline {}Shinto-Tadition}{38}%
-\contentsline {subsection}{\numberline {}Sioux-Tradition}{39}%
-\contentsline {subsection}{\numberline {}Sorbische Theurgie}{40}%
-\contentsline {subsection}{\numberline {}Strassenhexen}{41}%
-\contentsline {subsection}{\numberline {}Voodoo}{41}%
-\contentsline {subsection}{\numberline {}Wicca-Tradition}{42}%
-\contentsline {subsection}{\numberline {}Wuxing-Tradition}{43}%
-\contentsline {subsection}{\numberline {}Zarathustrische Tradition}{44}%
-\end {multicols*}
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {}This is a Chapter}{4}{chapter.1}%
+\contentsline {section}{\numberline {}This is a Section}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {}This is a Subsection}{6}{subsection.1.1.1}%
+\contentsline {subsubsection}{This is a Subsubsection}{6}{section*.2}%
+\contentsline {chapter}{\numberline {}Boxes}{8}{chapter.2}%
+\contentsline {section}{\numberline {}ColumnBox}{9}{section.2.1}%
+\contentsline {section}{\numberline {}TwoColumnBox}{10}{section.2.2}%
+\contentsline {section}{\numberline {}BlackBox}{14}{section.2.3}%
+\contentsline {chapter}{\numberline {}Very Long Story Chapter}{16}{chapter.3}%
+\contentsline {chapter}{\numberline {}Images}{22}{chapter.4}%
+\contentsline {section}{\numberline {}Two Column Image}{23}{section.4.1}%
+\contentsline {section}{\numberline {}One Column Image}{25}{section.4.2}%
+\contentsline {chapter}{\numberline {}Unter Dem Kreuz Hervor}{30}{chapter.5}%

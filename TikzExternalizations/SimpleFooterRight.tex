@@ -35,25 +35,9 @@
 \pagestyle{empty}
 \begin{document}
 \begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
-		%\fill[fill=storyblack, path fading=north] (0,13mm) rectangle (\paperwidth, 22mm);		
-		\fill[fill=storyblack] (0,-1mm) rectangle (\paperwidth, 14mm);
 		\fill[path fading=west, fill=headred] (.2\paperwidth-15mm,4mm) rectangle (\paperwidth, 14mm);
 		\fill[pattern=horizontal lines, pattern color=headred!50!black, path fading=west] (.2\paperwidth-15mm,4mm) rectangle (\paperwidth, 14mm);
 		
- 	  \pgfmathsetseed{53222}
-	  
-	  \edef\srtmp{0.5}
-      \foreach \i in {0,2,...,208} {
-      \pgfmathparse{\srtmp + (rand*(rand * 1 ))}
-	  \edef\srtmp{\pgfmathresult}
-      \pgfmathparse{(208-\i)/208*100}
-      \edef\c{\pgfmathresult}
-      
-      \fill[normalpage] (208mm-\i mm, 16mm) rectangle ++(2mm, 2mm); 
-      \fill[storyblack, opacity={\srtmp - .1}] (208mm-\i mm, 16mm) rectangle ++(2mm, 2mm); 
-      \fill[storyblack] (208mm-\i mm, 14mm) rectangle ++(2mm, 2mm);       
-	  \fill[normalpage, opacity={(1-\srtmp)-0.5}] (208mm-\i mm, 14mm) rectangle ++(2mm, 2mm);      	      
-      }				
 		
 	   \node[anchor=center] at (\paperwidth-15mm,12mm) {\includegraphics[height=3cm]{Schlange/Shadowrun-5-Schlange_500x600.png}};
 \end{tikzpicture}

@@ -15,6 +15,7 @@
 \usetikzlibrary{external}
 \usetikzlibrary{calc}
 %\tikzexternalize[prefix=figures/]
+\usepackage{pgf}
 
 
 \usepackage{geometry}
@@ -42,7 +43,20 @@
 	  \clip (0,0) rectangle (\paperwidth, -\headheight+3mm);
 	  \node[anchor=north west, opacity=.07] at (-45cm,2cm) {\includegraphics{Hintergruende/Interface_1920x1280px.png}};
 	  \end{scope}
-	  \fill[gray, path fading=south, fill opacity=.9] (0,-\headheight+3mm) rectangle (\paperwidth, -\headheight);
-	\fill[fill=redtext] (0mm,-14mm) rectangle (15mm,-8mm);
+	  \fill[fill=redtext] (0mm,-14mm) rectangle (15mm,-8mm);
+	  \pgfmathsetseed{534532}
+	  
+	  \edef\srtmp{0.5}
+      \foreach \i in {0,2,...,208} {
+      \pgfmathparse{\srtmp + (rand*(rand * 1 ))}
+	  \edef\srtmp{\pgfmathresult}
+      \pgfmathparse{(208-\i)/208*100}
+      \edef\c{\pgfmathresult}
+      
+      \fill[normalpage] (\i mm, -\headheight+1mm) rectangle ++(2mm, 2mm); 
+      \fill[storyblack!\c!headred, opacity={\srtmp - .1}] (\i mm, -\headheight+1mm) rectangle ++(2mm, 2mm); 
+      \fill[storyblack!\c!headred] (\i mm, -\headheight+3mm) rectangle ++(2mm, 2mm);       
+	  \fill[normalpage, opacity={(1-\srtmp)-0.5}] (\i mm, -\headheight+3mm) rectangle ++(2mm, 2mm);      	      
+      }
 	  \end{tikzpicture}
 \end{document}

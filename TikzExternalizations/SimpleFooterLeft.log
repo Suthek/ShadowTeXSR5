@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  10 JAN 2020 21:57
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  10 JAN 2020 22:03
 entering extended mode
-**./Footerright.tex
-(Footerright.tex
+**./SimpleFooterLeft.tex
+(SimpleFooterLeft.tex
 LaTeX2e <2019-10-01> patch level 3
 ("C:\Utility\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
@@ -443,8 +443,8 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \Gm@dimlist=\toks27
 
 ("C:\Utility\MiKTeX 2.9\tex/xelatex/xetexconfig\geometry.cfg"))
-(Footerright.aux)
-\openout1 = `Footerright.aux'.
+(SimpleFooterLeft.aux)
+\openout1 = `SimpleFooterLeft.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -494,8 +494,8 @@ LaTeX Font Info:    ... okay on input line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 6 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 File: ./SR5_Fankit/Schlange/Shadowrun-5-Schlange_500x600.png Graphic file (type
  bmp)
 <./SR5_Fankit/Schlange/Shadowrun-5-Schlange_500x600.png>
@@ -503,20 +503,20 @@ File: ./SR5_Fankit/Schlange/Shadowrun-5-Schlange_500x600.png Graphic file (type
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
- (Footerright.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 60.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+ (SimpleFooterLeft.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 13189 strings out of 427265
- 272071 string characters out of 3147679
- 525806 words of memory out of 3000000
- 17472 multiletter control sequences out of 15000+200000
+ 12357 strings out of 427265
+ 254591 string characters out of 3147679
+ 317439 words of memory out of 3000000
+ 16640 multiletter control sequences out of 15000+200000
  3648 words of font info for 15 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,5n,68p,550b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,5n,68p,555b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Footerright.pdf (1 page).
+Output written on SimpleFooterLeft.pdf (1 page).
