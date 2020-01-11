@@ -1,8 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  11 JAN 2020 18:49
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  11 JAN 2020 20:46
 entering extended mode
 **./Rulebook.tex
 (Rulebook.tex
 LaTeX2e <2019-10-01> patch level 3
+(ShadowTeXSR5.cls
+Document Class: ShadowTeXSR5 2020/01/11 - Shadowrun Rulebook Template
 ("C:\Utility\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
 ("C:\Utility\MiKTeX 2.9\tex/latex/base\bk10.clo"
@@ -136,11 +138,6 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 ("C:\Utility\MiKTeX 2.9\tex/latex/tools\multicol.sty"
 Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
 \c@tracingmulticols=\count93
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-141.
-
 \mult@box=\box29
 \multicol@leftmargin=\dimen107
 \c@unbalance=\count94
@@ -187,7 +184,8 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box53
 \colbreak@box=\box54
 \mc@col@check@num=\count102
-) (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/xifthen\xifthen.sty
+)
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/xifthen\xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
 ("C:\Utility\MiKTeX 2.9\tex/latex/tools\calc.sty"
@@ -1297,7 +1295,7 @@ Package babel Info: Making " an active character on input line 121.
 
 
 Writing index file Rulebook.idx
-(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.sty
+) (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
 (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.ltd.tex
@@ -1306,24 +1304,24 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 (Rulebook.aux)
 \openout1 = `Rulebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 1052.
-LaTeX Font Info:    ... okay on input line 1052.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
  ABD: EveryShipout initializing macros
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1359,7 +1357,7 @@ LaTeX Font Info:    ... okay on input line 1052.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box104
-Package hyperref Info: Link coloring OFF on input line 1052.
+Package hyperref Info: Link coloring OFF on input line 22.
 ("C:\Utility\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1372,9 +1370,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count343
 )
-LaTeX Info: Redefining \ref on input line 1052.
-LaTeX Info: Redefining \pageref on input line 1052.
-LaTeX Info: Redefining \nameref on input line 1052.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
  (Rulebook.out) (Rulebook.out)
 \@outlinefile=\write7
 \openout7 = `Rulebook.out'.
@@ -1399,12 +1397,12 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ]
 
 Package multicol Warning: multicols* inside a box does not make sense.
-(multicol)                Going to balance anyway on input line 1054.
+(multicol)                Going to balance anyway on input line 26.
 
 File: ./core/images/scanlines.png Graphic file (type bmp)
 <./core/images/scanlines.png>
 
-Overfull \hbox (332.24818pt too wide) in paragraph at lines 1054--1054
+Overfull \hbox (332.24818pt too wide) in paragraph at lines 26--26
 [] [] 
  []
 
@@ -1521,7 +1519,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 1058--1058
+Underfull \hbox (badness 1931) in paragraph at lines 32--32
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1536,19 +1534,19 @@ File: core/images/scanlines.png Graphic file (type bmp)
 File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftBig.pdf>
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-LaTeX Font Info:    Calculating math sizes for size <60> on input line 1059.
+LaTeX Font Info:    Calculating math sizes for size <60> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <60> on input line 1059.
+(Font)              <60> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <41.99982> on input line 1059.
+(Font)              <41.99982> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <30> on input line 1059.
+(Font)              <30> on input line 33.
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
  [4
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 1059--1059
+Underfull \hbox (badness 1931) in paragraph at lines 33--33
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1564,7 +1562,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [5]
-Underfull \hbox (badness 1931) in paragraph at lines 1065--1065
+Underfull \hbox (badness 1931) in paragraph at lines 39--39
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1575,7 +1573,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [6]
-Underfull \hbox (badness 1931) in paragraph at lines 1068--1068
+Underfull \hbox (badness 1931) in paragraph at lines 42--42
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1623,7 +1621,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 1070--1070
+Underfull \hbox (badness 1931) in paragraph at lines 44--44
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1648,7 +1646,7 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 1071--1071
+Underfull \hbox (badness 1931) in paragraph at lines 45--45
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1672,7 +1670,7 @@ File: ./core/images/scanlines.png Graphic file (type bmp)
 File: ./core/images/pattern.png Graphic file (type bmp)
 <./core/images/pattern.png>
 
-Underfull \hbox (badness 1931) in paragraph at lines 1078--1078
+Underfull \hbox (badness 1931) in paragraph at lines 52--52
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1694,7 +1692,7 @@ File: ./core/images/scanlines.png Graphic file (type bmp)
 File: ./core/images/pattern.png Graphic file (type bmp)
 <./core/images/pattern.png>
 
-Overfull \hbox (62.59601pt too wide) in paragraph at lines 1081--1081
+Overfull \hbox (62.59601pt too wide) in paragraph at lines 55--55
 [] [] 
  []
 
@@ -1702,7 +1700,7 @@ Overfull \hbox (62.59601pt too wide) in paragraph at lines 1081--1081
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1083--1083
+Underfull \hbox (badness 1931) in paragraph at lines 57--57
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1726,7 +1724,7 @@ File: ./core/images/scanlines.png Graphic file (type bmp)
 File: ./core/images/pattern.png Graphic file (type bmp)
 <./core/images/pattern.png>
 
-Overfull \hbox (11.38104pt too wide) in paragraph at lines 1086--1086
+Overfull \hbox (11.38104pt too wide) in paragraph at lines 60--60
 [] [] 
  []
 
@@ -1734,7 +1732,7 @@ Overfull \hbox (11.38104pt too wide) in paragraph at lines 1086--1086
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1088--1088
+Underfull \hbox (badness 1931) in paragraph at lines 62--62
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1748,7 +1746,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
  [12]
-Underfull \hbox (badness 1931) in paragraph at lines 1089--1089
+Underfull \hbox (badness 1931) in paragraph at lines 63--63
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1764,7 +1762,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [13]
-Underfull \hbox (badness 1931) in paragraph at lines 1090--1090
+Underfull \hbox (badness 1931) in paragraph at lines 64--64
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1775,7 +1773,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [14]
-Underfull \hbox (badness 1931) in paragraph at lines 1092--1092
+Underfull \hbox (badness 1931) in paragraph at lines 66--66
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1841,7 +1839,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 1103--1103
+Underfull \hbox (badness 1931) in paragraph at lines 77--77
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1858,13 +1856,13 @@ File: ./images/StoryLeft.jpg Graphic file (type bmp)
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-LaTeX Font Info:    Calculating math sizes for size <40> on input line 1103.
+LaTeX Font Info:    Calculating math sizes for size <40> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <40> on input line 1103.
+(Font)              <40> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <27.99988> on input line 1103.
+(Font)              <27.99988> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20> on input line 1103.
+(Font)              <20> on input line 77.
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
  [18
@@ -1880,12 +1878,12 @@ Missing character: There is no 6 in font nullfont!
 File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterRight.pdf>
  [19]
-Underfull \hbox (badness 1931) in paragraph at lines 1105--1105
+Underfull \hbox (badness 1931) in paragraph at lines 79--79
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1107--1107
+Underfull \hbox (badness 1931) in paragraph at lines 81--81
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1894,7 +1892,7 @@ File: core/images/scanlines.png Graphic file (type bmp)
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
 [20]
-Underfull \hbox (badness 1931) in paragraph at lines 1109--1109
+Underfull \hbox (badness 1931) in paragraph at lines 83--83
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1956,7 +1954,7 @@ File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 1112--1112
+Underfull \hbox (badness 1931) in paragraph at lines 86--86
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1977,7 +1975,7 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 [24
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 1115--1115
+Underfull \hbox (badness 1931) in paragraph at lines 89--89
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2001,7 +1999,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [25]
-Underfull \hbox (badness 1931) in paragraph at lines 1118--1118
+Underfull \hbox (badness 1931) in paragraph at lines 92--92
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2023,12 +2021,12 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [27]
-Underfull \hbox (badness 1931) in paragraph at lines 1118--1118
+Underfull \hbox (badness 1931) in paragraph at lines 92--92
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1119--1119
+Underfull \hbox (badness 1931) in paragraph at lines 93--93
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2039,7 +2037,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [28]
-Underfull \hbox (badness 1931) in paragraph at lines 1120--1120
+Underfull \hbox (badness 1931) in paragraph at lines 94--94
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2055,7 +2053,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [29]
-Underfull \hbox (badness 1931) in paragraph at lines 1121--1121
+Underfull \hbox (badness 1931) in paragraph at lines 95--95
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2074,7 +2072,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [30]
-Underfull \hbox (badness 1931) in paragraph at lines 1126--1126
+Underfull \hbox (badness 1931) in paragraph at lines 100--100
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2101,7 +2099,7 @@ LaTeX Warning: Text page 32 contains only floats.
 Overfull \vbox (17.66035pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1127--1127
+Underfull \hbox (badness 1931) in paragraph at lines 101--101
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2115,7 +2113,7 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 Underfull \vbox (badness 6792) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1129--1129
+Underfull \hbox (badness 1931) in paragraph at lines 103--103
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2183,7 +2181,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 1131--1131
+Underfull \hbox (badness 1931) in paragraph at lines 105--105
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2199,7 +2197,7 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
  [36
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 1133--1133
+Underfull \hbox (badness 1931) in paragraph at lines 107--107
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2224,15 +2222,15 @@ Package fontspec Info: Font family 'Decker(0)' created for font 'Decker' with
 (fontspec)             <->"Decker/BI/OT:mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \rmfamily on input line 1135.
+LaTeX Info: Redefining \rmfamily on input line 109.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
-LaTeX Info: Redefining \rmfamily on input line 1138.
+LaTeX Info: Redefining \rmfamily on input line 112.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1138
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
 
  []
 
@@ -2245,7 +2243,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
 [37]
-Underfull \hbox (badness 1931) in paragraph at lines 1151--1152
+Underfull \hbox (badness 1931) in paragraph at lines 125--126
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -2270,7 +2268,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 
 ]
-runsystem(makeindex -s index_style.ist Rulebook.idx)...executed (allowed).
+runsystem(makeindex -s ./index_style.ist Rulebook.idx)...executed (allowed).
 
  (Rulebook.ind
 File: core/images/scanlines.png Graphic file (type bmp)
@@ -2282,13 +2280,13 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
  [40
 
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1152.
- (Rulebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1152.
 
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+ (Rulebook.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `Rulebook.out' has not changed.
 (rerunfilecheck)             Checksum: AF14160C3EE29306C6D2FD59F94C743D;984.
 
@@ -2297,12 +2295,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 39428 strings out of 427265
- 793420 string characters out of 3147679
- 1233555 words of memory out of 3000000
- 43299 multiletter control sequences out of 15000+200000
+ 39433 strings out of 427265
+ 793599 string characters out of 3147679
+ 1232604 words of memory out of 3000000
+ 43304 multiletter control sequences out of 15000+200000
  572937 words of font info for 95 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,18n,95p,796b,1269s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,18n,99p,825b,1269s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Rulebook.pdf (43 pages).

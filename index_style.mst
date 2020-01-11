@@ -1,0 +1,6 @@
+headings_flag 1
+heading_prefix "\\color\{redtext\}\\Huge\\MakeUppercase\{"
+heading_suffix "\}\\nopagebreak\n\\titlerule\\normalsize\\color\{black\}\\nopagebreak\n"
+delim_0 " \\dotfill "
+delim_1 " \\dotfill "
+delim_2 " \\dotfill "
