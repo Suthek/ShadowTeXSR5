@@ -621,7 +621,7 @@
 %%%%%%%%%%%%%%%%%%%
 %% IMAGES
 %%%
-\newcommand{\twocolumnimage}[1]{
+\newcommand{\twocolimage}[1]{
 \begin{tcolorbox}[
     enhanced,
     float*=t,
@@ -673,10 +673,27 @@
 %% BOXES
 %%%
 
-\newenvironment{twocolumnblackbox}[1]{
-\begin{tcolorbox}[enhanced, fonttitle=\boxfont, float*, colback=storyblack, left=2mm, right=2mm, bottom=6mm, top=3mm, title={\color{yellowtext}\Large\MakeUppercase{#1}}, width = \textwidth, arc=0mm, outer arc=0mm, colframe=storyblack, attach boxed title to top left={yshift=-1mm}, boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=storyblack, outer arc=0mm}, underlay boxed title={\fill[storyblack] ($(title.north east)+(-2mm, 0mm)$) -- ($(title.south east)+(-2mm, 0mm)$) -- ($(title.south east)+(2mm, 0mm)$) -- ++(2cm, 0mm) -- ($(title.north east)+(2mm, 0mm)$) -- cycle;}]
+\newcommand{\sr@blckbox}[2]{
+\begin{tcolorbox}[
+enhanced, 
+fonttitle=\boxfont, 
+float*=tb, 
+colback=storyblack, 
+left=2mm, 
+right=2mm, 
+bottom=6mm, top=3mm, 
+title={\color{yellowtext}\Large\MakeUppercase{#1}}, 
+width = \textwidth, 
+arc=0mm, 
+outer arc=0mm, 
+colframe=storyblack, 
+attach boxed title to top left={yshift=-1mm}, 
+boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=storyblack, outer arc=0mm}, underlay boxed title={\fill[storyblack] ($(title.north east)+(-2mm, 0mm)$) -- ($(title.south east)+(-2mm, 0mm)$) -- ($(title.south east)+(2mm, 0mm)$) -- ++(2cm, 0mm) -- ($(title.north east)+(2mm, 0mm)$) -- cycle;}
+]
 \centering
-}{\end{tcolorbox}}
+#2
+\end{tcolorbox}
+}
 
 \newcommand{\sr@lbox}[1]{
   \begin{tcolorbox}[
@@ -758,7 +775,7 @@
     boxrule=2mm,
     arc is angular,    
     arc=6mm,outer arc=7mm,
-    float*=h!tb,
+    float*=tb,
     every float=\hspace{-7mm}
     ]
     #1
@@ -788,13 +805,16 @@
     },
     arc is angular,    
     arc=6mm,outer arc=7mm,
-    float*=h!tb,
+    float*=tb,
     every float=\hspace{-25mm}
     ] 
     #1
     \end{tcolorbox}
 }
 
+\NewEnviron{blackbox}[1]{
+\sr@blckbox{#1}{\BODY}
+}
 
 \NewEnviron{columnbox}[1][]{
   \hfuzz=30mm
@@ -812,7 +832,7 @@
   }%
 }
 
-\NewEnviron{twocolumnbox}[1][]{
+\NewEnviron{twocolbox}[1][]{
   \hfuzz=30mm
   \par
   \boxfont
@@ -825,6 +845,14 @@
   }{
     \ifthenelse{\equal{#1}{l}}{\sr@ldblbox{\BODY}}{\sr@rdblbox{\BODY}}
   }
+}
+
+\NewEnviron{examplebox}{
+%\sr@examplebox{\BODY}
+}
+
+\NewEnviron{twocolexamplebox}{
+%\sr@dblexamplebox{\BODY}
 }
 
 %%%%%%%%%%%%%%%%%%%%

@@ -57,7 +57,15 @@ Pre-Defined colors are:
 - headred
  
 ## Available Commands
-  
+
+### Setup
+
+- `\title{}`: Title of your book.
+- `\author`, `\writers`, `\artists`, `\coverartist`: Can be used to credit writers and artists who help with the book in the Impressum. 
+- `\splashpicture{}`: Filename of splash picture in ./images/ folder
+- `\srmaketitle`: Creates the cover, impressum and splash picture. Cover colors can be added as optional argument. Options: black, blue, brown, green, grey, red, yellow. Default: black
+
+
 ### Structure  
 - `\chapter`, `\section`, `\subsection`, `\subsubsection`: as per regular LaTeX
 - `\storychapter{Title}{Author}{LeftImage}{RightImage}`: Creates a black themed chapter for stories.
@@ -68,14 +76,14 @@ Pre-Defined colors are:
 All boxes are environments that are used with `\begin{name}` and `\end{name}`.
 
 - `columnbox`: creates a red box in one column. The Layout changes depending on which column it's in and should dynamically do the right thing; should a box refuse to play nice, you can force it into a configuration using `\begin{columnbox}[l]` or `\begin{columnbox}[r]`.
-- `twocolumnbox`: like `columnbox`, only the box spreads over both columns. Optional arguments apply as well.
-- `twocolumnblackbox`: creates a dark-themed box. With white text.
+- `twocolbox`: like `columnbox`, only the box spreads over both columns. Optional arguments apply as well.
+- `blackbox`: creates a dark-themed box. With white text.
 - `examplebox`: (Not yet Implemented). Creates a white box used for example texts.
-- `twocolumnexamplebox`: (Not yet Implemented). Like `examplebox`, but two columns.
+- `twocolexamplebox`: (Not yet Implemented). Like `examplebox`, but two columns.
   
 ### Images
 
-- `twocolumnimage`: Creates a two-column image with frame. File name provided through argument.
+- `twocolimage`: Creates a two-column image with frame. File name provided through argument.
 - `columnimage`: Creates a tall image taking up one column.
 
 ### Tables

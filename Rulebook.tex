@@ -33,9 +33,13 @@
 \section{This is a Section}
 \index{Section}
 \lipsum[1]
+\section*{Starred Section Test}
+\lipsum[2]
 \subsection{This is a Subsection}
 \index{Subsection}
-\lipsum
+\lipsum[2-5]
+\subsection*{Starred Subsection Test}
+\lipsum[1-4]
 \subsubsection{This is a Subsubsection}
 \index{Subsubsection}
 \lipsum
@@ -49,21 +53,21 @@
 \end{columnbox}
 \section{TwoColumnBox}
 \lipsum
-\begin{twocolumnbox}
+\begin{twocolbox}
 \centering\Huge Yay!\\
 \normalsize\lipsum[1-3]
-\end{twocolumnbox}
+\end{twocolbox}
 \lipsum
-\begin{twocolumnbox}
+\begin{twocolbox}
 \centering\Huge Yay!\\
 \normalsize\lipsum[1-3]
-\end{twocolumnbox}
+\end{twocolbox}
 \lipsum
 \lipsum
 \lipsum
 \section{BlackBox}
 \lipsum
-\begin{twocolumnblackbox}{Titel}
+\begin{blackbox}{Titel}
 \centering\color{white}
 \lipsum[1]
 \begin{srtable}{Xc}{Values & Dangers}
@@ -71,7 +75,7 @@ Value & Danger\\
 Value2 & Danger2\\
 Rick & Morty\\
 \end{srtable}
-\end{twocolumnblackbox}
+\end{blackbox}
 \storychapter{Very Long Story Chapter}{Author}{StoryLeft.jpg}{StoryRight.jpg}
 \lipsum
 \storypar
@@ -86,8 +90,8 @@ Rick & Morty\\
 \section{Two Column Image}
 \index{Image!Two-Column}
 \lipsum
-\twocolumnimage{TwoColumnImage.jpg}
-\twocolumnimage{TwoColumnImage.jpg}
+\twocolimage{TwoColumnImage.jpg}
+\twocolimage{TwoColumnImage.jpg}
 \lipsum
 \lipsum\par
 \lipsum\par
