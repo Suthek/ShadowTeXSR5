@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  11 JAN 2020 22:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  12 JAN 2020 00:20
 entering extended mode
 **./Rulebook.tex
 (Rulebook.tex
@@ -1262,9 +1262,13 @@ File: switch.def 2019/12/08 3.37 Babel switching mechanism
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Utility\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
-Language: english 2017/06/06 v3.3r English support from the babel system
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-german\ngerman.ldf
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
+phy)
 
+(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-german\ngermanb.ldf
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
+aphy)
 ("C:\Utility\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/12/08 3.37 Babel common definitions
 \babel@savecnt=\count341
@@ -1274,22 +1278,17 @@ File: babel.def 2019/12/08 3.37 Babel common definitions
 ("C:\Utility\MiKTeX 2.9\tex/generic/babel\txtbabel.def"))
 \bbl@dirlevel=\count342
 )
+Package babel Info: Making " an active character on input line 121.
+))
+("C:\Utility\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 108.
-)
-(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-german\ngerman.ldf
-Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
-phy)
-
-(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-german\ngermanb.ldf
-Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
-aphy)
-Package babel Info: Making " an active character on input line 121.
-)))
+))
 \Rulebook@idxfile=\write6
 \openout6 = `Rulebook.idx'.
 
@@ -1304,24 +1303,24 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 (Rulebook.aux)
 \openout1 = `Rulebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  ABD: EveryShipout initializing macros
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1357,7 +1356,7 @@ LaTeX Font Info:    ... okay on input line 22.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box104
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 19.
 ("C:\Utility\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1370,9 +1369,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count343
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
  (Rulebook.out) (Rulebook.out)
 \@outlinefile=\write7
 \openout7 = `Rulebook.out'.
@@ -1397,12 +1396,12 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ]
 
 Package multicol Warning: multicols* inside a box does not make sense.
-(multicol)                Going to balance anyway on input line 26.
+(multicol)                Going to balance anyway on input line 25.
 
 File: ./core/images/scanlines.png Graphic file (type bmp)
 <./core/images/scanlines.png>
 
-Overfull \hbox (332.24818pt too wide) in paragraph at lines 26--26
+Overfull \hbox (332.24818pt too wide) in paragraph at lines 25--25
 [] [] 
  []
 
@@ -1517,12 +1516,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Kapitel .
-
-Underfull \hbox (badness 1931) in paragraph at lines 32--32
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+Chapter .
 
 Underfull \vbox (badness 3199) has occurred while \output is active []
 
@@ -1534,24 +1528,19 @@ File: core/images/scanlines.png Graphic file (type bmp)
 File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftBig.pdf>
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-LaTeX Font Info:    Calculating math sizes for size <60> on input line 33.
+LaTeX Font Info:    Calculating math sizes for size <60> on input line 32.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <60> on input line 33.
+(Font)              <60> on input line 32.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <41.99982> on input line 33.
+(Font)              <41.99982> on input line 32.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <30> on input line 33.
+(Font)              <30> on input line 32.
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
  [4
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 33--33
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3199) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -1562,26 +1551,14 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [5]
-Underfull \hbox (badness 1931) in paragraph at lines 41--41
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
+
 [6]
-Underfull \hbox (badness 1931) in paragraph at lines 43--43
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 46--46
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
@@ -1590,7 +1567,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
-[7]
+ [7]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1624,12 +1601,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Kapitel .
-
-Underfull \hbox (badness 1931) in paragraph at lines 48--48
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+Chapter .
 
 Underfull \vbox (badness 3199) has occurred while \output is active []
 
@@ -1651,12 +1623,7 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 49--49
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3199) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -1674,21 +1641,14 @@ File: ./core/images/scanlines.png Graphic file (type bmp)
 <./core/images/scanlines.png>
 File: ./core/images/pattern.png Graphic file (type bmp)
 <./core/images/pattern.png>
-
-Underfull \hbox (badness 1931) in paragraph at lines 56--56
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \vbox (badness 6792) has occurred while \output is active []
-
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
- [10]
+
+[10]
 File: ./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg Graphic file (type 
 bmp)
 <./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg>
@@ -1697,17 +1657,12 @@ File: ./core/images/scanlines.png Graphic file (type bmp)
 File: ./core/images/pattern.png Graphic file (type bmp)
 <./core/images/pattern.png>
 
-Overfull \hbox (62.59601pt too wide) in paragraph at lines 59--59
+Overfull \hbox (62.59601pt too wide) in paragraph at lines 58--58
 [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 61--61
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
 
 
 Underfull \vbox (badness 5288) has occurred while \output is active []
@@ -1729,17 +1684,12 @@ File: ./core/images/scanlines.png Graphic file (type bmp)
 File: ./core/images/pattern.png Graphic file (type bmp)
 <./core/images/pattern.png>
 
-Overfull \hbox (11.38104pt too wide) in paragraph at lines 64--64
+Overfull \hbox (11.38104pt too wide) in paragraph at lines 63--63
 [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 66--66
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1751,13 +1701,6 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
  [12]
-Underfull \hbox (badness 1931) in paragraph at lines 67--67
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \vbox (badness 6792) has occurred while \output is active []
-
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
@@ -1766,22 +1709,15 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [13]
-Underfull \hbox (badness 1931) in paragraph at lines 68--68
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
 
+[13]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
-[14]
-Underfull \hbox (badness 1931) in paragraph at lines 70--70
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+ [14]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
@@ -1790,7 +1726,9 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
-[15]
+ [15]
+Underfull \vbox (badness 2418) has occurred while \output is active []
+
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
@@ -1798,6 +1736,10 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
  [16]
+Overfull \hbox (24.9948pt too wide) in paragraph at lines 84--84
+|\TU/sublm(0)/m/n/20.74 TWOCOLUMNEXAMPLEBOX|  
+ []
+
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
@@ -1806,7 +1748,26 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [17
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterLeft.pdf>
+ [18]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
+File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterRight.pdf>
+
+[19
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1842,12 +1803,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Kapitel .
-
-Underfull \hbox (badness 1931) in paragraph at lines 81--81
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+Chapter .
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1860,17 +1816,17 @@ File: ./images/StoryLeft.jpg Graphic file (type bmp)
 <./images/StoryLeft.jpg>
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-LaTeX Font Info:    Calculating math sizes for size <40> on input line 81.
+LaTeX Font Info:    Calculating math sizes for size <40> on input line 91.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <40> on input line 81.
+(Font)              <40> on input line 91.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <27.99988> on input line 81.
+(Font)              <27.99988> on input line 91.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20> on input line 81.
+(Font)              <20> on input line 91.
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
- [18
+ [20
+
 
 ]
 Underfull \vbox (badness 8132) has occurred while \output is active []
@@ -1882,46 +1838,30 @@ File: ./images/StoryRight.jpg Graphic file (type bmp)
 Missing character: There is no 6 in font nullfont!
 File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterRight.pdf>
- [19]
-Underfull \hbox (badness 1931) in paragraph at lines 83--83
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 85--85
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-File: core/images/scanlines.png Graphic file (type bmp)
-<core/images/scanlines.png>
-File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
-<use ./core/tikz/SimpleFooterLeft.pdf>
-[20]
-Underfull \hbox (badness 1931) in paragraph at lines 87--87
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \vbox (badness 6792) has occurred while \output is active []
-
-File: core/images/scanlines.png Graphic file (type bmp)
-<core/images/scanlines.png>
-File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
-<use ./core/tikz/SimpleFooterRight.pdf>
  [21]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
 
-[22
+[22]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
+<use ./core/tikz/SimpleFooterRight.pdf>
+ [23]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
+<use ./core/tikz/SimpleFooterLeft.pdf>
+ [24
 
 ]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterRight.pdf>
- [23
+ [25
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1957,12 +1897,7 @@ File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Kapitel .
-
-Underfull \hbox (badness 1931) in paragraph at lines 90--90
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+Chapter .
 
 Underfull \vbox (badness 3199) has occurred while \output is active []
 
@@ -1977,12 +1912,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
-[24
+[26
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 93--93
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
+Underfull \vbox (badness 4229) has occurred while \output is active []
 
 File: ./images/TwoColumnImage.jpg Graphic file (type bmp)
 <./images/TwoColumnImage.jpg>
@@ -2003,10 +1936,8 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [25]
-Underfull \hbox (badness 1931) in paragraph at lines 96--96
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
+ [27]
+Underfull \vbox (badness 2426) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -2014,7 +1945,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
-[26]
+ [28]
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
@@ -2025,68 +1956,16 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [27]
-Underfull \hbox (badness 1931) in paragraph at lines 96--96
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 97--97
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-File: core/images/scanlines.png Graphic file (type bmp)
-<core/images/scanlines.png>
-File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
-<use ./core/tikz/HeaderLeftSmall.pdf>
-File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
-<use ./core/tikz/FooterLeft.pdf>
-[28]
-Underfull \hbox (badness 1931) in paragraph at lines 98--98
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
+ [29]
 Underfull \vbox (badness 6792) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
-File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
-<use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Splash.jpg Graphic file (type bmp)
-<./images/Splash.jpg>
-File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
-<use ./core/tikz/FooterRight.pdf>
- [29]
-Underfull \hbox (badness 1931) in paragraph at lines 99--99
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-File: ./images/Columnimage.jpg Graphic file (type bmp)
-<./images/Columnimage.jpg>
-File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
-<use ./core/tikz/Columnframe.pdf>
-File: ./images/Columnimage.jpg Graphic file (type bmp)
-<./images/Columnimage.jpg>
-File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
-<use ./core/tikz/Columnframe.pdf>
-File: core/images/scanlines.png Graphic file (type bmp)
-<core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
-[30]
-Underfull \hbox (badness 1931) in paragraph at lines 104--104
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-LaTeX Warning: Text page 31 contains only floats.
-
-
-Overfull \vbox (17.66035pt too high) has occurred while \output is active []
-
+ [30]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
@@ -2097,30 +1976,26 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
 
 [31]
-
-LaTeX Warning: Text page 32 contains only floats.
-
-
-Overfull \vbox (17.66035pt too high) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 105--105
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+File: ./images/Columnimage.jpg Graphic file (type bmp)
+<./images/Columnimage.jpg>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
+File: ./images/Columnimage.jpg Graphic file (type bmp)
+<./images/Columnimage.jpg>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
-[32]
-Underfull \vbox (badness 6792) has occurred while \output is active []
+ [32]
+
+LaTeX Warning: Text page 33 contains only floats.
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 107--107
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
+Overfull \vbox (17.66035pt too high) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -2130,14 +2005,38 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
+
 [33]
+
+LaTeX Warning: Text page 34 contains only floats.
+
+
+Overfull \vbox (17.66035pt too high) has occurred while \output is active []
+
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
- [34
+
+[34]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
+File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterRight.pdf>
+ [35]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterLeft.pdf>
+ [36
 
 ]
 File: core/images/scanlines.png Graphic file (type bmp)
@@ -2148,7 +2047,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [35
+ [37
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2184,12 +2083,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Kapitel .
-
-Underfull \hbox (badness 1931) in paragraph at lines 109--109
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+Chapter .
 
 Underfull \vbox (badness 3199) has occurred while \output is active []
 
@@ -2199,12 +2093,10 @@ File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftBig.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
- [36
+ [38
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 111--111
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
+Underfull \vbox (badness 4229) has occurred while \output is active []
 
 
 Package fontspec Info: Could not resolve font "Decker/I" (it probably doesn't
@@ -2227,15 +2119,15 @@ Package fontspec Info: Font family 'Decker(0)' created for font 'Decker' with
 (fontspec)             <->"Decker/BI/OT:mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \rmfamily on input line 113.
+LaTeX Info: Redefining \rmfamily on input line 123.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
 
  []
 
-LaTeX Info: Redefining \rmfamily on input line 116.
+LaTeX Info: Redefining \rmfamily on input line 126.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 
  []
 
@@ -2247,18 +2139,14 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
-[37]
-Underfull \hbox (badness 1931) in paragraph at lines 129--130
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
+[39]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
-[38
+ [40
 
 ]
 File: core/images/scanlines.png Graphic file (type bmp)
@@ -2269,7 +2157,7 @@ File: ./images/Splash.jpg Graphic file (type bmp)
 <./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [39
+ [41
 
 
 ]
@@ -2282,30 +2170,30 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
- [40
+ [42
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (Rulebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
 Package rerunfilecheck Info: File `Rulebook.out' has not changed.
-(rerunfilecheck)             Checksum: AF14160C3EE29306C6D2FD59F94C743D;984.
+(rerunfilecheck)             Checksum: F974836F68A618472A4E9BADB2EFBD6C;1107.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 39450 strings out of 427265
- 793890 string characters out of 3147679
- 1232986 words of memory out of 3000000
- 43321 multiletter control sequences out of 15000+200000
+ 39472 strings out of 427265
+ 794312 string characters out of 3147679
+ 1240101 words of memory out of 3000000
+ 43343 multiletter control sequences out of 15000+200000
  572937 words of font info for 95 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,18n,99p,825b,1274s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,18n,99p,820b,1303s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Rulebook.pdf (43 pages).
+Output written on Rulebook.pdf (45 pages).

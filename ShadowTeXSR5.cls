@@ -162,6 +162,7 @@
 \def\srbb@spelltype{}
 \def\srbb@spelldur{}
 \def\srbb@spelldmg{}
+\def\srbb@example{}
 
 %%%%%%%%%%%%%%%%%%%%
 %%
@@ -812,6 +813,64 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
     \end{tcolorbox}
 }
 
+\newcommand{\sr@examplebox}[1]{
+  \begin{tcolorbox}[
+  enhanced, 
+  float, 
+  colback=storyblack, 
+  left=3mm, 
+  right=5mm, 
+  bottom=3mm, 
+  top=5mm,
+  height=30mm,
+  height plus=\textheight-30mm,
+  boxrule=1pt, 
+  title={\headerfont\color{yellowtext}\Large\MakeUppercase{\srbb@example}}, 
+  width=\columnwidth, 
+  arc=5mm, 
+  outer arc=5mm, 
+  colframe=storyblack, 
+  colback=white,  
+  arc is angular,
+  attach boxed title to top left={xshift=5mm}, 
+  boxed title style={enhanced, opacityframe=0, opacityback=0, left= 1mm, arc=0mm, top=2mm, bottom=1mm, outer arc=0mm, boxrule=1pt}, 
+  underlay boxed title={
+  \fill[storyblack] (title.north west) -- ++(-3.5mm, 0mm) -- ++(-135:5mm) -- ($(frame.south west) + (-2mm, 25mm)$) -- ++(-45:3mm) -- ($(frame.north west)+(1pt,-5mm)$) -- ++(45:7mm) -- ($(title.south west)+(1mm, -1pt)$) -- ($(title.south west)+(0mm, -1pt)$) -- ($(frame.north east)+(-15mm, -1pt)$) -- ++(135:3.2mm) -- ($(title.south east)+(20mm,2mm)$) -- ++(135:10.5mm) -- cycle;
+  }
+  ]
+  #1
+  \end{tcolorbox}
+}
+
+\newcommand{\sr@dblexamplebox}[1]{
+  \begin{tcolorbox}[
+  enhanced, 
+  float*, 
+  colback=storyblack, 
+  left=3mm, 
+  right=5mm, 
+  bottom=3mm, 
+  top=5mm,
+  height=30mm,
+  height plus=\textheight-30mm,
+  boxrule=1pt, 
+  title={\headerfont\color{yellowtext}\Large\MakeUppercase{\srbb@example}}, 
+  width=\textwidth, 
+  arc=5mm, 
+  outer arc=5mm, 
+  colframe=storyblack, 
+  colback=white,  
+  arc is angular,
+  attach boxed title to top left={xshift=5mm}, 
+  boxed title style={enhanced, opacityframe=0, opacityback=0, left= 1mm, arc=0mm, top=2mm, bottom=1mm, outer arc=0mm, boxrule=1pt}, 
+  underlay boxed title={
+  \fill[storyblack] (title.north west) -- ++(-3.5mm, 0mm) -- ++(-135:5mm) -- ($(frame.south west) + (-2mm, 25mm)$) -- ++(-45:3mm) -- ($(frame.north west)+(1pt,-5mm)$) -- ++(45:7mm) -- ($(title.south west)+(1mm, -1pt)$) -- ($(title.south west)+(0mm, -1pt)$) -- ($(frame.north east)+(-15mm, -1pt)$) -- ++(135:3.2mm) -- ($(title.south east)+(20mm,2mm)$) -- ++(135:10.5mm) -- cycle;
+  }
+  ]
+  #1
+  \end{tcolorbox}
+}
+
 \NewEnviron{blackbox}[1]{
 \sr@blckbox{#1}{\BODY}
 }
@@ -848,11 +907,11 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 }
 
 \NewEnviron{examplebox}{
-%\sr@examplebox{\BODY}
+\sr@examplebox{\BODY}
 }
 
 \NewEnviron{twocolexamplebox}{
-%\sr@dblexamplebox{\BODY}
+\sr@dblexamplebox{\BODY}
 }
 
 %%%%%%%%%%%%%%%%%%%%
@@ -1022,8 +1081,9 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 %%
 %%%%%%%%%%%%%%%%%%%%
 
-\PassOptionsToPackage{english}{babel}
+
 \PassOptionsToPackage{ngerman}{babel}
+\PassOptionsToPackage{english}{babel}
 
 \RequirePackage{babel}
 
@@ -1033,11 +1093,12 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@cover}{Cover Image}
   \renewcommand{\srbb@illustrations}{Illustrations \& Maps}
   \renewcommand{\srbb@texts}{Texts}
-  \renewcommand{\srbb@spelltype}{Art}
-  \renewcommand{\srbb@spellreach}{Reichweite}
-  \renewcommand{\srbb@spelldur}{Dauer}
-  \renewcommand{\srbb@spelldrain}{Entzug}
-  \renewcommand{\srbb@spelldmg}{Schaden}
+  \renewcommand{\srbb@spelltype}{Type}
+  \renewcommand{\srbb@spellreach}{Range}
+  \renewcommand{\srbb@spelldur}{Duration}
+  \renewcommand{\srbb@spelldrain}{Drain}
+  \renewcommand{\srbb@spelldmg}{Damage}
+  \renewcommand{\srbb@example}{Example}
 }
 
 \addto\captionsngerman{
@@ -1046,12 +1107,14 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@cover}{Coverbild}
   \renewcommand{\srbb@illustrations}{Illustrationen \& Karten}
   \renewcommand{\srbb@texts}{Texte}
-  \renewcommand{\srbb@spelltype}{Type}
-  \renewcommand{\srbb@spellreach}{Range}
-  \renewcommand{\srbb@spelldur}{Duration}
-  \renewcommand{\srbb@spelldrain}{Drain}
-  \renewcommand{\srbb@spelldmg}{Damage}
+  \renewcommand{\srbb@spelltype}{Art}
+  \renewcommand{\srbb@spellreach}{Reichweite}
+  \renewcommand{\srbb@spelldur}{Dauer}
+  \renewcommand{\srbb@spelldrain}{Entzug}
+  \renewcommand{\srbb@spelldmg}{Schaden}
+  \renewcommand{\srbb@example}{Beispiel}
 }
+
 
 
 \graphicspath{{./images/}}

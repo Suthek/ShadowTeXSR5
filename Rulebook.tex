@@ -1,7 +1,4 @@
 \documentclass{ShadowTeXSR5}
-%You can use this to select your Language of choice. Currently only german and english are supported.
-\selectlanguage{english}
-
 %How you want to name your Book. The title will show up in the headers
 %Or on the alternative cover page.
 \title{My Rulebook}
@@ -20,6 +17,8 @@
 \usepackage{lipsum}
 
 \begin{document}
+%You can use this to select your Language of choice. Currently only ngerman and english are supported.
+\selectlanguage{english}
 %This builds and prints the cover page, splash page and impressum.
 \srmaketitle
 %This builds the TOC.
@@ -76,6 +75,17 @@ Value2 & Danger2\\
 Rick & Morty\\
 \end{srtable}
 \end{blackbox}
+\section{Examplebox}
+\lipsum
+\begin{examplebox}
+\lipsum[1]
+\end{examplebox}
+\lipsum
+\section{Twocolumnexamplebox}
+\begin{twocolexamplebox}
+\lipsum[2-5]
+\end{twocolexamplebox}
+\lipsum
 \storychapter{Very Long Story Chapter}{Author}{StoryLeft.jpg}{StoryRight.jpg}
 \lipsum
 \storypar

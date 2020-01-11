@@ -1,0 +1,120 @@
+\documentclass[a4paper, 10pt, twocolumn, twoside]{book}
+\usepackage[dvipdfx, rgb, table]{xcolor}
+  \definecolor{yellowtext}{HTML}{f9b00b}
+  \definecolor{redtext}{HTML}{931004}
+  \definecolor{whitetext}{gray}{0.5}
+  
+  \definecolor{normalpage}{gray}{0.95}
+  \definecolor{storyblack}{gray}{0.1}
+  \definecolor{boxred}{HTML}{721a16}
+  \definecolor{headred}{HTML}{5e1519}
+
+\usepackage{lipsum}
+
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{external}
+\usetikzlibrary{calc}
+%\tikzexternalize[prefix=figures/]
+\usepackage[many]{tcolorbox}
+
+%newpackages
+\usepackage{array}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{environ}
+
+\usepackage{geometry}
+  \geometry{a4paper, 
+  includeheadfoot,
+  top=0cm, 
+  headheight=23mm, 
+  headsep=7mm, 
+  footskip=23mm, 
+  bottom=7mm,
+  left=20mm, 
+  right=15mm
+  }  
+  
+\graphicspath{{./SR5_Fankit/}}
+  
+\makeatletter
+
+\newcommand*{\belowrulesepcolor}[1]{%
+  \noalign{%
+    \kern-\belowrulesep
+    \begingroup
+      \color{#1}%
+      \hrule height\belowrulesep
+    \endgroup
+  }%
+}
+\newcommand*{\aboverulesepcolor}[1]{%
+  \noalign{%
+    \begingroup
+      \color{#1}%
+      \hrule height\aboverulesep
+    \endgroup
+    \kern-\aboverulesep
+  }%
+}
+
+\newenvironment{twocolumnblackbox}[1]{
+  \begin{tcolorbox}[
+  enhanced, 
+  float, 
+  colback=storyblack, 
+  left=3mm, 
+  right=5mm, 
+  bottom=3mm, 
+  top=5mm,
+  height=50mm,
+  height plus=\textheight-10mm,
+  boxrule=1pt, 
+  title={\color{yellowtext}\Large\MakeUppercase{Beispiel}}, 
+  width=\columnwidth, 
+  arc=5mm, 
+  outer arc=5mm, 
+  colframe=storyblack, 
+  colback=white,  
+  arc is angular,
+  attach boxed title to top left={xshift=5mm}, 
+  boxed title style={enhanced, opacityframe=0, opacityback=0, left= 1mm, arc=0mm, top=2mm, bottom=1mm, outer arc=0mm, boxrule=1pt}, 
+  underlay boxed title={
+  \fill[storyblack] (title.north west) -- ++(-3.5mm, 0mm) -- ++(-135:5mm) -- ($(frame.south west) + (-2mm, 25mm)$) -- ++(-45:3mm) -- ($(frame.north west)+(1pt,-5mm)$) -- ++(45:7mm) -- ($(title.south west)+(1mm, -1pt)$) -- ($(title.south west)+(0mm, -1pt)$) -- ($(frame.north east)+(-15mm, -1pt)$) -- ++(135:3.2mm) -- ($(title.south east)+(20mm,2mm)$) -- ++(135:10.5mm) -- cycle;
+  }
+  ]
+\centering
+}{\end{tcolorbox}}
+
+\NewEnviron{srtable}[2]{
+  \rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
+  \arrayrulecolor{yellowtext}
+  \color{white}\small 
+  \begin{tabularx}{\textwidth}{#1}
+  \toprule
+  \belowrulesepcolor{black}
+  #2\\
+  \aboverulesepcolor{black}   
+  \bottomrule
+  \BODY
+  \toprule
+  \end{tabularx}
+}
+
+\makeatother
+
+
+
+\pagestyle{empty}
+
+
+\begin{document}
+
+\begin{twocolumnblackbox}{Beispiele für Hoststufen}
+
+\end{twocolumnblackbox}
+\end{document}
