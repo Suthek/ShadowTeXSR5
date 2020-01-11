@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  10 JAN 2020 23:38
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  11 JAN 2020 14:31
 entering extended mode
 **./Rulebook.tex
 (Rulebook.tex
@@ -1243,7 +1243,9 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
 \tcb@cur@hbadness=\count338
 ) ("C:\Utility\MiKTeX 2.9\tex/latex/tcolorbox\tcbxparse.code.tex"
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.22'
-)) ("C:\Utility\MiKTeX 2.9\tex/generic/babel\babel.sty"
+)) (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) ("C:\Utility\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2019/12/08 3.37 The Babel package
 
 ("C:\Utility\MiKTeX 2.9\tex/generic/babel\switch.def"
@@ -1292,26 +1294,26 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 (Rulebook.aux)
 \openout1 = `Rulebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 951.
-LaTeX Font Info:    ... okay on input line 951.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 959.
+LaTeX Font Info:    ... okay on input line 959.
 \AtBeginShipoutBox=\box104
-Package hyperref Info: Link coloring OFF on input line 951.
+Package hyperref Info: Link coloring OFF on input line 959.
  ("C:\Utility\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1324,9 +1326,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 951.
-LaTeX Info: Redefining \pageref on input line 951.
-LaTeX Info: Redefining \nameref on input line 951.
+LaTeX Info: Redefining \ref on input line 959.
+LaTeX Info: Redefining \pageref on input line 959.
+LaTeX Info: Redefining \nameref on input line 959.
  (Rulebook.out) (Rulebook.out)
 \@outlinefile=\write6
 \openout6 = `Rulebook.out'.
@@ -1366,8 +1368,8 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/Cover-black.pdf Graphic file (type pdf)
 <use ./core/tikz/Cover-black.pdf>
 File: core/images/scanlines.png Graphic file (type bmp)
@@ -1386,12 +1388,12 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ]
 
 Package multicol Warning: multicols* inside a box does not make sense.
-(multicol)                Going to balance anyway on input line 953.
+(multicol)                Going to balance anyway on input line 961.
 
 File: ./core/images/scanlines.png Graphic file (type bmp)
 <./core/images/scanlines.png>
 
-Overfull \hbox (332.24818pt too wide) in paragraph at lines 953--953
+Overfull \hbox (332.24818pt too wide) in paragraph at lines 961--961
 [] [] 
  []
 
@@ -1406,8 +1408,8 @@ File: core/images/scanlines.png Graphic file (type bmp)
  [3
 
 ]
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
  [1
@@ -1465,8 +1467,8 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [3
@@ -1508,7 +1510,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 957--957
+Underfull \hbox (badness 1931) in paragraph at lines 968--968
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1523,19 +1525,19 @@ File: core/images/scanlines.png Graphic file (type bmp)
 File: ./core/tikz/HeaderLeftBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftBig.pdf>
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-LaTeX Font Info:    Calculating math sizes for size <60> on input line 958.
+LaTeX Font Info:    Calculating math sizes for size <60> on input line 969.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <60> on input line 958.
+(Font)              <60> on input line 969.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <41.99982> on input line 958.
+(Font)              <41.99982> on input line 969.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <30> on input line 958.
+(Font)              <30> on input line 969.
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
  [4
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 958--958
+Underfull \hbox (badness 1931) in paragraph at lines 969--969
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1546,18 +1548,18 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightBig.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [5]
-Underfull \hbox (badness 1931) in paragraph at lines 962--962
+Underfull \hbox (badness 1931) in paragraph at lines 973--973
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 962.
+(hyperref)                be the same. Added a new anchor on input line 973.
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -1566,7 +1568,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [6]
-Underfull \hbox (badness 1931) in paragraph at lines 964--964
+Underfull \hbox (badness 1931) in paragraph at lines 975--975
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1574,8 +1576,8 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
 [7]
@@ -1614,7 +1616,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 966--966
+Underfull \hbox (badness 1931) in paragraph at lines 977--977
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1639,7 +1641,7 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 967--967
+Underfull \hbox (badness 1931) in paragraph at lines 978--978
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1650,19 +1652,19 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightBig.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [9]
-Underfull \hbox (badness 1931) in paragraph at lines 974--974
+Underfull \hbox (badness 1931) in paragraph at lines 985--985
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 File: ./core/images/scanlines.png Graphic file (type bmp)
 <./core/images/scanlines.png>
 
-Overfull \hbox (82.51292pt too wide) in paragraph at lines 977--977
+Overfull \hbox (82.51292pt too wide) in paragraph at lines 988--988
 [][] 
  []
 
@@ -1673,7 +1675,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [10]
-Underfull \hbox (badness 1931) in paragraph at lines 979--979
+Underfull \hbox (badness 1931) in paragraph at lines 990--990
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1687,12 +1689,12 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [11]
-Underfull \hbox (badness 1931) in paragraph at lines 980--980
+Underfull \hbox (badness 1931) in paragraph at lines 991--991
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1703,7 +1705,7 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [12]
-Underfull \hbox (badness 1931) in paragraph at lines 981--981
+Underfull \hbox (badness 1931) in paragraph at lines 992--992
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1711,7 +1713,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 981--981
 Underfull \vbox (badness 6792) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 982--982
+Underfull \hbox (badness 1931) in paragraph at lines 993--993
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1719,12 +1721,12 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
 [13]
-Underfull \hbox (badness 1931) in paragraph at lines 984--984
+Underfull \hbox (badness 1931) in paragraph at lines 995--995
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1742,8 +1744,8 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
 
@@ -1785,7 +1787,7 @@ File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 995--995
+Underfull \hbox (badness 1931) in paragraph at lines 1006--1006
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1797,18 +1799,18 @@ Underfull \vbox (badness 8132) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
+File: ./images/StoryLeft.jpg Graphic file (type bmp)
+<./images/StoryLeft.jpg>
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
 Missing character: There is no - in font [./core/fonts/sublm-rg.ttf]/OT!
-LaTeX Font Info:    Calculating math sizes for size <40> on input line 995.
+LaTeX Font Info:    Calculating math sizes for size <40> on input line 1006.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <40> on input line 995.
+(Font)              <40> on input line 1006.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <27.99988> on input line 995.
+(Font)              <27.99988> on input line 1006.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20> on input line 995.
+(Font)              <20> on input line 1006.
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
  [16
@@ -1819,18 +1821,18 @@ Underfull \vbox (badness 8132) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
-File: example-image-b.pdf Graphic file (type pdf)
-<use example-image-b.pdf>
+File: ./images/StoryRight.jpg Graphic file (type bmp)
+<./images/StoryRight.jpg>
 Missing character: There is no 6 in font nullfont!
 File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterRight.pdf>
  [17]
-Underfull \hbox (badness 1931) in paragraph at lines 997--997
+Underfull \hbox (badness 1931) in paragraph at lines 1008--1008
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 999--999
+Underfull \hbox (badness 1931) in paragraph at lines 1010--1010
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1839,7 +1841,7 @@ File: core/images/scanlines.png Graphic file (type bmp)
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
 [18]
-Underfull \hbox (badness 1931) in paragraph at lines 1001--1001
+Underfull \hbox (badness 1931) in paragraph at lines 1012--1012
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1901,7 +1903,7 @@ File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 
 Kapitel .
 
-Underfull \hbox (badness 1931) in paragraph at lines 1003--1003
+Underfull \hbox (badness 1931) in paragraph at lines 1014--1014
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
@@ -1925,12 +1927,16 @@ File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 [22
 
 ]
-Underfull \hbox (badness 1931) in paragraph at lines 1005--1005
+Underfull \hbox (badness 1931) in paragraph at lines 1016--1016
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
-File: example-image-c.pdf Graphic file (type pdf)
-<use example-image-c.pdf>
+File: ./images/TwoColumnImage.jpg Graphic file (type bmp)
+<./images/TwoColumnImage.jpg>
+File: ./core/tikz/Twocolumnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Twocolumnframe.pdf>
+File: ./images/TwoColumnImage.jpg Graphic file (type bmp)
+<./images/TwoColumnImage.jpg>
 File: ./core/tikz/Twocolumnframe.pdf Graphic file (type pdf)
 <use ./core/tikz/Twocolumnframe.pdf>
 
@@ -1940,20 +1946,14 @@ File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightBig.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightBig.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 1007--1007
+Underfull \hbox (badness 1931) in paragraph at lines 1019--1019
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -1961,29 +1961,26 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
- [24]
-Underfull \hbox (badness 1931) in paragraph at lines 1009--1009
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
-
-Underfull \vbox (badness 3482) has occurred while \output is active []
+[24]
+Underfull \vbox (badness 2426) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
  [25]
-Underfull \hbox (badness 1931) in paragraph at lines 1011--1011
+Underfull \hbox (badness 1931) in paragraph at lines 1019--1019
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1931) in paragraph at lines 1020--1020
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
@@ -1991,32 +1988,35 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderLeftSmall.pdf>
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
- [26]
-Underfull \hbox (badness 1931) in paragraph at lines 1012--1012
+[26]
+Underfull \hbox (badness 1931) in paragraph at lines 1021--1021
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
 Underfull \vbox (badness 6792) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1931) in paragraph at lines 1013--1013
-[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
- []
-
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
-[27]
-Underfull \hbox (badness 1931) in paragraph at lines 1014--1014
+ [27]
+Underfull \hbox (badness 1931) in paragraph at lines 1022--1022
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
+File: ./images/Columnimage.jpg Graphic file (type bmp)
+<./images/Columnimage.jpg>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
+File: ./images/Columnimage.jpg Graphic file (type bmp)
+<./images/Columnimage.jpg>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
@@ -2024,22 +2024,133 @@ File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
 File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterLeft.pdf>
 [28]
-Underfull \hbox (badness 1931) in paragraph at lines 1015--1015
+Underfull \hbox (badness 1931) in paragraph at lines 1026--1026
 []\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Text page 29 contains only floats.
+
+
+Overfull \vbox (17.66035pt too high) has occurred while \output is active []
 
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
 <use ./core/tikz/HeaderRightSmall.pdf>
-File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
-<./images/Shadowrun_Cover_1530x1980px.jpg>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
 File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/FooterRight.pdf>
- [29]
+
+[29]
+
+LaTeX Warning: Text page 30 contains only floats.
+
+
+Overfull \vbox (17.66035pt too high) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 1027--1027
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterLeft.pdf>
+[30]
+File: ./images/Columnimage.jpg Graphic file (type bmp)
+<./images/Columnimage.jpg>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
+File: ./images/Columnimage.jpg Graphic file (type bmp)
+<./images/Columnimage.jpg>
+File: ./core/tikz/Columnframe.pdf Graphic file (type pdf)
+<use ./core/tikz/Columnframe.pdf>
+
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 31 contains only floats.
+
+
+Overfull \vbox (17.66035pt too high) has occurred while \output is active []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
+File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterRight.pdf>
+
+[31]
+
+LaTeX Warning: Text page 32 contains only floats.
+
+
+Overfull \vbox (17.66035pt too high) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 1030--1030
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterLeft.pdf>
+[32]
+Underfull \hbox (badness 1931) in paragraph at lines 1031--1031
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 1032--1032
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
+File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterRight.pdf>
+[33]
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 1034--1034
+[]\TU/srbody/m/n/10 Nulla malesuada porttitor diam. Donec felis erat,
+ []
+
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderLeftSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderLeftSmall.pdf>
+File: ./core/tikz/FooterLeft.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterLeft.pdf>
+[34]
+File: core/images/scanlines.png Graphic file (type bmp)
+<core/images/scanlines.png>
+File: ./core/tikz/HeaderRightSmall.pdf Graphic file (type pdf)
+<use ./core/tikz/HeaderRightSmall.pdf>
+File: ./images/Splash.jpg Graphic file (type bmp)
+<./images/Splash.jpg>
+File: ./core/tikz/FooterRight.pdf Graphic file (type pdf)
+<use ./core/tikz/FooterRight.pdf>
+ [35
+
+]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2087,7 +2198,7 @@ File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
 Missing character: There is no 5 in font nullfont!
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
- [30
+ [36
 
 
 ]
@@ -2103,20 +2214,20 @@ File: ./images/Shadowrun_Cover_1530x1980px.jpg Graphic file (type bmp)
 Missing character: There is no 6 in font nullfont!
 File: ./core/tikz/SimpleFooterRight.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterRight.pdf>
- [31]
+ [37]
 File: core/images/scanlines.png Graphic file (type bmp)
 <core/images/scanlines.png>
 File: ./core/tikz/SimpleFooterLeft.pdf Graphic file (type pdf)
 <use ./core/tikz/SimpleFooterLeft.pdf>
 
-[32
+[38
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1074.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1074.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1093.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1093.
  (Rulebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1074.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1074.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1093.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1093.
 
 Package rerunfilecheck Info: File `Rulebook.out' has not changed.
 (rerunfilecheck)             Checksum: 564AD3E4AA7C8AEF6315C701539D3DBE;820.
@@ -2126,12 +2237,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 39136 strings out of 427265
- 787920 string characters out of 3147679
- 1232934 words of memory out of 3000000
- 43038 multiletter control sequences out of 15000+200000
+ 39215 strings out of 427265
+ 789571 string characters out of 3147679
+ 1234229 words of memory out of 3000000
+ 43109 multiletter control sequences out of 15000+200000
  572865 words of font info for 86 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,18n,95p,796b,1269s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Rulebook.pdf (35 pages).
+Output written on Rulebook.pdf (41 pages).

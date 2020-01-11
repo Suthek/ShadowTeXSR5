@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  10 JAN 2020 21:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  11 JAN 2020 11:38
 entering extended mode
 **./Footerleft.tex
 (Footerleft.tex
@@ -494,29 +494,63 @@ LaTeX Font Info:    ... okay on input line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no 5 in font nullfont!
-File: ./SR5_Fankit/Schlange/Shadowrun-5-Schlange_500x600.png Graphic file (type
- bmp)
-<./SR5_Fankit/Schlange/Shadowrun-5-Schlange_500x600.png>
+
+! LaTeX Error: Environment tcolorbox undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38   \begin{tcolorbox}
+                        [
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! You can't use `\dimexpr' in horizontal mode.
+l.50     text width=\dimexpr
+                            \columnwidth-7mm,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: \begin{document} ended by \end{tcolorbox}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56     \end{tcolorbox}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 38--57
+\TU/lmr/m/n/10 opacityframe=1, opacityback=1, interior style=left
+ []
+
 [1
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (Footerleft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 62.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 13189 strings out of 427265
- 272060 string characters out of 3147679
- 524818 words of memory out of 3000000
- 17472 multiletter control sequences out of 15000+200000
+ 12297 strings out of 427265
+ 252943 string characters out of 3147679
+ 317433 words of memory out of 3000000
+ 16586 multiletter control sequences out of 15000+200000
  3648 words of font info for 15 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,5n,68p,549b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,5n,68p,549b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Footerleft.pdf (1 page).

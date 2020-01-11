@@ -51,31 +51,48 @@
 
 %Restrict placement of single-column floats to outer columns only.
 %(experimental)
+
 \def\@floatplacement{
   \def\zero{0}
   %Textpage bit, global:
   \ifodd\c@page
     \if@firstcolumn
-      \global\@topnum \zero
-      \global\@botnum \zero
+      \renewcommand\textfraction{0.2}
+	  \setlength{\textfloatsep}{1.7\baselineskip plus 0.2\baselineskip minus 0.5\baselineskip}
+	  \global\@toproom \topfraction\@colht
+  	  \global\@botroom \bottomfraction\@colht
+
+      \@fpmin   \floatpagefraction\@colht
+
     \else
-      \global\@topnum \c@topnumber 
-      \global\@botnum \c@bottomnumber
+      \renewcommand\textfraction{0}
+      \setlength{\textfloatsep}{0pt}
+      \global\@toproom \@colht
+  	  \global\@botroom \zero\@colht
+
+      \@fpmin   \@colht      
     \fi
   \else
     \if@firstcolumn
-      \global\@topnum \c@topnumber 
-      \global\@botnum \c@bottomnumber
+      \renewcommand\textfraction{0}
+      \setlength{\textfloatsep}{0pt}	  
+	  \global\@toproom \@colht
+  	  \global\@botroom \zero\@colht
+      
+      \@fpmin   \@colht
     \else
-      \global\@topnum \zero
-      \global\@botnum \zero
+      \renewcommand\textfraction{0.2}
+      \setlength{\textfloatsep}{1.7\baselineskip plus 0.2\baselineskip minus 0.5\baselineskip}
+	  \global\@toproom \topfraction\@colht
+      \global\@botroom \bottomfraction\@colht
+      
+      \@fpmin   \floatpagefraction\@colht
     \fi
   \fi
+        \global\@topnum \c@topnumber 
+      \global\@botnum \c@bottomnumber
   \global\@colnum  \c@totalnumber
-  \global\@toproom \topfraction\@colht
-  \global\@botroom \bottomfraction\@colht
   % Floatpage bit, local:
-  \@fpmin   \floatpagefraction\@colht
 }
 
 %Change \cleardoublepage so that new chapters begin on even sides
@@ -592,26 +609,34 @@
 %% IMAGES
 %%%
 \newcommand{\twocolumnimage}[1]{
-  \begin{figure*}[t]
-  \centering
-  \vspace*{13cm}
-  \begin{tikzpicture}[remember picture, overlay, shift={(current page.north)}]
-  \node[anchor=north] at (0,{-(30mm)}) {\includegraphics[width=\textwidth, height=12cm]{#1}};
-  \node[anchor=north] at (0,{-((30mm)-(8.85cm))}) {\pgfuseimage{widepictureframe}};
-  \end{tikzpicture}
-  \end{figure*}
+\begin{tcolorbox}[
+    enhanced,
+    float*=t,
+    width=\textwidth,
+    height=12cm,
+    top=0mm,
+    bottom=0mm,	
+    left=0mm,
+    right=0mm,    
+    opacityframe=1,
+    opacityback=1,
+    colframe=storyblack,
+    coltext=white,
+    interior style={fill stretch image=#1, fill image opacity=1},
+    interior code app={\node[anchor=center] at (frame.center) {\pgfuseimage{widepictureframe}};},
+  ]
+  \end{tcolorbox}
 }
 
 \usepackage{afterpage}
+\usepackage{placeins}
 
 \newcommand{\drawcolimg}[1]{
-
-  \iftopfloat{
-  \afterpage{\lp@columnimage{#1}}
-  }{
   \begin{tcolorbox}[
     enhanced,
+    float=ht,
     width=\columnwidth,
+    height=.99\textheight,
     top=0mm,
     bottom=0mm,	
     left=0mm,
@@ -623,29 +648,12 @@
     interior style={fill stretch image=#1, fill image opacity=1},
     interior code app={\node[anchor=center] at (frame.center) {\pgfuseimage{longpictureframe}};},
   ]
-  \vspace*{231mm}
   \end{tcolorbox}
-  }
-}
-
-\newcommand{\lp@columnimage}[1]{
-  \ifodd\c@page
-      \afterpage{\drawcolimg{#1}}	
-  \else
-	  \drawcolimg{#1}
-  \fi
 }
 
 \newcommand{\columnimage}[1]{
-  \ifodd\c@page
-      \afterpage{\drawcolimg{#1}}	
-  \else
-	\if@firstcolumn
-	  \afterpage{\afterpage{\afterpage{\drawcolimg{#1}}}}
-	\else
-	  \afterpage{\afterpage{\drawcolimg{#1}}}
-	\fi  
-  \fi
+ \drawcolimg{#1}
+ \afterpage{\afterpage{\FloatBarrier}}
 }
 
 %%%%%%%%%%%%%%%%%%%%
@@ -946,13 +954,16 @@
 \artists{Me, Myself \& I}
 \coverartist{Me, too}
 \writers{Not me}
-\splashpicture{Shadowrun_Cover_1530x1980px.jpg}
+\splashpicture{Splash.jpg}
 
 \begin{document}
 \srmaketitle
 \tableofcontents
 
 \chapter{This is a Chapter}
+\makeatletter
+\the\@textmin
+\makeatother
 \lipsum
 \lipsum
 \section{This is a Section}
@@ -990,7 +1001,7 @@ Value2 & Danger2\\
 Rick & Morty\\
 \end{srtable}
 \end{twocolumnblackbox}
-\storychapter{Very Long Story Chapter}{Author}{example-image-a}{example-image-b}
+\storychapter{Very Long Story Chapter}{Author}{StoryLeft.jpg}{StoryRight.jpg}
 \lipsum
 \storypar
 \lipsum
@@ -1002,15 +1013,23 @@ Rick & Morty\\
 \lipsum
 \section{Two Column Image}
 \lipsum
-\twocolumnimage{example-image-c}
+\twocolumnimage{TwoColumnImage.jpg}
+\twocolumnimage{TwoColumnImage.jpg}
 \lipsum
+\lipsum\par
+\lipsum\par
+\lipsum\par
+\lipsum\par
 \section{One Column Image}
-\lipsum
-\columnimage{Shadowrun_Cover_1530x1980px.jpg}
-\lipsum
-\lipsum
-\lipsum
-\lipsum
+\columnimage{Columnimage.jpg}
+\columnimage{Columnimage.jpg}
+\lipsum\par
+\lipsum\par
+\columnimage{Columnimage.jpg}
+\columnimage{Columnimage.jpg}
+\lipsum\par
+\lipsum\par
+\lipsum\par
 \lipsum
 \storychapter{Unter Dem Kreuz Hervor}{Christian Meyer}{Shadowrun_Cover_1530x1980px.jpg}{Shadowrun_Cover_1530x1980px.jpg}
 Jakob Müller ließ seine Hände über den Weizen streichen, während er den Kopf hob und den Nieselregen auf seinem Gesicht genoss. Er atmete tief ein und erfreute sich an dem erdigen Geruch von feuchtem Ackerboden. Die Augen wieder geöffnet, ließ er seinen Blick in die Ferne, über die unendliche Fläche des Weizens, gleiten.
