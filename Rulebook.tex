@@ -30,8 +30,6 @@
 \usepackage{multicol}
 %\usepackage{ifthen}
 \usepackage{xifthen}
-%\PassOptionToPackage{hidelinks}{hyperref}
-\usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
   \usetikzlibrary{fadings}
   \usetikzlibrary{patterns}
@@ -41,7 +39,7 @@
 \usepackage{booktabs}
 \usepackage{environ}
 \usepackage{enumitem}
-
+\usepackage[makeindex]{imakeidx}
 
 %%%%%%%%%%%%%%%%%%%%
 %%
@@ -156,6 +154,11 @@
 \def\srbb@texts{}
 \def\srbb@cover{}
 \def\srbb@illustrations{}
+\def\srbb@spellreach{}
+\def\srbb@spelldrain{}
+\def\srbb@spelltype{}
+\def\srbb@spelldur{}
+\def\srbb@spelldmg{}
 
 %%%%%%%%%%%%%%%%%%%%
 %%
@@ -322,7 +325,7 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \usepackage{tocloft}
-\usepackage{titlesec}
+\usepackage[nobottomtitles]{titlesec}
 
 \patchcmd{\l@chapter}
   {\cftchapfont #1}%   search pattern
@@ -510,14 +513,21 @@
 \renewcommand{\thesection}{}
 \renewcommand{\thesubsection}{}
 
-\titleformat{\section}
+\titleformat{name=\section}[block]
   {\headerfont\huge\color{redtext}\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{redtext}\nobreak\titlerule}]
+  
+\titleformat{name=\section,numberless}[block]
+  {\headerfont\huge\color{redtext}\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{redtext}\nobreak\titlerule}]
+
 
 \titleformat{\subsection}
   {\headerfont\Large\color{redtext}\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{redtext}\nobreak\titlerule}]
+
   
 \titleformat{\subsubsection}
   {\headerfont\large\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{black}\nobreak\titlerule}]
+
+
 
 %%%%%%%%%%%%%%%
 %% NEW CHAPTER DEFS
@@ -668,17 +678,24 @@
 \newcommand{\sr@lbox}[1]{
   \begin{tcolorbox}[
 	enhanced,	
-	before={\hspace{-32mm}},
+	before={\vspace{1em}\hspace{-32mm}},
 	top=4mm,
     bottom=4mm,	
 	left=25mm,
 	right=5mm,    
     opacityframe=1,
     opacityback=1,
-    interior style={left color=boxred,right color=redtext},
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
     colframe=storyblack,
     coltext=white,
     text width=\dimexpr\columnwidth-7mm,
+    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    underlay={
+		\fill[storyblack] ($(frame.north east) + (-7mm,-1mm)$) rectangle ++(-40mm, 2mm);
+		\fill[storyblack] ($(frame.north east) + (-46mm,1mm)$) -- ++(-1mm, 0mm) -- ++(-6mm, -2mm) -- ++(7mm, 0mm) -- cycle;
+		\fill[storyblack] ($(frame.north east) + (-7mm,1mm)$) -- ++(0mm, -2mm) -- ++(-45:9.9mm) -- ++(0mm, 2mm) -- cycle;
+		\node[anchor=east, opacity=.25] at ($(frame.north east) + (-10mm,-.5mm)$) {\includegraphics[height=1.5mm, width=30mm]{./core/images/pattern.png}};
+    },
     boxrule=2mm,
     arc is angular,    
     arc=6mm,outer arc=7mm
@@ -696,8 +713,16 @@
     right=25mm,
 	opacityframe=1,
     opacityback=1,
-    interior style={left color=redtext,right color=boxred},
+    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
     colframe=storyblack,
+        interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    underlay={
+		\fill[storyblack] ($(frame.north west) + (7mm,-1mm)$) rectangle ++(40mm, 2mm);
+		\fill[storyblack] ($(frame.north west) + (46mm,1mm)$) -- ++(1mm, 0mm) -- ++(6mm, -2mm) -- ++(-7mm, 0mm) -- cycle;
+		\fill[storyblack] ($(frame.north west) + (7mm,1mm)$) -- ++(0mm, -2mm) -- ++(-135:9.9mm) -- ++(0mm, 2mm) -- cycle;
+		\node[anchor=west, opacity=.25] at ($(frame.north west) + (10mm,-.5mm)$) {\includegraphics[height=1.5mm, width=30mm]{./core/images/pattern.png}};
+    },
     coltext=white,
     text width=\dimexpr\columnwidth-7mm,
     boxrule=2mm,
@@ -707,8 +732,69 @@
     \end{tcolorbox}
 }
 
+\newcommand{\sr@rdblbox}[1]{
+\begin{tcolorbox}[
+	enhanced,
+	top=4mm,
+    bottom=4mm,	
+	left=5mm,
+	right=25mm,    
+    opacityframe=1,
+    opacityback=1,
+    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    colframe=storyblack,
+    coltext=white,
+    text width=\textwidth-7mm,
+    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    underlay={
+		\fill[storyblack] ($(frame.north west) + (7mm,-1mm)$) rectangle ++(40mm, 2mm);
+		\fill[storyblack] ($(frame.north west) + (46mm,1mm)$) -- ++(1mm, 0mm) -- ++(6mm, -2mm) -- ++(-7mm, 0mm) -- cycle;
+		\fill[storyblack] ($(frame.north west) + (7mm,1mm)$) -- ++(0mm, -2mm) -- ++(-135:9.9mm) -- ++(0mm, 2mm) -- cycle;
+		\node[anchor=west, opacity=.25] at ($(frame.north west) + (10mm,-.5mm)$) {\includegraphics[height=1.5mm, width=30mm]{./core/images/pattern.png}};
+    },
+    boxrule=2mm,
+    arc is angular,    
+    arc=6mm,outer arc=7mm,
+    float*=h!tb,
+    every float=\hspace{-7mm}
+    ]
+    #1
+    \end{tcolorbox}
+}
+
+\newcommand{\sr@ldblbox}[1]{
+\begin{tcolorbox}[
+	enhanced,
+	top=4mm,
+    bottom=4mm,	
+	left=25mm,
+	right=5mm,    
+    opacityframe=1,
+    opacityback=1,
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    colframe=storyblack,
+    coltext=white,
+    text width=\textwidth-7mm,
+    boxrule=2mm,
+        frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    underlay={
+		\fill[storyblack] ($(frame.north east) + (-7mm,-1mm)$) rectangle ++(-40mm, 2mm);
+		\fill[storyblack] ($(frame.north east) + (-46mm,1mm)$) -- ++(-1mm, 0mm) -- ++(-6mm, -2mm) -- ++(7mm, 0mm) -- cycle;
+		\fill[storyblack] ($(frame.north east) + (-7mm,1mm)$) -- ++(0mm, -2mm) -- ++(-45:9.9mm) -- ++(0mm, 2mm) -- cycle;
+		\node[anchor=east, opacity=.25] at ($(frame.north east) + (-10mm,-.5mm)$) {\includegraphics[height=1.5mm, width=30mm]{./core/images/pattern.png}};
+    },
+    arc is angular,    
+    arc=6mm,outer arc=7mm,
+    float*=h!tb,
+    every float=\hspace{-25mm}
+    ] 
+    #1
+    \end{tcolorbox}
+}
+
+
 \NewEnviron{columnbox}[1][]{
-  \hfuzz=20mm
+  \hfuzz=30mm
   \par
   \boxfont
   \ifthenelse{\isempty{#1}}%
@@ -723,47 +809,20 @@
   }%
 }
 
-\newenvironment{twocolumnbox}{
-\boxfont
-\ifodd\c@page
-  \begin{tcolorbox}[
-	enhanced,
-	top=4mm,
-    bottom=4mm,	
-	left=25mm,
-	right=5mm,    
-    opacityframe=1,
-    opacityback=1,
-    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
-    colframe=storyblack,
-    coltext=white,
-    text width=\textwidth-7mm,
-    boxrule=2mm,
-    arc is angular,    
-    arc=6mm,outer arc=7mm,
-    float*=h!tb,
-    every float=\hspace{-32mm}
-    ] 
-\else
-   \begin{tcolorbox}[
-	enhanced,
-	top=4mm,
-    bottom=4mm,	
-	left=5mm,
-	right=25mm,    
-    opacityframe=1,
-    opacityback=1,
-    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
-    colframe=storyblack,
-    coltext=white,
-    text width=\textwidth-7mm,
-    boxrule=2mm,
-    arc is angular,    
-    arc=6mm,outer arc=7mm,
-    float*=h!tb
-    ]
-\fi
-}{\end{tcolorbox}}
+\NewEnviron{twocolumnbox}[1][]{
+  \hfuzz=30mm
+  \par
+  \boxfont
+  \ifthenelse{\isempty{#1}}{
+    \ifodd\c@page
+      \sr@rdblbox{\BODY}  
+    \else
+      \sr@ldblbox{\BODY}
+    \fi
+  }{
+    \ifthenelse{\equal{#1}{l}}{\sr@ldblbox{\BODY}}{\sr@rdblbox{\BODY}}
+  }
+}
 
 %%%%%%%%%%%%%%%%%%%%
 %% TABLES
@@ -788,7 +847,7 @@
 %% OTHER AREAS
 %%%
 
-\NewEnviron{dckcomment}[1]{
+\NewEnviron{deckercomment}[1]{
   \def\commentauthor{#1}
   \setmainfont{Decker}
   \small
@@ -804,6 +863,14 @@
   \par
 }
 
+\NewEnviron{spell}[2]{
+\par\vspace{1em}\noindent
+{\headerfont\Large\color{redtext}\MakeUppercase{#1}}\nopagebreak\\
+{\headerfont\large\color{storyblack}\MakeUppercase{#2}}\nopagebreak\\[1pt]
+\vspace{-1em}\hrule\vspace{1em}\noindent
+\BODY
+}
+
 
 %%%%%%%%%%%%%%%%%%%%
 %%
@@ -811,7 +878,17 @@
 %%
 %%%%%%%%%%%%%%%%%%%%
 
-
+\newcommand{\spellblock}[5][]{
+\def\sr@tmp{}
+\ifthenelse{\isempty{#1}}{}{
+\def\sr@tmp{\textbf{\srbb@spelldmg:} #1}
+}
+\begin{tabular}{lll}
+\textbf{\srbb@spelltype:} #2 & \textbf{\srbb@spellreach:} #3 & \sr@tmp\\
+\textbf{\srbb@spelldur:} #4 & \textbf{\srbb@spelldrain:} #5 & \\
+\end{tabular}
+\par
+}
 
 \newcommand{\srmaketitle}[1][black]{
   \def\coverframe{cover-}
@@ -905,6 +982,9 @@
 %%
 %%%%%%%%%%%%%%%%%%%%
 
+\usepackage[hidelinks]{hyperref}
+
+
 %%%%%%%%%%%%%%%%%%%%
 %%
 %% TERMINOLOGY
@@ -922,6 +1002,11 @@
   \renewcommand{\srbb@cover}{Cover Image}
   \renewcommand{\srbb@illustrations}{Illustrations \& Maps}
   \renewcommand{\srbb@texts}{Texts}
+  \renewcommand{\srbb@spelltype}{Art}
+  \renewcommand{\srbb@spellreach}{Reichweite}
+  \renewcommand{\srbb@spelldur}{Dauer}
+  \renewcommand{\srbb@spelldrain}{Entzug}
+  \renewcommand{\srbb@spelldmg}{Schaden}
 }
 
 \addto\captionsngerman{
@@ -930,11 +1015,19 @@
   \renewcommand{\srbb@cover}{Coverbild}
   \renewcommand{\srbb@illustrations}{Illustrationen \& Karten}
   \renewcommand{\srbb@texts}{Texte}
+  \renewcommand{\srbb@spelltype}{Type}
+  \renewcommand{\srbb@spellreach}{Range}
+  \renewcommand{\srbb@spelldur}{Duration}
+  \renewcommand{\srbb@spelldrain}{Drain}
+  \renewcommand{\srbb@spelldmg}{Damage}
 }
 
 
 \graphicspath{{./images/}}
 \makeatother
+\indexsetup{level=\section*,toclevel=chapter}
+\makeindex[options= -s index_style.ist, intoc]
+\AtEndDocument{\printindex}
 \frontmatter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -961,16 +1054,16 @@
 \tableofcontents
 
 \chapter{This is a Chapter}
-\makeatletter
-\the\@textmin
-\makeatother
 \lipsum
 \lipsum
 \section{This is a Section}
+\index{Section}
 \lipsum[1]
 \subsection{This is a Subsection}
+\index{Subsection}
 \lipsum
 \subsubsection{This is a Subsubsection}
+\index{Subsubsection}
 \lipsum
 \chapter{Boxes}
 \lipsum
@@ -987,6 +1080,10 @@
 \normalsize\lipsum[1-3]
 \end{twocolumnbox}
 \lipsum
+\begin{twocolumnbox}
+\centering\Huge Yay!\\
+\normalsize\lipsum[1-3]
+\end{twocolumnbox}
 \lipsum
 \lipsum
 \lipsum
@@ -1010,8 +1107,10 @@ Rick & Morty\\
 \storypar
 \lipsum
 \chapter{Images}
+\index{Image}
 \lipsum
 \section{Two Column Image}
+\index{Image!Two-Column}
 \lipsum
 \twocolumnimage{TwoColumnImage.jpg}
 \twocolumnimage{TwoColumnImage.jpg}
@@ -1021,73 +1120,33 @@ Rick & Morty\\
 \lipsum\par
 \lipsum\par
 \section{One Column Image}
+\index{Image!One-Column}
 \columnimage{Columnimage.jpg}
 \columnimage{Columnimage.jpg}
-\lipsum\par
-\lipsum\par
-\columnimage{Columnimage.jpg}
-\columnimage{Columnimage.jpg}
-\lipsum\par
 \lipsum\par
 \lipsum\par
 \lipsum
-\storychapter{Unter Dem Kreuz Hervor}{Christian Meyer}{Shadowrun_Cover_1530x1980px.jpg}{Shadowrun_Cover_1530x1980px.jpg}
-Jakob Müller ließ seine Hände über den Weizen streichen, während er den Kopf hob und den Nieselregen auf seinem Gesicht genoss. Er atmete tief ein und erfreute sich an dem erdigen Geruch von feuchtem Ackerboden. Die Augen wieder geöffnet, ließ er seinen Blick in die Ferne, über die unendliche Fläche des Weizens, gleiten.
-"Überprüfung einer Fehlermeldung an Eingangstür C-15 erforderlich. Auftrag bestätigen: ja – nein?"
-Das Pop-up riss ihn aus der Entspannung.
-"Techniker Müller, ID 1765 bestätigt." Seufzend verließ er die VR-Darstellung des Hosts und ging seinen Werkzeugkasten holen.
-So eine Agraranlage betreibt sich eben auch in Westphalen nicht allein durch Gottes Gnade.
-
-Das Diagnoseprogramm an Tür C-15 meldete normale Parameter, die Verbindung zum Host zeigte bei der Prüfung ebenfalls keine Auffälligkeiten. Jakob schraubte das Gehäuse wieder zu und verstaute sein Werkzeug. Seufzend machte er sich auf den Rückweg zum Bereitschaftsraum. In der Nähe des Wartungsschachtes glaubte er merkwürdige Geräusche zu hören und blieb stehen. Jakob lauschte, und tatsächlich kamen aus dem Zugangsraum zum Wartungsschacht Stimmen.
-"Jetzt mach hin, ich will hier langsam raus!", hörte er aus dem Raum. Eigentlich sollte um diese Uhrzeit niemand in dieser Ecke des Gebäudes sein. Vorsichtig lugte er um die Ecke. Vier Personen: ein Ork, ein Zwerg, zwei Menschen. Dunkel gekleidet und bewaffnet. Einer der Menschen sah aus, als könnte es sich dabei um eine Frau handeln. Gut, dass er noch sein Kommlink an seine Datenbuchse angeschlossen hatte. Seine Finger wurden vor Angst und Aufregung zittrig. Das waren bestimmt Shadowrunner.
-
-Schnell wählte er die Nummer des Sicherheitsdienstes.
-"Guten Tag, Werkssicherheit Agraranlage Greven. Mein Name ist Gert Heuwen, was kann ich für Sie tun?“
-"Da sind Shadowrunner …“, haspelte Jakob über sein DNI hervor.
-"Bitte identifizieren Sie sich und sagen mir, wo Sie sind“, antwortete der Sicherheitsangestellte.
-"Äh, ja … Jakob Müller, ID 1765. Ich befinde mich an Zugang W4 zum Wartungsschacht. Kommen Sie schnell!“ Jakobs Gedanken überschlugen sich, als er dem Sicherheitsmann die benötigten Informationen zukommen ließ.
-"Und was genau haben Sie gesehen?"
-"Vier Personen, bewaffnet, aktuell wollen sie wohl den Wartungsschacht öffnen."
-"Bringen Sie sich in Sicherheit, wir sind unterwegs", waren die letzten Worte, bevor der Sicherheitsmann auflegte.
-
-Jakob lehnte sich neben der Ecke an die Wand und versuchte sich zu beruhigen. Er konnte die Runner nebenan hören.
-"Dreck, der Alarm ist ausgelöst!", fluchte eine männliche Stimme.
-"Ich dachte, du hast den umgeleitet", grummelte eine tiefe Stimme.
-"In der Sicherheitszentrale eingehende und zur Konzernzentrale rausgehende, ja. Keine Ahnung, wo der jetzt herkommt", antwortete die erste Stimme.
-"Ist doch jetzt auch egal, lasst uns hier schnell fertig werden, bevor sie uns finden!", fauchte eine weibliche Stimme.
-Jakob traute seinen Ohren nicht. Das war doch …
-"Sabrina?" Er schaute um die Ecke und rieb sich die Augen.
-Da stand sie tatsächlich. Er hatte sie seit über einem Jahr nicht mehr gesehen.
-
-Die Runner zuckten herum und rissen ihre Waffen aus den Holstern. Jakob schluckte, als er in die Läufe schaute. Vorsichtig hob er seine leeren Hände.
-"Jakob?" Sabrinas Stimme klang wie früher. Sie ließ ihre Waffe sinken und bedeutete den anderen, es ebenfalls zu tun.
-"Was in Herrgottsnamen ist denn das jetzt?", grummelte der Zwerg.
-Sabrina funkelte ihn an. "Das ist mein Bruder. Und jetzt nimm die Waffe runter. Copperline, mach den blöden Schacht auf, bevor die Sicherheit uns findet und hier um uns herumsteht." Das Fauchen in der Stimme kannte Jakob noch gut.
-"Äh, ich fürchte, sie wissen, wo ihr seid", flüsterte Jakob.
-"Du hast den Alarm ausgelöst?", fragte der Ork.
-Er kniff die Augen zu. "Ja …", gab er leise zu.
-
-"Sketch, Vorschläge für Deckung? Kurzer, bereite einen Geist vor und plane für magische Opposition. Elektronenjockey, mach hin mit dem Schacht …"
-Die Anweisungen waren weiterhin gebrummelt, aber kurz und präzise. Die Waffen klickten und schienen ihn nicht zu erschießen.
-"Hey, Drohne, wenn du keine dummen Fragen beantworten willst, solltest du entweder schnell verschwinden oder wenigstens in Deckung gehen."
-Jakob öffnete vorsichtig die Augen. Die Waffen waren nicht mehr auf ihn gerichtet. Der Mensch hatte sich wieder dem Wartungsschacht zugewandt, Sabrina blickte sich im Bereitschaftsraum um und ging gerade auf den Snackautomaten zu.
-Der Zwerg lehnte sich in die Ecke und schien sich auf etwas Unsichtbares zu konzentrieren. So sah Magie aus? Bei Karl Kombatmage war das aber spektakulärer. Der Ork musterte ihn weiter.
-
-Jakob hörte hinter sich schwere Stiefel den Gang entlanglaufen.
-"Sie kommen!", stieß er hervor. Er warf noch einen schnellen Blick zu Sabrina, als er sich zurückziehen wollte. Sie trug gerade den Snackautomaten. Er schaute noch mal hin, nur um sicherzugehen.
-"Was … was machst du da?", fragte er ungläubig.
-"Aus dem Weg, ich schaffe Deckung. Verschwinde jetzt lieber", antwortete sie schroff.
-
-Jakob brachte sich in Sicherheit. Aber sein Geist versuchte immer noch, das Gesehene zu verarbeiten. Da begannen die Schüsse. Und die Schreie.
-Er wand sich in einer Ecke und presste sich die Hände auf die Ohren. Durch die Gänge hallte der Lärm der Schießerei trotzdem furchterregend an seine Ohren.
-
-Es schien kein Ende zu nehmen. Auf einmal spürte er, wie ihn jemand berührte. Er zuckte zusammen und schrie kurz auf.
-"Jakob, reiß dich zusammen!", fauchte Sabrina ihn an. "Wir brauchen deine Hilfe."
-Jakob blickte verwirrt. "Was? Ist es schon vorbei?"
-"Ja, und wir brauchen deine Hilfe." Sie klang schon fast flehend. "Copperline hat’s erwischt. Wir brauchen einen Hacker, der uns den Schacht öffnet." Ihre Stimme wurde weicher. Es klang verzweifelt. "Sonst schaffen wir es nicht zum Fluchtfahrzeug, und anders kommen wir hier nicht weg. Bitte, Jakob, du musst mir helfen." Die letzten Worte schluchzte sie fast.
-\storypar
-Das war vor sechs Monaten gewesen. Jakob war unter dem Kreuz Westphalens hervorgekrochen und in den Rhein-Ruhr-Megaplex gegangen. Er schüttelte den Kopf. Nein, nicht Jakob. Wavelength. Er war der neue Decker in Sabrinas Team. Das stimmte auch nicht. Hier hieß sie Sketch.
-"Hey, Wavelength, was ist mit der Tür?", klang Sketchs Stimme in seinem Kopf. Er blickte kurz hinüber.
-"Gleich bereit. Einen Moment noch", antwortete Wavelength. Er holte tief Luft und stürzte sich in die digitalen Fluten, um seinem Team die Tür zu öffnen. 
-
+\chapter{Other Sections}
+\lipsum
+\section{Deckerchat}
+\lipsum[1-5]
+\begin{deckercomment}{Suthek}
+Look, mom, I'm in a rulebook! :D
+\end{deckercomment}
+\begin{deckercomment}{Suthek's Mom}
+I'm so proud of you, honey! Well done. Now go out there and run those shadows.
+\end{deckercomment}
+\section{Spells and Qualities}
+\lipsum[1]
+\begin{spell}{Sarcastic Tongue}{Bonus: 5 Karma}
+This character always sounds sarcastic, wether they mean to or not. They roll against an increased obstacle of +1 when trying to convince someone of their sincerity.
+\end{spell}
+\begin{spell}{Alohomora}{Alteration}
+\spellblock{M}{T}{P}{F-2}
+\lipsum[2]
+\end{spell}
+\begin{spell}{Avada Kedavra}{(Direct)}
+\spellblock[K]{M}{LOS}{P}{F+5}
+\lipsum[3]
+\end{spell}
 \end{document}

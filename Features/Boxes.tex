@@ -9,6 +9,9 @@
   \definecolor{boxred}{HTML}{721a16}
   \definecolor{headred}{HTML}{5e1519}
 
+\usepackage{lipsum}
+
+
 \usepackage{tikz}
 \usetikzlibrary{fadings}
 \usetikzlibrary{patterns}
@@ -16,7 +19,7 @@
 \usetikzlibrary{calc}
 %\tikzexternalize[prefix=figures/]
 
-\usepackage[many]{tcolorbox}
+\usepackage[most]{tcolorbox}
 
 \usepackage{geometry}
   \geometry{a4paper, 
@@ -29,33 +32,37 @@
   left=20mm, 
   right=15mm
   }  
-  
-\graphicspath{{./SR5_Fankit/}}
-  
 
+\graphicspath{{../}}
+  
 \pagestyle{empty}
 \begin{document}
-
+\lipsum[1-4]
   \begin{tcolorbox}[
 	enhanced,	
 	width=\columnwidth,
 	height=2cm,
     height plus=\textheight-3cm,	
-	top=4mm,
+ 	top=4mm,
     bottom=4mm,	
 	left=5mm,
-	right=5mm,    
+	right=55mm,    
     opacityframe=1,
     opacityback=1,
-    interior style={left color=boxred,right color=redtext},
+    text width=\columnwidth-7mm,
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    underlay={
+		\fill[storyblack] ($(frame.north west) + (7mm,-1mm)$) rectangle ++(40mm, 2mm);
+		\fill[storyblack] ($(frame.north west) + (46mm,1mm)$) -- ++(1mm, 0mm) -- ++(6mm, -2mm) -- ++(-7mm, 0mm) -- cycle;
+		\fill[storyblack] ($(frame.north west) + (7mm,1mm)$) -- ++(0mm, -2mm) -- ++(-135:9.9mm) -- ++(0mm, 2mm) -- cycle;
+		\node[anchor=west, opacity=.25] at ($(frame.north west) + (10mm,-.5mm)$) {\includegraphics[height=1.5mm, width=30mm]{./core/images/pattern.png}};
+    },
     colframe=storyblack,
     coltext=white,
-    text width=\dimexpr\columnwidth-7mm,
     boxrule=2mm,
     arc is angular,    
-    arc=6mm,outer arc=7mm
-    overlay={% here
-          \node at (interior.center) {};
+    arc=6mm,outer arc=7mm,
     ]
     Test\\
     jaslj\\
