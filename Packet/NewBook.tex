@@ -1,0 +1,32 @@
+\documentclass{ShadowTeXSR5}
+
+
+%How you want to name your Book. The title will show up in the headers
+%Or on the alternative cover page.
+\title{My Rulebook}
+%Main author
+\author{Me}
+%List of artists, if available. Can leave empty.
+%\artists{Me, Myself \& I}
+%Cover artist, if available. Can leave empty.
+%\coverartist{Me, too}
+%Text Writers, if available. Can leave empty.
+%\writers{Not me}
+%Filename of the image you wish to be on the cover. It'll also show as an overlay in the headers. 
+%If no image is provided, the document will show an alternative (boring) cover page and not overlay anything on the headers.
+\splashpicture{Splash.jpg}
+
+\begin{document}
+%You can use this to select your Language of choice. Currently only ngerman and english are supported.
+\selectlanguage{english}
+%This builds and prints the cover page, splash page and impressum.
+%Supported colors: black, blue, brown, green, grey, red, yellow
+\srmaketitle[black]
+%This builds the TOC.
+\tableofcontents
+
+%From here on, your content can start.
+
+
+
+\end{document}  

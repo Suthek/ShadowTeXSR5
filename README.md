@@ -31,7 +31,7 @@
 \splashpicture{Splash.jpg}
 
 \begin{document}
-%You can use this to select your Language of choice. Currently only german and english are supported.
+%You can use this to select your Language of choice. Currently only ngerman and english are supported.
 \selectlanguage{english}
 %This builds and prints the cover page, splash page and impressum.
 \srmaketitle
