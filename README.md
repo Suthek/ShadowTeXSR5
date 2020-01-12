@@ -15,9 +15,6 @@
   
   ```
 \documentclass{ShadowTeXSR5}
-%You can use this to select your Language of choice. Currently only german and english are supported.
-\selectlanguage{english}
-
 %How you want to name your Book. The title will show up in the headers
 %Or on the alternative cover page.
 \title{My Rulebook}
@@ -34,6 +31,8 @@
 \splashpicture{Splash.jpg}
 
 \begin{document}
+%You can use this to select your Language of choice. Currently only german and english are supported.
+\selectlanguage{english}
 %This builds and prints the cover page, splash page and impressum.
 \srmaketitle
 %This builds the TOC.
