@@ -1,6 +1,6 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {}This is a Chapter}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {}Magische Gesellschaften}{4}{chapter.1}%
 \contentsline {section}{\numberline {}This is a Section}{6}{section.1.1}%
 \contentsline {subsection}{\numberline {}This is a Subsection}{6}{subsection.1.1.1}%
 \contentsline {subsubsection}{This is a Subsubsection}{7}{subsubsection*.2}%

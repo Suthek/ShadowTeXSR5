@@ -244,8 +244,11 @@
 \newfontfamily{\headerfont}[
   Path = ./core/fonts/,
   Extension = .ttf,
-  UprightFont = *-rg,  
-]{sublm}
+  UprightFont = *-rg,
+  UprightFeatures = {
+  FakeStretch=0.75
+  }
+]{rexlia}
 \newfontfamily{\boxfont}[
   Path = ./core/fonts/,
   Extension = .ttf,

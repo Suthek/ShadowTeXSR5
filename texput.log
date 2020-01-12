@@ -1,0 +1,19 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.2)  12 JAN 2020 13:27
+entering extended mode
+**ShadowTeXSR5.tex
+
+! Emergency stop.
+<*> ShadowTeXSR5.tex
+                    
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 2 strings out of 427265
+ 22 string characters out of 3147679
+ 65666 words of memory out of 3000000
+ 4578 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
