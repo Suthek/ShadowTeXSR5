@@ -397,14 +397,14 @@
 \newcommand{\footerleft}[1]{
 \begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
 	\node[anchor=center] at (.5\paperwidth,.5\paperheight) {\pgfuseimage{#1}};
-	\node [anchor=west, white, font=\headerfont] at (27mm,9mm) {\LARGE\thepage\hspace{1cm}\Large\leftmark\hspace{1em}\Huge\guillemotright};
+	\node [anchor=west, white, font=\headerfont] at (27mm,9.5mm) {\LARGE\thepage\hspace{1cm}\large\MakeUppercase{\leftmark}\hspace{1em}\large\guillemotright};
 	\end{tikzpicture}	
 }
 
 \newcommand{\footerright}[1]{
 	\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
 	\node[anchor=center] at (.5\paperwidth,.5\paperheight) {\pgfuseimage{#1}};
-	\node [anchor=east, align=right, white, font=\headerfont] at (\paperwidth-27mm,9mm) {\Huge\guillemotleft\hspace{1em}\Large\leftmark\hspace{1cm}\LARGE\thepage};
+	\node [anchor=east, align=right, white, font=\headerfont] at (\paperwidth-27mm,9.5mm) {\large\guillemotleft\hspace{1em}\large\MakeUppercase{\leftmark}\hspace{1cm}\LARGE\thepage};
 	\end{tikzpicture}	
 
 }

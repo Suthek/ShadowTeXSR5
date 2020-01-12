@@ -3,3 +3,12 @@ TODO.txt
 refactoring/*
 Presentation/*
 TikzExternalizations/SR5_Fankit/*
+**/*.aux
+**/*.auxlock
+**/*.idx
+**/*.ilg
+**/*.ind
+**/*.log
+**/*.out
+**/*.gz
+**/*.toc
