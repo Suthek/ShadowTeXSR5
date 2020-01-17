@@ -5,7 +5,7 @@
   - The ShadowTeXSR5.cls (once it exists)
   - The core folder; it contains all the static material used in the document (backgrounds etc.)
   - An image folder; you can create that yourself. It's where you store any pictures you want to include in the document. The provided folder contains some template images.
-  - The index_style.mst. Rename it to <yourtexfilename>.mst.
+  - The index_style.mst. Rename it to \<yourtexfilename\>.mst.
   - A *.tex file
   
   
