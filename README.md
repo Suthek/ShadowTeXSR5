@@ -62,7 +62,7 @@ Pre-Defined colors are:
 - `\title{}`: Title of your book.
 - `\author{}`, `\writers{}`, `\artists{}`, `\coverartist{}`: Can be used to credit writers and artists who help with the book in the Impressum. 
 - `\splashpicture{}`: Filename of splash picture in ./images/ folder
-- `\srmaketitle`: Creates the cover, impressum and splash picture. Cover colors can be added as optional argument. (e.g. `\srmaketitle[red]`) Options: black, blue, brown, green, grey, red, yellow. Default: black
+- `\srmaketitle`: Creates the cover, impressum and splash picture. Also initializes title for header use. Cover colors can be added as optional argument. (e.g. `\srmaketitle[red]`) Options: black, blue, brown, green, grey, red, yellow. Default: black
 
 
 ### Structure  
