@@ -5,7 +5,7 @@
   - The ShadowTeXSR5.cls (once it exists)
   - The core folder; it contains all the static material used in the document (backgrounds etc.)
   - An image folder; you can create that yourself. It's where you store any pictures you want to include in the document. The provided folder contains some template images.
-  - The index_style.mst. Rename it to <yourtexfilename>.mst.
+  - The index_style.mst. Rename it to \<yourtexfilename\>.mst.
   - A *.tex file
   
   
@@ -62,7 +62,7 @@ Pre-Defined colors are:
 - `\title{}`: Title of your book.
 - `\author{}`, `\writers{}`, `\artists{}`, `\coverartist{}`: Can be used to credit writers and artists who help with the book in the Impressum. 
 - `\splashpicture{}`: Filename of splash picture in ./images/ folder
-- `\srmaketitle`: Creates the cover, impressum and splash picture. Cover colors can be added as optional argument. (e.g. `\srmaketitle[red]`) Options: black, blue, brown, green, grey, red, yellow. Default: black
+- `\srmaketitle`: Creates the cover, impressum and splash picture. Also initializes title for header use. Cover colors can be added as optional argument. (e.g. `\srmaketitle[red]`) Options: black, blue, brown, green, grey, red, yellow. Default: black
 
 
 ### Structure  

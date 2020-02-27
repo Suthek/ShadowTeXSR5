@@ -150,6 +150,7 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \newif\ifTitleSpread
+\def\sr@doctitle{}
 \def\sr@coverartist{}
 \def\sr@writers{}
 \def\sr@artists{}
@@ -426,7 +427,7 @@
  {\parbox{183mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
       \else
         \node at (0,0) {\pgfuseimage{smallleftheader}};	  
-	    \node[anchor=west, white, font=\headerfont] at (-.5\paperwidth+15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\Large\guillemotright~~\normalsize\doctitle~~\Large\guillemotleft};
+	    \node[anchor=west, white, font=\headerfont] at (-.5\paperwidth+15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\Large\guillemotright~~\normalsize\sr@doctitle~~\Large\guillemotleft};
 	  \fi	  
 	\end{tikzpicture}
   }
@@ -450,7 +451,7 @@
             \node[red, anchor=center, opacity=0.25] at (0,.5\paperheight) {\includegraphics[height=\paperheight, width=\paperwidth]{\srsplash}};
 	      \end{scope}
         } 
-        \node[anchor=east, align=left, white, font=\headerfont] at (.5\paperwidth-15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\large\guillemotright~~\normalsize\doctitle~~\Large\guillemotleft};
+        \node[anchor=east, align=left, white, font=\headerfont] at (.5\paperwidth-15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\large\guillemotright~~\normalsize\sr@doctitle~~\Large\guillemotleft};
 	  \fi
     \end{tikzpicture}
     \global\headheight=23mm
@@ -942,7 +943,7 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 
 \NewEnviron{deckercomment}[1]{
   \def\commentauthor{#1}
-  \setmainfont{Decker}
+  \deckerfont
   \small
   \par
   \begin{itemize}[
@@ -986,7 +987,7 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \newcommand{\srmaketitle}[1][black]{
   \def\coverframe{cover-}
   \g@addto@macro\coverframe{#1}
-  \let\doctitle\@title 
+  \let\sr@doctitle\@title
   \pagestyle{empty}
   \cleardoublepage
   \begin{titlepage}
