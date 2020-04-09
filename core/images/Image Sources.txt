@@ -1,0 +1,6 @@
+bgpattern: Custom
+
+bgvisual:
+skyline_seattle_schwarz_1920x1080px.jpg from SR5-Fankit
+
+pattern: Custom

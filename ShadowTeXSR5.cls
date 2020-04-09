@@ -6,7 +6,7 @@
 %% Author: Tobias Braun
 %% Jan, 2020
 %%
-%% ALL FONTS USED ARE LICENSED FOR NON-COMMERCIAL PURPOSES ONLY
+%% ALL FONTS AND IMAGES USED ARE LICENSED FOR NON-COMMERCIAL PURPOSES ONLY
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -249,12 +249,12 @@
   UprightFeatures = {
   FakeStretch=0.75
   }
-]{rexlia}
+]{hdrfont}
 \newfontfamily{\boxfont}[
   Path = ./core/fonts/,
   Extension = .ttf,
   UprightFont = *-rg  
-]{universcondensed}
+]{boxfont}
   
 \renewcommand{\rmdefault}{srbody}
 \renewcommand{\sfdefault}{srbody}
@@ -315,7 +315,7 @@
   opacity=.01,
   angle=0,
   contents={%
-    \includegraphics[width=\paperwidth , height=\paperheight]{core/images/scanlines.png}
+    \includegraphics[width=\paperwidth , height=\paperheight]{core/images/bgpattern.png}
   }
 }
 
@@ -710,11 +710,11 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 	right=5mm,    
     opacityframe=1,
     opacityback=1,
-    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/bgpattern.png, fill image opacity=0.1},
     colframe=storyblack,
     coltext=white,
     text width=\dimexpr\columnwidth-7mm,
-    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    frame style={fill plain image=./core/images/bgvisual.jpg},
     underlay={
 		\fill[storyblack] ($(frame.north east) + (-7mm,-1mm)$) rectangle ++(-40mm, 2mm);
 		\fill[storyblack] ($(frame.north east) + (-46mm,1mm)$) -- ++(-1mm, 0mm) -- ++(-6mm, -2mm) -- ++(7mm, 0mm) -- cycle;
@@ -738,10 +738,10 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
     right=25mm,
 	opacityframe=1,
     opacityback=1,
-    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/bgpattern.png, fill image opacity=0.1},
     colframe=storyblack,
-        interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
-    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+        interior style={left color=boxred,right color=redtext, fill plain image=./core/images/bgpattern.png, fill image opacity=0.1},
+    frame style={fill plain image=./core/images/bgvisual.jpg},
     underlay={
 		\fill[storyblack] ($(frame.north west) + (7mm,-1mm)$) rectangle ++(40mm, 2mm);
 		\fill[storyblack] ($(frame.north west) + (46mm,1mm)$) -- ++(1mm, 0mm) -- ++(6mm, -2mm) -- ++(-7mm, 0mm) -- cycle;
@@ -766,11 +766,11 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 	right=25mm,    
     opacityframe=1,
     opacityback=1,
-    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    interior style={left color=redtext,right color=boxred, fill plain image=./core/images/bgpattern.png, fill image opacity=0.1},
     colframe=storyblack,
     coltext=white,
     text width=\textwidth-7mm,
-    frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+    frame style={fill plain image=./core/images/bgvisual.jpg},
     underlay={
 		\fill[storyblack] ($(frame.north west) + (7mm,-1mm)$) rectangle ++(40mm, 2mm);
 		\fill[storyblack] ($(frame.north west) + (46mm,1mm)$) -- ++(1mm, 0mm) -- ++(6mm, -2mm) -- ++(-7mm, 0mm) -- cycle;
@@ -796,12 +796,12 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 	right=5mm,    
     opacityframe=1,
     opacityback=1,
-    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    interior style={left color=boxred,right color=redtext, fill plain image=./core/images/bgpattern.png, fill image opacity=0.1},
     colframe=storyblack,
     coltext=white,
     text width=\textwidth-7mm,
     boxrule=2mm,
-        frame style={fill plain image=./core/images/Skyline_Seattle_schwarz_1920x1080px.jpg},
+        frame style={fill plain image=./core/images/bgvisual.jpg},
     underlay={
 		\fill[storyblack] ($(frame.north east) + (-7mm,-1mm)$) rectangle ++(-40mm, 2mm);
 		\fill[storyblack] ($(frame.north east) + (-46mm,1mm)$) -- ++(-1mm, 0mm) -- ++(-6mm, -2mm) -- ++(7mm, 0mm) -- cycle;
@@ -1028,7 +1028,7 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
     opacityframe=1,
     opacityback=1,
     colback=boxred,
-    interior style={fill plain image=./core/images/scanlines.png, fill image opacity=0.1},
+    interior style={fill plain image=./core/images/bgpattern.png, fill image opacity=0.1},
     colframe=storyblack,
     coltext=white,
     text width=\textwidth-7mm,

@@ -49,7 +49,7 @@
 Pre-Defined colors are:
 - whitetext
 - redtext
-- whitetext
+- yellowtext
 - normalpage
 - storyblack
 - boxred
