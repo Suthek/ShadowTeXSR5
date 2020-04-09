@@ -2,10 +2,10 @@
 ## Installation
  What you need: 
   - A XeTeX compiler. Most LaTeX environments like [MikTeX](https://miktex.org/) or [TeXLive](https://www.tug.org/texlive/) will have it included.
-  - The ShadowTeXSR5.cls (once it exists)
+  - The ShadowTeXSR5.cls
   - The core folder; it contains all the static material used in the document (backgrounds etc.)
   - An image folder; you can create that yourself. It's where you store any pictures you want to include in the document. The provided folder contains some template images.
-  - The index_style.mst. Rename it to \<yourtexfilename\>.mst.
+  - The index_style.ist.
   - A *.tex file
   
   

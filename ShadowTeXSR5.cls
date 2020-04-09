@@ -422,7 +422,7 @@
 	    \suppressfloats[t]
 	    \suppressfloats[b]	  
 	    \node at (0,0) {\pgfuseimage{bigleftheader}};
-	    \node[anchor=south west, fill=redtext, minimum height=6mm, white, font=\headerfont] at (-.5\paperwidth+15mm,.5\paperheight-14mm) {\MakeUppercase{\doctitle}};
+	    \node[anchor=south west, fill=redtext, minimum height=6mm, white, font=\headerfont] at (-.5\paperwidth+15mm,.5\paperheight-14mm) {\MakeUppercase{\sr@doctitle}};
 	    \draw node[anchor=west, white, align=left, font=\headerfont\fontsize{60}{50}\selectfont] at (-.5\paperwidth+8mm,{(.5\paperheight)-(.5\headheight)})
  {\parbox{183mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
       \else
