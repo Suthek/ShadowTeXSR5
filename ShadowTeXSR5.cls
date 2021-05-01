@@ -398,14 +398,14 @@
 \newcommand{\footerleft}[1]{
 \begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
 	\node[anchor=center] at (.5\paperwidth,.5\paperheight) {\pgfuseimage{#1}};
-	\node [anchor=west, white, font=\headerfont] at (27mm,9.5mm) {\LARGE\thepage\hspace{1cm}\large\MakeUppercase{\leftmark}\hspace{1em}\large\guillemotright};
+	\node [anchor=west, text=white, font=\headerfont] at (27mm,9.5mm) {\LARGE\thepage\hspace{1cm}\large\MakeUppercase{\leftmark}\hspace{1em}\large\guillemotright};
 	\end{tikzpicture}	
 }
 
 \newcommand{\footerright}[1]{
 	\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
 	\node[anchor=center] at (.5\paperwidth,.5\paperheight) {\pgfuseimage{#1}};
-	\node [anchor=east, align=right, white, font=\headerfont] at (\paperwidth-27mm,9.5mm) {\large\guillemotleft\hspace{1em}\large\MakeUppercase{\leftmark}\hspace{1cm}\LARGE\thepage};
+	\node [anchor=east, align=right, text=white, font=\headerfont] at (\paperwidth-27mm,9.5mm) {\large\guillemotleft\hspace{1em}\large\MakeUppercase{\leftmark}\hspace{1cm}\LARGE\thepage};
 	\end{tikzpicture}	
 
 }
@@ -422,12 +422,12 @@
 	    \suppressfloats[t]
 	    \suppressfloats[b]	  
 	    \node at (0,0) {\pgfuseimage{bigleftheader}};
-	    \node[anchor=south west, fill=redtext, minimum height=6mm, white, font=\headerfont] at (-.5\paperwidth+15mm,.5\paperheight-14mm) {\MakeUppercase{\sr@doctitle}};
-	    \draw node[anchor=west, white, align=left, font=\headerfont\fontsize{60}{50}\selectfont] at (-.5\paperwidth+8mm,{(.5\paperheight)-(.5\headheight)})
+	    \node[anchor=south west, fill=redtext, minimum height=6mm, text=white, font=\headerfont] at (-.5\paperwidth+15mm,.5\paperheight-14mm) {\MakeUppercase{\sr@doctitle}};
+	    \draw node[anchor=west, text=white, align=left, font=\headerfont\fontsize{60}{50}\selectfont] at (-.5\paperwidth+8mm,{(.5\paperheight)-(.5\headheight)})
  {\parbox{183mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
       \else
         \node at (0,0) {\pgfuseimage{smallleftheader}};	  
-	    \node[anchor=west, white, font=\headerfont] at (-.5\paperwidth+15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\Large\guillemotright~~\normalsize\sr@doctitle~~\Large\guillemotleft};
+	    \node[anchor=west, text=white, font=\headerfont] at (-.5\paperwidth+15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\Large\guillemotright~~\normalsize\sr@doctitle~~\Large\guillemotleft};
 	  \fi	  
 	\end{tikzpicture}
   }
@@ -451,7 +451,7 @@
             \node[red, anchor=center, opacity=0.25] at (0,.5\paperheight) {\includegraphics[height=\paperheight, width=\paperwidth]{\srsplash}};
 	      \end{scope}
         } 
-        \node[anchor=east, align=left, white, font=\headerfont] at (.5\paperwidth-15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\large\guillemotright~~\normalsize\sr@doctitle~~\Large\guillemotleft};
+        \node[anchor=east, align=left, text=white, font=\headerfont] at (.5\paperwidth-15mm,{(.5\paperheight)-((.5\headheight)-2mm)}) {\large\guillemotright~~\normalsize\sr@doctitle~~\Large\guillemotleft};
 	  \fi
     \end{tikzpicture}
     \global\headheight=23mm
@@ -480,7 +480,7 @@
       \begin{tikzpicture}[remember picture, overlay]
         \node at (.5\paperwidth-15mm,.5\headheight) {\includegraphics[width=\paperwidth, height=\headheight]{\storyleftimage}};
         \fill[fill=redtext, path fading=east, fill opacity=.8] (-15mm,0) rectangle (\paperwidth, 3);
-        \draw node[white, align=justify, font=\headerfont\fontsize{40}{35}\selectfont\styleB] at (65mm,15mm) {\parbox{140mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
+        \draw node[text=white, align=justify, font=\headerfont\fontsize{40}{35}\selectfont\styleB] at (65mm,15mm) {\parbox{140mm}{\styleB \nohyphens{\MakeUppercase{\leftmark}}}};
       \end{tikzpicture}
     \fi
   }
@@ -491,7 +491,7 @@
       \begin{tikzpicture}[remember picture, overlay]
         \node at (.5\paperwidth-20mm,.5\headheight) {\includegraphics[width=\paperwidth, height=\headheight]{\storyrightimage}};
         \fill[anchor=south east, fill=redtext, path fading=west, fill opacity=.8] (.4\paperwidth,0) rectangle (\paperwidth-20mm, 10mm);
-        \draw node[white, anchor=east, font=\headerfont\large] at (\paperwidth-40mm, 0.5) {\MakeUppercase{\storyauthor}};
+        \draw node[text=white, anchor=east, font=\headerfont\large] at (\paperwidth-40mm, 0.5) {\MakeUppercase{\storyauthor}};
       \end{tikzpicture}
     \fi
     \global\headheight=23mm
