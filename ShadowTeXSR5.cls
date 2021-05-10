@@ -163,6 +163,9 @@
 \def\srbb@spelltype{}
 \def\srbb@spelldur{}
 \def\srbb@spelldmg{}
+\def\srbb@cformtarg{}
+\def\srbb@cformdur{}
+\def\srbb@cformfade{}
 \def\srbb@example{}
 
 %%%%%%%%%%%%%%%%%%%%
@@ -984,6 +987,12 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \par
 }
 
+\newcommand{\cformblock}[3][]{
+\begin{tabular}{lll}
+\textbf{\srbb@cformtarg:} #1 & \textbf{\srbb@cformdur:} #2 & \textbf{\srbb@cformfade:} #3 \\
+\end{tabular}
+}
+
 \newcommand{\srmaketitle}[1][black]{
   \def\coverframe{cover-}
   \g@addto@macro\coverframe{#1}
@@ -1102,6 +1111,9 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@spelldur}{Duration}
   \renewcommand{\srbb@spelldrain}{Drain}
   \renewcommand{\srbb@spelldmg}{Damage}
+  \renewcommand{\srbb@cformtarg}{Target}
+  \renewcommand{\srbb@cformdur}{Duration}
+  \renewcommand{\srbb@cformfade}{Fading}
   \renewcommand{\srbb@example}{Example}
 }
 
@@ -1116,6 +1128,9 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@spelldur}{Dauer}
   \renewcommand{\srbb@spelldrain}{Entzug}
   \renewcommand{\srbb@spelldmg}{Schaden}
+  \renewcommand{\srbb@cformtarg}{Ziel}
+  \renewcommand{\srbb@cformdur}{Dauer}
+  \renewcommand{\srbb@cformfade}{Schwund}
   \renewcommand{\srbb@example}{Beispiel}
 }
 
