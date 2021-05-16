@@ -99,6 +99,7 @@ These sections are environments as well.
 ### Other commands
 
 - `spellblock`: This command takes 4 arguments and a 5th optional one. `\spellblock[Damage]{Type}{Range}{Duration}{Drain}`. This can be used in the `spell` environment to add the core spell features.
+- `cformblock`: This command takes 3 arguments. `\cformblock[Target]{Duration}{Fading}`. Just like `spellblock` this can be used in the `spell` environment to add complex forms.
 
 ### Indexing
 To create an index entry for a term, write `\index{Term}` in the text where you want the entry to link to.
