@@ -11,7 +11,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ShadowTeXSR5}[2020/01/11 - Shadowrun Rulebook Template]
 
@@ -141,7 +140,6 @@
     \end{multicols*}%
   }{}%
 }
-
 
 %%%%%%%%%%%%%%%%%%%%
 %%
@@ -389,6 +387,7 @@
 %% PAGESTYLES/HEADER AND FOOTER
 %%
 %%%%%%%%%%%%%%%%%%%%
+
 \graphicspath{{./images/}}
 \RequirePackage{fancyhdr}
 
@@ -538,8 +537,6 @@
 \titleformat{\subsubsection}
   {\headerfont\large\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{black}\nobreak\titlerule}]
 
-
-
 %%%%%%%%%%%%%%%
 %% NEW CHAPTER DEFS
 %%%
@@ -629,6 +626,7 @@
 %%%%%%%%%%%%%%%%%%%
 %% IMAGES
 %%%
+
 \newcommand{\twocolimage}[1]{
 \begin{tcolorbox}[
     enhanced,
@@ -968,7 +966,6 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \BODY
 }
 
-
 %%%%%%%%%%%%%%%%%%%%
 %%
 %% NEW COMMANDS II
@@ -1087,13 +1084,11 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 
 \RequirePackage[hidelinks]{hyperref}
 
-
 %%%%%%%%%%%%%%%%%%%%
 %%
 %% TERMINOLOGY
 %%
 %%%%%%%%%%%%%%%%%%%%
-
 
 \PassOptionsToPackage{ngerman}{babel}
 \PassOptionsToPackage{english}{babel}
@@ -1134,13 +1129,9 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@example}{Beispiel}
 }
 
-
-
 \graphicspath{{./images/}}
 
 \indexsetup{level=\section*,toclevel=chapter}
 \makeindex[options= -s ./index_style.ist, intoc]
 \AtEndDocument{\cleardoublepage\restorepagecolor\globalcolor{black}\pagestyle{plain}\printindex}
 \frontmatter
-
-
