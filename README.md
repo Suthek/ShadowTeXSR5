@@ -76,7 +76,8 @@ All boxes are environments that are used with `\begin{name}` and `\end{name}`.
 
 - `columnbox`: creates a red box in one column. The Layout changes depending on which column it's in and should dynamically do the right thing; should a box refuse to play nice, you can force it into a configuration using `\begin{columnbox}[l]` or `\begin{columnbox}[r]`.
 - `twocolbox`: like `columnbox`, only the box spreads over both columns. Optional arguments apply as well.
-- `blackbox`: creates a dark-themed box. With white text. Takes a title as argument.
+- `blackbox`: creates a single column dark-themed box. With white text. Takes a title as argument.
+- `twocolblackbox`: like `blackbox`, but two columns.
 - `examplebox`: Creates a white box used for example texts.
 - `twocolexamplebox`: Like `examplebox`, but two columns.
   
@@ -87,7 +88,7 @@ All boxes are environments that are used with `\begin{name}` and `\end{name}`.
 
 ### Tables
 
-The environment `\begin{srtable}{layout}{Header}` & `\end{srtable}` creates a table to be used within a `twocolumnblackbox`. Layout describes [tabularx column-Layout](https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabularx_package). The body contains all lines of the table except for the header line, which is provided through the second argument.
+The environment `\begin{srtable}{layout}{Header}` & `\end{srtable}` creates a table to be used within a `blackbox` or `twocolumnblackbox`. Layout describes [tabularx column-Layout](https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabularx_package). The body contains all lines of the table except for the header line, which is provided through the second argument.
 
 ### Small Sections
 
@@ -99,6 +100,7 @@ These sections are environments as well.
 ### Other commands
 
 - `spellblock`: This command takes 4 arguments and a 5th optional one. `\spellblock[Damage]{Type}{Range}{Duration}{Drain}`. This can be used in the `spell` environment to add the core spell features.
+- `cformblock`: This command takes 3 arguments. `\cformblock[Target]{Duration}{Fading}`. Just like `spellblock` this can be used in the `spell` environment to add complex forms.
 
 ### Indexing
 To create an index entry for a term, write `\index{Term}` in the text where you want the entry to link to.

@@ -11,7 +11,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ShadowTeXSR5}[2020/01/11 - Shadowrun Rulebook Template]
 
@@ -142,7 +141,6 @@
   }{}%
 }
 
-
 %%%%%%%%%%%%%%%%%%%%
 %%
 %% NEW VALUES
@@ -163,6 +161,9 @@
 \def\srbb@spelltype{}
 \def\srbb@spelldur{}
 \def\srbb@spelldmg{}
+\def\srbb@cformtarg{}
+\def\srbb@cformdur{}
+\def\srbb@cformfade{}
 \def\srbb@example{}
 
 %%%%%%%%%%%%%%%%%%%%
@@ -386,6 +387,7 @@
 %% PAGESTYLES/HEADER AND FOOTER
 %%
 %%%%%%%%%%%%%%%%%%%%
+
 \graphicspath{{./images/}}
 \RequirePackage{fancyhdr}
 
@@ -535,8 +537,6 @@
 \titleformat{\subsubsection}
   {\headerfont\large\raggedright\nohyphens}{}{0cm}{\MakeUppercase}[{\color{black}\nobreak\titlerule}]
 
-
-
 %%%%%%%%%%%%%%%
 %% NEW CHAPTER DEFS
 %%%
@@ -626,6 +626,7 @@
 %%%%%%%%%%%%%%%%%%%
 %% IMAGES
 %%%
+
 \newcommand{\twocolimage}[1]{
 \begin{tcolorbox}[
     enhanced,
@@ -679,6 +680,28 @@
 %%%
 
 \newcommand{\sr@blckbox}[2]{
+\begin{tcolorbox}[
+enhanced, 
+fonttitle=\boxfont, 
+float=tb, 
+colback=storyblack, 
+left=2mm, 
+right=2mm, 
+bottom=6mm, top=3mm, 
+title={\color{yellowtext}\Large\MakeUppercase{#1}}, 
+width = \columnwidth, 
+arc=0mm, 
+outer arc=0mm, 
+colframe=storyblack, 
+attach boxed title to top left={yshift=-1mm}, 
+boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=storyblack, outer arc=0mm}, underlay boxed title={\fill[storyblack] ($(title.north east)+(-2mm, 0mm)$) -- ($(title.south east)+(-2mm, 0mm)$) -- ($(title.south east)+(2mm, 0mm)$) -- ++(2cm, 0mm) -- ($(title.north east)+(2mm, 0mm)$) -- cycle;}
+]
+\centering
+#2
+\end{tcolorbox}
+}
+
+\newcommand{\sr@dblblckbox}[2]{
 \begin{tcolorbox}[
 enhanced, 
 fonttitle=\boxfont, 
@@ -879,6 +902,10 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \sr@blckbox{#1}{\BODY}
 }
 
+\NewEnviron{twocolblackbox}[1]{
+\sr@dblblckbox{#1}{\BODY}
+}
+
 \NewEnviron{columnbox}[1][]{
   \hfuzz=30mm
   \par
@@ -965,7 +992,6 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \BODY
 }
 
-
 %%%%%%%%%%%%%%%%%%%%
 %%
 %% NEW COMMANDS II
@@ -982,6 +1008,12 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \textbf{\srbb@spelldur:} #4 & \textbf{\srbb@spelldrain:} #5 & \\
 \end{tabular}
 \par
+}
+
+\newcommand{\cformblock}[3][]{
+\begin{tabular}{lll}
+\textbf{\srbb@cformtarg:} #1 & \textbf{\srbb@cformdur:} #2 & \textbf{\srbb@cformfade:} #3 \\
+\end{tabular}
 }
 
 \newcommand{\srmaketitle}[1][black]{
@@ -1078,13 +1110,11 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 
 \RequirePackage[hidelinks]{hyperref}
 
-
 %%%%%%%%%%%%%%%%%%%%
 %%
 %% TERMINOLOGY
 %%
 %%%%%%%%%%%%%%%%%%%%
-
 
 \PassOptionsToPackage{ngerman}{babel}
 \PassOptionsToPackage{english}{babel}
@@ -1102,6 +1132,9 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@spelldur}{Duration}
   \renewcommand{\srbb@spelldrain}{Drain}
   \renewcommand{\srbb@spelldmg}{Damage}
+  \renewcommand{\srbb@cformtarg}{Target}
+  \renewcommand{\srbb@cformdur}{Duration}
+  \renewcommand{\srbb@cformfade}{Fading}
   \renewcommand{\srbb@example}{Example}
 }
 
@@ -1116,10 +1149,11 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
   \renewcommand{\srbb@spelldur}{Dauer}
   \renewcommand{\srbb@spelldrain}{Entzug}
   \renewcommand{\srbb@spelldmg}{Schaden}
+  \renewcommand{\srbb@cformtarg}{Ziel}
+  \renewcommand{\srbb@cformdur}{Dauer}
+  \renewcommand{\srbb@cformfade}{Schwund}
   \renewcommand{\srbb@example}{Beispiel}
 }
-
-
 
 \graphicspath{{./images/}}
 
@@ -1127,5 +1161,3 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 \makeindex[options= -s ./index_style.ist, intoc]
 \AtEndDocument{\cleardoublepage\restorepagecolor\globalcolor{black}\pagestyle{plain}\printindex}
 \frontmatter
-
-
