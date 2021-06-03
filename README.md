@@ -76,7 +76,8 @@ All boxes are environments that are used with `\begin{name}` and `\end{name}`.
 
 - `columnbox`: creates a red box in one column. The Layout changes depending on which column it's in and should dynamically do the right thing; should a box refuse to play nice, you can force it into a configuration using `\begin{columnbox}[l]` or `\begin{columnbox}[r]`.
 - `twocolbox`: like `columnbox`, only the box spreads over both columns. Optional arguments apply as well.
-- `blackbox`: creates a dark-themed box. With white text. Takes a title as argument.
+- `blackbox`: creates a single column dark-themed box. With white text. Takes a title as argument.
+- `twocolblackbox`: like `blackbox`, but two columns.
 - `examplebox`: Creates a white box used for example texts.
 - `twocolexamplebox`: Like `examplebox`, but two columns.
   
@@ -87,7 +88,7 @@ All boxes are environments that are used with `\begin{name}` and `\end{name}`.
 
 ### Tables
 
-The environment `\begin{srtable}{layout}{Header}` & `\end{srtable}` creates a table to be used within a `twocolumnblackbox`. Layout describes [tabularx column-Layout](https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabularx_package). The body contains all lines of the table except for the header line, which is provided through the second argument.
+The environment `\begin{srtable}{layout}{Header}` & `\end{srtable}` creates a table to be used within a `blackbox` or `twocolumnblackbox`. Layout describes [tabularx column-Layout](https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabularx_package). The body contains all lines of the table except for the header line, which is provided through the second argument.
 
 ### Small Sections
 
