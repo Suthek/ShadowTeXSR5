@@ -683,6 +683,28 @@
 \begin{tcolorbox}[
 enhanced, 
 fonttitle=\boxfont, 
+float=tb, 
+colback=storyblack, 
+left=2mm, 
+right=2mm, 
+bottom=6mm, top=3mm, 
+title={\color{yellowtext}\Large\MakeUppercase{#1}}, 
+width = \columnwidth, 
+arc=0mm, 
+outer arc=0mm, 
+colframe=storyblack, 
+attach boxed title to top left={yshift=-1mm}, 
+boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=storyblack, outer arc=0mm}, underlay boxed title={\fill[storyblack] ($(title.north east)+(-2mm, 0mm)$) -- ($(title.south east)+(-2mm, 0mm)$) -- ($(title.south east)+(2mm, 0mm)$) -- ++(2cm, 0mm) -- ($(title.north east)+(2mm, 0mm)$) -- cycle;}
+]
+\centering
+#2
+\end{tcolorbox}
+}
+
+\newcommand{\sr@dblblckbox}[2]{
+\begin{tcolorbox}[
+enhanced, 
+fonttitle=\boxfont, 
 float*=tb, 
 colback=storyblack, 
 left=2mm, 
@@ -878,6 +900,10 @@ boxed title style={arc=0mm, top=2mm, bottom=1mm, colframe=storyblack, colback=st
 
 \NewEnviron{blackbox}[1]{
 \sr@blckbox{#1}{\BODY}
+}
+
+\NewEnviron{twocolblackbox}[1]{
+\sr@dblblckbox{#1}{\BODY}
 }
 
 \NewEnviron{columnbox}[1][]{
